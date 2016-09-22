@@ -7,4 +7,11 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <Group
+      location = "container:"
+      name = "SampleApps">
+      <FileRef
+         location = "group:SampleApps/UIKitCatalogiOSCreatingandCustomizingUIKitControls/Objective-C/UIKitCatalog.xcodeproj">
+      </FileRef>
+   </Group>
 </Workspace>

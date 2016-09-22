@@ -1,2 +1,2 @@
 # Organismo-iOS
-iOS Organimso framework
+iOS Organismo framework

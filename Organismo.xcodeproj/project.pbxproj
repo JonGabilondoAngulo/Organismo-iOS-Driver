@@ -1,0 +1,1168 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		031F745F1D4015F400DDC876 /* UITextView+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 031F745D1D4015F400DDC876 /* UITextView+ORG.h */; };
+		031F74601D4015F400DDC876 /* UITextView+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 031F745E1D4015F400DDC876 /* UITextView+ORG.m */; };
+		031F74631D40167D00DDC876 /* UITextField+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 031F74611D40167D00DDC876 /* UITextField+ORG.h */; };
+		031F74641D40167D00DDC876 /* UITextField+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 031F74621D40167D00DDC876 /* UITextField+ORG.m */; };
+		031F74671D42C3C800DDC876 /* UIWindow+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 031F74651D42C3C800DDC876 /* UIWindow+ORG.h */; };
+		031F74681D42C3C800DDC876 /* UIWindow+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 031F74661D42C3C800DDC876 /* UIWindow+ORG.m */; };
+		03209FE01D574A320091FC2E /* UIButton+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03209FDE1D574A320091FC2E /* UIButton+ORG.h */; };
+		03209FE11D574A320091FC2E /* UIButton+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03209FDF1D574A320091FC2E /* UIButton+ORG.m */; };
+		03209FE41D574C300091FC2E /* UISegmentedControl+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03209FE21D574C300091FC2E /* UISegmentedControl+ORG.h */; };
+		03209FE51D574C300091FC2E /* UISegmentedControl+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03209FE31D574C300091FC2E /* UISegmentedControl+ORG.m */; };
+		03209FE81D574F390091FC2E /* UIPickerView+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03209FE61D574F390091FC2E /* UIPickerView+ORG.h */; };
+		03209FE91D574F390091FC2E /* UIPickerView+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03209FE71D574F390091FC2E /* UIPickerView+ORG.m */; };
+		03209FEC1D574FFC0091FC2E /* UIDatePicker+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03209FEA1D574FFC0091FC2E /* UIDatePicker+ORG.h */; };
+		03209FED1D574FFC0091FC2E /* UIDatePicker+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03209FEB1D574FFC0091FC2E /* UIDatePicker+ORG.m */; };
+		0320A0021D586CB40091FC2E /* ORGRequestElementInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0320A0001D586CB40091FC2E /* ORGRequestElementInfo.h */; };
+		0320A0031D586CB40091FC2E /* ORGRequestElementInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320A0011D586CB40091FC2E /* ORGRequestElementInfo.m */; };
+		032863D61D06DD5800EF2FA2 /* CMDeviceMotion+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 032863D41D06DD5800EF2FA2 /* CMDeviceMotion+ORG.h */; };
+		032863D71D06DD5800EF2FA2 /* CMDeviceMotion+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 032863D51D06DD5800EF2FA2 /* CMDeviceMotion+ORG.m */; };
+		033677E11D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 033677DF1D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.h */; };
+		033677E21D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 033677E01D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m */; };
+		033677F11D3E67F1009B86A4 /* UINibDecoderORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 033677EF1D3E67F1009B86A4 /* UINibDecoderORG.h */; };
+		033677F21D3E67F1009B86A4 /* UINibDecoderORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 033677F01D3E67F1009B86A4 /* UINibDecoderORG.m */; };
+		035157261D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157241D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h */; };
+		035157271D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157251D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m */; };
+		0351572A1D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157281D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h */; };
+		0351572B1D3B9EAC004260A1 /* UIGestureRecognizer+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157291D3B9EAC004260A1 /* UIGestureRecognizer+ORG.m */; };
+		0351572E1D3BA074004260A1 /* UILongPressGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 0351572C1D3BA074004260A1 /* UILongPressGestureRecognizer+ORG.h */; };
+		0351572F1D3BA074004260A1 /* UILongPressGestureRecognizer+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351572D1D3BA074004260A1 /* UILongPressGestureRecognizer+ORG.m */; };
+		035157321D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157301D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.h */; };
+		035157331D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157311D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.m */; };
+		035157361D3BA20D004260A1 /* UISwipeGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157341D3BA20D004260A1 /* UISwipeGestureRecognizer+ORG.h */; };
+		035157371D3BA20D004260A1 /* UISwipeGestureRecognizer+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157351D3BA20D004260A1 /* UISwipeGestureRecognizer+ORG.m */; };
+		0351573A1D3BA2A5004260A1 /* UIRotationGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157381D3BA2A5004260A1 /* UIRotationGestureRecognizer+ORG.h */; };
+		0351573B1D3BA2A5004260A1 /* UIRotationGestureRecognizer+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157391D3BA2A5004260A1 /* UIRotationGestureRecognizer+ORG.m */; };
+		0351573E1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 0351573C1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.h */; };
+		0351573F1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 0351573D1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.m */; };
+		035157461D3BA736004260A1 /* UIControl+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157441D3BA736004260A1 /* UIControl+ORG.h */; };
+		035157471D3BA736004260A1 /* UIControl+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157451D3BA736004260A1 /* UIControl+ORG.m */; };
+		0357A11E1CBEE52C00A35556 /* CLHeading+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 0357A11C1CBEE52C00A35556 /* CLHeading+ORG.h */; };
+		0357A11F1CBEE52C00A35556 /* CLHeading+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 0357A11D1CBEE52C00A35556 /* CLHeading+ORG.m */; };
+		039DA6CC1D8EB9F800F6937A /* ORGGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DA6CA1D8EB9F800F6937A /* ORGGesture.h */; };
+		039DA6CD1D8EB9F800F6937A /* ORGGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DA6CB1D8EB9F800F6937A /* ORGGesture.m */; };
+		039DA6D01D8EBA1300F6937A /* ORGGestureTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DA6CE1D8EBA1300F6937A /* ORGGestureTap.h */; };
+		039DA6D11D8EBA1300F6937A /* ORGGestureTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DA6CF1D8EBA1300F6937A /* ORGGestureTap.m */; };
+		039DA6D81D8EBC3000F6937A /* ORGRequestTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DA6D61D8EBC3000F6937A /* ORGRequestTap.h */; };
+		039DA6D91D8EBC3000F6937A /* ORGRequestTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DA6D71D8EBC3000F6937A /* ORGRequestTap.m */; };
+		03A89A6F1D92CCE7000AB035 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033677F31D3E6974009B86A4 /* UIKit.framework */; };
+		03B588B21D04082D0083DF15 /* NSDate+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B588B01D04082D0083DF15 /* NSDate+ORG.h */; };
+		03B588B31D04082D0083DF15 /* NSDate+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B588B11D04082D0083DF15 /* NSDate+ORG.m */; };
+		03DA668B1CBCEE4700E26CAA /* Organismo.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA668A1CBCEE4700E26CAA /* Organismo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		03DA66921CBCEE4700E26CAA /* Organismo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DA66871CBCEE4700E26CAA /* Organismo.framework */; };
+		03DA66971CBCEE4700E26CAA /* OrganismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66961CBCEE4700E26CAA /* OrganismoTests.m */; };
+		03DA66AF1CBD009A00E26CAA /* Web in Resources */ = {isa = PBXBuildFile; fileRef = 03DA66AE1CBD009A00E26CAA /* Web */; };
+		03DA66B61CBD00C300E26CAA /* ORGCoreMotion.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66B01CBD00C300E26CAA /* ORGCoreMotion.h */; };
+		03DA66B71CBD00C300E26CAA /* ORGCoreMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66B11CBD00C300E26CAA /* ORGCoreMotion.m */; };
+		03DA66B81CBD00C300E26CAA /* ORGScreenshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66B21CBD00C300E26CAA /* ORGScreenshot.h */; };
+		03DA66B91CBD00C300E26CAA /* ORGScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66B31CBD00C300E26CAA /* ORGScreenshot.m */; };
+		03DA66BA1CBD00C300E26CAA /* ORGUIViewHierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66B41CBD00C300E26CAA /* ORGUIViewHierarchy.h */; };
+		03DA66BB1CBD00C300E26CAA /* ORGUIViewHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66B51CBD00C300E26CAA /* ORGUIViewHierarchy.m */; };
+		03DA66C41CBD00EF00E26CAA /* NSDictionary+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66BC1CBD00EF00E26CAA /* NSDictionary+ORG.h */; };
+		03DA66C51CBD00EF00E26CAA /* NSDictionary+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66BD1CBD00EF00E26CAA /* NSDictionary+ORG.m */; };
+		03DA66C61CBD00EF00E26CAA /* NSObject+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66BE1CBD00EF00E26CAA /* NSObject+ORG.h */; };
+		03DA66C71CBD00EF00E26CAA /* NSObject+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66BF1CBD00EF00E26CAA /* NSObject+ORG.m */; };
+		03DA66C81CBD00EF00E26CAA /* NSString+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66C01CBD00EF00E26CAA /* NSString+ORG.h */; };
+		03DA66C91CBD00EF00E26CAA /* NSString+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66C11CBD00EF00E26CAA /* NSString+ORG.m */; };
+		03DA66CA1CBD00EF00E26CAA /* UIView+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66C21CBD00EF00E26CAA /* UIView+ORG.h */; };
+		03DA66CB1CBD00EF00E26CAA /* UIView+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66C31CBD00EF00E26CAA /* UIView+ORG.m */; };
+		03DA66D61CBD011900E26CAA /* ORGBaseWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66CC1CBD011900E26CAA /* ORGBaseWebSocket.h */; };
+		03DA66D71CBD011900E26CAA /* ORGBaseWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66CD1CBD011900E26CAA /* ORGBaseWebSocket.m */; };
+		03DA66D81CBD011900E26CAA /* ORGHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66CE1CBD011900E26CAA /* ORGHTTPConnection.h */; };
+		03DA66D91CBD011900E26CAA /* ORGHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66CF1CBD011900E26CAA /* ORGHTTPConnection.m */; };
+		03DA66DA1CBD011900E26CAA /* ORGInBoundMessageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66D01CBD011900E26CAA /* ORGInBoundMessageProcessor.h */; };
+		03DA66DB1CBD011900E26CAA /* ORGInBoundMessageProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66D11CBD011900E26CAA /* ORGInBoundMessageProcessor.m */; };
+		03DA66DC1CBD011900E26CAA /* ORGMainWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66D21CBD011900E26CAA /* ORGMainWebSocket.h */; };
+		03DA66DD1CBD011900E26CAA /* ORGMainWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66D31CBD011900E26CAA /* ORGMainWebSocket.m */; };
+		03DA66DE1CBD011900E26CAA /* ORGOutboundMessageQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66D41CBD011900E26CAA /* ORGOutboundMessageQueue.h */; };
+		03DA66DF1CBD011900E26CAA /* ORGOutboundMessageQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66D51CBD011900E26CAA /* ORGOutboundMessageQueue.m */; };
+		03DA66F01CBD015D00E26CAA /* CLLocationManager+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66E01CBD015D00E26CAA /* CLLocationManager+ORG.h */; };
+		03DA66F11CBD015D00E26CAA /* CLLocationManager+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66E11CBD015D00E26CAA /* CLLocationManager+ORG.m */; };
+		03DA66F21CBD015D00E26CAA /* CMAltimeter+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66E21CBD015D00E26CAA /* CMAltimeter+ORG.h */; };
+		03DA66F31CBD015D00E26CAA /* CMAltimeter+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66E31CBD015D00E26CAA /* CMAltimeter+ORG.m */; };
+		03DA66F41CBD015D00E26CAA /* CMAttitude+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66E41CBD015D00E26CAA /* CMAttitude+ORG.h */; };
+		03DA66F51CBD015D00E26CAA /* CMAttitude+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66E51CBD015D00E26CAA /* CMAttitude+ORG.m */; };
+		03DA66F61CBD015D00E26CAA /* CMMotionActivityManager+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66E61CBD015D00E26CAA /* CMMotionActivityManager+ORG.h */; };
+		03DA66F71CBD015D00E26CAA /* CMMotionActivityManager+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66E71CBD015D00E26CAA /* CMMotionActivityManager+ORG.m */; };
+		03DA66F81CBD015D00E26CAA /* CMMotionManager+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66E81CBD015D00E26CAA /* CMMotionManager+ORG.h */; };
+		03DA66F91CBD015D00E26CAA /* CMMotionManager+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66E91CBD015D00E26CAA /* CMMotionManager+ORG.m */; };
+		03DA66FA1CBD015D00E26CAA /* CMPedometer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66EA1CBD015D00E26CAA /* CMPedometer+ORG.h */; };
+		03DA66FB1CBD015D00E26CAA /* CMPedometer+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66EB1CBD015D00E26CAA /* CMPedometer+ORG.m */; };
+		03DA66FC1CBD015D00E26CAA /* MKMapView+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66EC1CBD015D00E26CAA /* MKMapView+ORG.h */; };
+		03DA66FD1CBD015D00E26CAA /* MKMapView+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66ED1CBD015D00E26CAA /* MKMapView+ORG.m */; };
+		03DA66FE1CBD015D00E26CAA /* UIApplication+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66EE1CBD015D00E26CAA /* UIApplication+ORG.h */; };
+		03DA66FF1CBD015D00E26CAA /* UIApplication+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66EF1CBD015D00E26CAA /* UIApplication+ORG.m */; };
+		03DA67021CBD018A00E26CAA /* ORGConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67001CBD018A00E26CAA /* ORGConstants.h */; };
+		03DA67031CBD018A00E26CAA /* ORGConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67011CBD018A00E26CAA /* ORGConstants.m */; };
+		03DA670A1CBD01C100E26CAA /* ORGMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67041CBD01C100E26CAA /* ORGMessage.h */; };
+		03DA670B1CBD01C100E26CAA /* ORGMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67051CBD01C100E26CAA /* ORGMessage.m */; };
+		03DA670C1CBD01C100E26CAA /* ORGMessageBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67061CBD01C100E26CAA /* ORGMessageBuilder.h */; };
+		03DA670D1CBD01C100E26CAA /* ORGMessageBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67071CBD01C100E26CAA /* ORGMessageBuilder.m */; };
+		03DA670E1CBD01C100E26CAA /* ORGMessageUpdate.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67081CBD01C100E26CAA /* ORGMessageUpdate.h */; };
+		03DA670F1CBD01C100E26CAA /* ORGMessageUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67091CBD01C100E26CAA /* ORGMessageUpdate.m */; };
+		03DA671D1CBD01F700E26CAA /* ORGRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67111CBD01F700E26CAA /* ORGRequest.h */; };
+		03DA671E1CBD01F700E26CAA /* ORGRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67121CBD01F700E26CAA /* ORGRequest.m */; };
+		03DA671F1CBD01F700E26CAA /* ORGRequestAppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67131CBD01F700E26CAA /* ORGRequestAppInfo.h */; };
+		03DA67201CBD01F700E26CAA /* ORGRequestAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67141CBD01F700E26CAA /* ORGRequestAppInfo.m */; };
+		03DA67211CBD01F700E26CAA /* ORGRequestDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67151CBD01F700E26CAA /* ORGRequestDeviceInfo.h */; };
+		03DA67221CBD01F700E26CAA /* ORGRequestDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67161CBD01F700E26CAA /* ORGRequestDeviceInfo.m */; };
+		03DA67231CBD01F700E26CAA /* ORGRequestElementTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67171CBD01F700E26CAA /* ORGRequestElementTree.h */; };
+		03DA67241CBD01F700E26CAA /* ORGRequestElementTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67181CBD01F700E26CAA /* ORGRequestElementTree.m */; };
+		03DA67251CBD01F700E26CAA /* ORGRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67191CBD01F700E26CAA /* ORGRequestFactory.h */; };
+		03DA67261CBD01F700E26CAA /* ORGRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA671A1CBD01F700E26CAA /* ORGRequestFactory.m */; };
+		03DA67271CBD01F700E26CAA /* ORGRequestScreenshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA671B1CBD01F700E26CAA /* ORGRequestScreenshot.h */; };
+		03DA67281CBD01F700E26CAA /* ORGRequestScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA671C1CBD01F700E26CAA /* ORGRequestScreenshot.m */; };
+		03DA67331CBD021200E26CAA /* ORGRemoteAltimeter.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67291CBD021200E26CAA /* ORGRemoteAltimeter.h */; };
+		03DA67341CBD021200E26CAA /* ORGRemoteAltimeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA672A1CBD021200E26CAA /* ORGRemoteAltimeter.m */; };
+		03DA67351CBD021200E26CAA /* ORGRemoteController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA672B1CBD021200E26CAA /* ORGRemoteController.h */; };
+		03DA67361CBD021200E26CAA /* ORGRemoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA672C1CBD021200E26CAA /* ORGRemoteController.m */; };
+		03DA67371CBD021200E26CAA /* ORGRemoteLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA672D1CBD021200E26CAA /* ORGRemoteLocationManager.h */; };
+		03DA67381CBD021200E26CAA /* ORGRemoteLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA672E1CBD021200E26CAA /* ORGRemoteLocationManager.m */; };
+		03DA67391CBD021200E26CAA /* ORGRemoteMotionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA672F1CBD021200E26CAA /* ORGRemoteMotionManager.h */; };
+		03DA673A1CBD021200E26CAA /* ORGRemoteMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67301CBD021200E26CAA /* ORGRemoteMotionManager.m */; };
+		03DA673B1CBD021200E26CAA /* ORGRemotePedometer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67311CBD021200E26CAA /* ORGRemotePedometer.h */; };
+		03DA673C1CBD021200E26CAA /* ORGRemotePedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67321CBD021200E26CAA /* ORGRemotePedometer.m */; };
+		03DA673E1CBD022200E26CAA /* OrganismoPrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 03DA673D1CBD022200E26CAA /* OrganismoPrefixHeader.pch */; };
+		03DA67411CBD065C00E26CAA /* CMAltitudeData+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA673F1CBD065C00E26CAA /* CMAltitudeData+ORG.h */; };
+		03DA67421CBD065C00E26CAA /* CMAltitudeData+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67401CBD065C00E26CAA /* CMAltitudeData+ORG.m */; };
+		03F87CDB1CCC0A740018EFDC /* CLBeaconRegion+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F87CD91CCC0A740018EFDC /* CLBeaconRegion+ORG.h */; };
+		03F87CDC1CCC0A740018EFDC /* CLBeaconRegion+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F87CDA1CCC0A740018EFDC /* CLBeaconRegion+ORG.m */; };
+		5D5781C9E30947AC7C8B0949 /* libPods-OrganismoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2479C6DEAC19610037FA354 /* libPods-OrganismoTests.a */; };
+		CA4C4D307B138D6A6FC4E0CF /* libPods-Organismo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEA7DB878D84135F931CD0E /* libPods-Organismo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03DA66931CBCEE4700E26CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03DA667E1CBCEE4700E26CAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03DA66861CBCEE4700E26CAA;
+			remoteInfo = Organismo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031F745D1D4015F400DDC876 /* UITextView+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+ORG.h"; sourceTree = "<group>"; };
+		031F745E1D4015F400DDC876 /* UITextView+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ORG.m"; sourceTree = "<group>"; };
+		031F74611D40167D00DDC876 /* UITextField+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ORG.h"; sourceTree = "<group>"; };
+		031F74621D40167D00DDC876 /* UITextField+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ORG.m"; sourceTree = "<group>"; };
+		031F74651D42C3C800DDC876 /* UIWindow+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+ORG.h"; sourceTree = "<group>"; };
+		031F74661D42C3C800DDC876 /* UIWindow+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+ORG.m"; sourceTree = "<group>"; };
+		03209FDE1D574A320091FC2E /* UIButton+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ORG.h"; sourceTree = "<group>"; };
+		03209FDF1D574A320091FC2E /* UIButton+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ORG.m"; sourceTree = "<group>"; };
+		03209FE21D574C300091FC2E /* UISegmentedControl+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISegmentedControl+ORG.h"; sourceTree = "<group>"; };
+		03209FE31D574C300091FC2E /* UISegmentedControl+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISegmentedControl+ORG.m"; sourceTree = "<group>"; };
+		03209FE61D574F390091FC2E /* UIPickerView+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+ORG.h"; sourceTree = "<group>"; };
+		03209FE71D574F390091FC2E /* UIPickerView+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPickerView+ORG.m"; sourceTree = "<group>"; };
+		03209FEA1D574FFC0091FC2E /* UIDatePicker+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDatePicker+ORG.h"; sourceTree = "<group>"; };
+		03209FEB1D574FFC0091FC2E /* UIDatePicker+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDatePicker+ORG.m"; sourceTree = "<group>"; };
+		0320A0001D586CB40091FC2E /* ORGRequestElementInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequestElementInfo.h; sourceTree = "<group>"; };
+		0320A0011D586CB40091FC2E /* ORGRequestElementInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestElementInfo.m; sourceTree = "<group>"; };
+		032863D41D06DD5800EF2FA2 /* CMDeviceMotion+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMDeviceMotion+ORG.h"; sourceTree = "<group>"; };
+		032863D51D06DD5800EF2FA2 /* CMDeviceMotion+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMDeviceMotion+ORG.m"; sourceTree = "<group>"; };
+		033677DF1D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+ORG.h"; sourceTree = "<group>"; };
+		033677E01D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+ORG.m"; sourceTree = "<group>"; };
+		033677EF1D3E67F1009B86A4 /* UINibDecoderORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINibDecoderORG.h; sourceTree = "<group>"; };
+		033677F01D3E67F1009B86A4 /* UINibDecoderORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINibDecoderORG.m; sourceTree = "<group>"; };
+		033677F31D3E6974009B86A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		035157241D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
+		035157251D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+ORG.m"; sourceTree = "<group>"; };
+		035157281D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
+		035157291D3B9EAC004260A1 /* UIGestureRecognizer+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+ORG.m"; sourceTree = "<group>"; };
+		0351572C1D3BA074004260A1 /* UILongPressGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILongPressGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
+		0351572D1D3BA074004260A1 /* UILongPressGestureRecognizer+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILongPressGestureRecognizer+ORG.m"; sourceTree = "<group>"; };
+		035157301D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPanGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
+		035157311D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPanGestureRecognizer+ORG.m"; sourceTree = "<group>"; };
+		035157341D3BA20D004260A1 /* UISwipeGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwipeGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
+		035157351D3BA20D004260A1 /* UISwipeGestureRecognizer+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwipeGestureRecognizer+ORG.m"; sourceTree = "<group>"; };
+		035157381D3BA2A5004260A1 /* UIRotationGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRotationGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
+		035157391D3BA2A5004260A1 /* UIRotationGestureRecognizer+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRotationGestureRecognizer+ORG.m"; sourceTree = "<group>"; };
+		0351573C1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPinchGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
+		0351573D1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPinchGestureRecognizer+ORG.m"; sourceTree = "<group>"; };
+		035157441D3BA736004260A1 /* UIControl+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+ORG.h"; sourceTree = "<group>"; };
+		035157451D3BA736004260A1 /* UIControl+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+ORG.m"; sourceTree = "<group>"; };
+		0357A11C1CBEE52C00A35556 /* CLHeading+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLHeading+ORG.h"; sourceTree = "<group>"; };
+		0357A11D1CBEE52C00A35556 /* CLHeading+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLHeading+ORG.m"; sourceTree = "<group>"; };
+		039DA6CA1D8EB9F800F6937A /* ORGGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGGesture.h; sourceTree = "<group>"; };
+		039DA6CB1D8EB9F800F6937A /* ORGGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGGesture.m; sourceTree = "<group>"; };
+		039DA6CE1D8EBA1300F6937A /* ORGGestureTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGGestureTap.h; sourceTree = "<group>"; };
+		039DA6CF1D8EBA1300F6937A /* ORGGestureTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGGestureTap.m; sourceTree = "<group>"; };
+		039DA6D61D8EBC3000F6937A /* ORGRequestTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequestTap.h; sourceTree = "<group>"; };
+		039DA6D71D8EBC3000F6937A /* ORGRequestTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestTap.m; sourceTree = "<group>"; };
+		03B588B01D04082D0083DF15 /* NSDate+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ORG.h"; sourceTree = "<group>"; };
+		03B588B11D04082D0083DF15 /* NSDate+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ORG.m"; sourceTree = "<group>"; };
+		03DA66871CBCEE4700E26CAA /* Organismo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Organismo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DA668A1CBCEE4700E26CAA /* Organismo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Organismo.h; sourceTree = "<group>"; };
+		03DA668C1CBCEE4700E26CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DA66911CBCEE4700E26CAA /* OrganismoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrganismoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03DA66961CBCEE4700E26CAA /* OrganismoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganismoTests.m; sourceTree = "<group>"; };
+		03DA66981CBCEE4700E26CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03DA66AE1CBD009A00E26CAA /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Web; path = "Supporting Files/Web"; sourceTree = "<group>"; };
+		03DA66B01CBD00C300E26CAA /* ORGCoreMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGCoreMotion.h; sourceTree = "<group>"; };
+		03DA66B11CBD00C300E26CAA /* ORGCoreMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGCoreMotion.m; sourceTree = "<group>"; };
+		03DA66B21CBD00C300E26CAA /* ORGScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGScreenshot.h; sourceTree = "<group>"; };
+		03DA66B31CBD00C300E26CAA /* ORGScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGScreenshot.m; sourceTree = "<group>"; };
+		03DA66B41CBD00C300E26CAA /* ORGUIViewHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGUIViewHierarchy.h; sourceTree = "<group>"; };
+		03DA66B51CBD00C300E26CAA /* ORGUIViewHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGUIViewHierarchy.m; sourceTree = "<group>"; };
+		03DA66BC1CBD00EF00E26CAA /* NSDictionary+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ORG.h"; sourceTree = "<group>"; };
+		03DA66BD1CBD00EF00E26CAA /* NSDictionary+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ORG.m"; sourceTree = "<group>"; };
+		03DA66BE1CBD00EF00E26CAA /* NSObject+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ORG.h"; sourceTree = "<group>"; };
+		03DA66BF1CBD00EF00E26CAA /* NSObject+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ORG.m"; sourceTree = "<group>"; };
+		03DA66C01CBD00EF00E26CAA /* NSString+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ORG.h"; sourceTree = "<group>"; };
+		03DA66C11CBD00EF00E26CAA /* NSString+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ORG.m"; sourceTree = "<group>"; };
+		03DA66C21CBD00EF00E26CAA /* UIView+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ORG.h"; sourceTree = "<group>"; };
+		03DA66C31CBD00EF00E26CAA /* UIView+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ORG.m"; sourceTree = "<group>"; };
+		03DA66CC1CBD011900E26CAA /* ORGBaseWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGBaseWebSocket.h; sourceTree = "<group>"; };
+		03DA66CD1CBD011900E26CAA /* ORGBaseWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGBaseWebSocket.m; sourceTree = "<group>"; };
+		03DA66CE1CBD011900E26CAA /* ORGHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGHTTPConnection.h; sourceTree = "<group>"; };
+		03DA66CF1CBD011900E26CAA /* ORGHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGHTTPConnection.m; sourceTree = "<group>"; };
+		03DA66D01CBD011900E26CAA /* ORGInBoundMessageProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGInBoundMessageProcessor.h; sourceTree = "<group>"; };
+		03DA66D11CBD011900E26CAA /* ORGInBoundMessageProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGInBoundMessageProcessor.m; sourceTree = "<group>"; };
+		03DA66D21CBD011900E26CAA /* ORGMainWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGMainWebSocket.h; sourceTree = "<group>"; };
+		03DA66D31CBD011900E26CAA /* ORGMainWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGMainWebSocket.m; sourceTree = "<group>"; };
+		03DA66D41CBD011900E26CAA /* ORGOutboundMessageQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGOutboundMessageQueue.h; sourceTree = "<group>"; };
+		03DA66D51CBD011900E26CAA /* ORGOutboundMessageQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGOutboundMessageQueue.m; sourceTree = "<group>"; };
+		03DA66E01CBD015D00E26CAA /* CLLocationManager+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocationManager+ORG.h"; sourceTree = "<group>"; };
+		03DA66E11CBD015D00E26CAA /* CLLocationManager+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocationManager+ORG.m"; sourceTree = "<group>"; };
+		03DA66E21CBD015D00E26CAA /* CMAltimeter+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMAltimeter+ORG.h"; sourceTree = "<group>"; };
+		03DA66E31CBD015D00E26CAA /* CMAltimeter+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMAltimeter+ORG.m"; sourceTree = "<group>"; };
+		03DA66E41CBD015D00E26CAA /* CMAttitude+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMAttitude+ORG.h"; sourceTree = "<group>"; };
+		03DA66E51CBD015D00E26CAA /* CMAttitude+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMAttitude+ORG.m"; sourceTree = "<group>"; };
+		03DA66E61CBD015D00E26CAA /* CMMotionActivityManager+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMMotionActivityManager+ORG.h"; sourceTree = "<group>"; };
+		03DA66E71CBD015D00E26CAA /* CMMotionActivityManager+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMMotionActivityManager+ORG.m"; sourceTree = "<group>"; };
+		03DA66E81CBD015D00E26CAA /* CMMotionManager+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMMotionManager+ORG.h"; sourceTree = "<group>"; };
+		03DA66E91CBD015D00E26CAA /* CMMotionManager+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMMotionManager+ORG.m"; sourceTree = "<group>"; };
+		03DA66EA1CBD015D00E26CAA /* CMPedometer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMPedometer+ORG.h"; sourceTree = "<group>"; };
+		03DA66EB1CBD015D00E26CAA /* CMPedometer+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMPedometer+ORG.m"; sourceTree = "<group>"; };
+		03DA66EC1CBD015D00E26CAA /* MKMapView+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ORG.h"; sourceTree = "<group>"; };
+		03DA66ED1CBD015D00E26CAA /* MKMapView+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ORG.m"; sourceTree = "<group>"; };
+		03DA66EE1CBD015D00E26CAA /* UIApplication+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+ORG.h"; sourceTree = "<group>"; };
+		03DA66EF1CBD015D00E26CAA /* UIApplication+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+ORG.m"; sourceTree = "<group>"; };
+		03DA67001CBD018A00E26CAA /* ORGConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGConstants.h; sourceTree = "<group>"; };
+		03DA67011CBD018A00E26CAA /* ORGConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGConstants.m; sourceTree = "<group>"; };
+		03DA67041CBD01C100E26CAA /* ORGMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGMessage.h; sourceTree = "<group>"; };
+		03DA67051CBD01C100E26CAA /* ORGMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGMessage.m; sourceTree = "<group>"; };
+		03DA67061CBD01C100E26CAA /* ORGMessageBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGMessageBuilder.h; sourceTree = "<group>"; };
+		03DA67071CBD01C100E26CAA /* ORGMessageBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGMessageBuilder.m; sourceTree = "<group>"; };
+		03DA67081CBD01C100E26CAA /* ORGMessageUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGMessageUpdate.h; sourceTree = "<group>"; };
+		03DA67091CBD01C100E26CAA /* ORGMessageUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGMessageUpdate.m; sourceTree = "<group>"; };
+		03DA67111CBD01F700E26CAA /* ORGRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequest.h; sourceTree = "<group>"; };
+		03DA67121CBD01F700E26CAA /* ORGRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequest.m; sourceTree = "<group>"; };
+		03DA67131CBD01F700E26CAA /* ORGRequestAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequestAppInfo.h; sourceTree = "<group>"; };
+		03DA67141CBD01F700E26CAA /* ORGRequestAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestAppInfo.m; sourceTree = "<group>"; };
+		03DA67151CBD01F700E26CAA /* ORGRequestDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequestDeviceInfo.h; sourceTree = "<group>"; };
+		03DA67161CBD01F700E26CAA /* ORGRequestDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestDeviceInfo.m; sourceTree = "<group>"; };
+		03DA67171CBD01F700E26CAA /* ORGRequestElementTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequestElementTree.h; sourceTree = "<group>"; };
+		03DA67181CBD01F700E26CAA /* ORGRequestElementTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestElementTree.m; sourceTree = "<group>"; };
+		03DA67191CBD01F700E26CAA /* ORGRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequestFactory.h; sourceTree = "<group>"; };
+		03DA671A1CBD01F700E26CAA /* ORGRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestFactory.m; sourceTree = "<group>"; };
+		03DA671B1CBD01F700E26CAA /* ORGRequestScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequestScreenshot.h; sourceTree = "<group>"; };
+		03DA671C1CBD01F700E26CAA /* ORGRequestScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestScreenshot.m; sourceTree = "<group>"; };
+		03DA67291CBD021200E26CAA /* ORGRemoteAltimeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRemoteAltimeter.h; sourceTree = "<group>"; };
+		03DA672A1CBD021200E26CAA /* ORGRemoteAltimeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRemoteAltimeter.m; sourceTree = "<group>"; };
+		03DA672B1CBD021200E26CAA /* ORGRemoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRemoteController.h; sourceTree = "<group>"; };
+		03DA672C1CBD021200E26CAA /* ORGRemoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRemoteController.m; sourceTree = "<group>"; };
+		03DA672D1CBD021200E26CAA /* ORGRemoteLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRemoteLocationManager.h; sourceTree = "<group>"; };
+		03DA672E1CBD021200E26CAA /* ORGRemoteLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRemoteLocationManager.m; sourceTree = "<group>"; };
+		03DA672F1CBD021200E26CAA /* ORGRemoteMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRemoteMotionManager.h; sourceTree = "<group>"; };
+		03DA67301CBD021200E26CAA /* ORGRemoteMotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRemoteMotionManager.m; sourceTree = "<group>"; };
+		03DA67311CBD021200E26CAA /* ORGRemotePedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRemotePedometer.h; sourceTree = "<group>"; };
+		03DA67321CBD021200E26CAA /* ORGRemotePedometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRemotePedometer.m; sourceTree = "<group>"; };
+		03DA673D1CBD022200E26CAA /* OrganismoPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganismoPrefixHeader.pch; sourceTree = "<group>"; };
+		03DA673F1CBD065C00E26CAA /* CMAltitudeData+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMAltitudeData+ORG.h"; sourceTree = "<group>"; };
+		03DA67401CBD065C00E26CAA /* CMAltitudeData+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMAltitudeData+ORG.m"; sourceTree = "<group>"; };
+		03F87CD91CCC0A740018EFDC /* CLBeaconRegion+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLBeaconRegion+ORG.h"; sourceTree = "<group>"; };
+		03F87CDA1CCC0A740018EFDC /* CLBeaconRegion+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLBeaconRegion+ORG.m"; sourceTree = "<group>"; };
+		0FEA7DB878D84135F931CD0E /* libPods-Organismo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Organismo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D6F66BB89336ECB8BF7ABD /* Pods-OrganismoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganismoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OrganismoTests/Pods-OrganismoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		90E05018FD35D81D274B954F /* Pods-Organismo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organismo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Organismo/Pods-Organismo.release.xcconfig"; sourceTree = "<group>"; };
+		B2479C6DEAC19610037FA354 /* libPods-OrganismoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OrganismoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA292CC67D06DC53A78A50F7 /* Pods-Organismo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Organismo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Organismo/Pods-Organismo.debug.xcconfig"; sourceTree = "<group>"; };
+		DDF5B1C1671E69059FA1A392 /* Pods-OrganismoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrganismoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OrganismoTests/Pods-OrganismoTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03DA66831CBCEE4700E26CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A89A6F1D92CCE7000AB035 /* UIKit.framework in Frameworks */,
+				CA4C4D307B138D6A6FC4E0CF /* libPods-Organismo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DA668E1CBCEE4700E26CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DA66921CBCEE4700E26CAA /* Organismo.framework in Frameworks */,
+				5D5781C9E30947AC7C8B0949 /* libPods-OrganismoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0357A11B1CBECAC000A35556 /* Updates */ = {
+			isa = PBXGroup;
+			children = (
+				03DA67081CBD01C100E26CAA /* ORGMessageUpdate.h */,
+				03DA67091CBD01C100E26CAA /* ORGMessageUpdate.m */,
+			);
+			name = Updates;
+			sourceTree = "<group>";
+		};
+		0394AA791D23F1E0002ED6F0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				03DA66B21CBD00C300E26CAA /* ORGScreenshot.h */,
+				03DA66B31CBD00C300E26CAA /* ORGScreenshot.m */,
+				03DA66B41CBD00C300E26CAA /* ORGUIViewHierarchy.h */,
+				03DA66B51CBD00C300E26CAA /* ORGUIViewHierarchy.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		039DA6C91D8EB98300F6937A /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				039DA6CA1D8EB9F800F6937A /* ORGGesture.h */,
+				039DA6CB1D8EB9F800F6937A /* ORGGesture.m */,
+				039DA6CE1D8EBA1300F6937A /* ORGGestureTap.h */,
+				039DA6CF1D8EBA1300F6937A /* ORGGestureTap.m */,
+			);
+			name = Gestures;
+			sourceTree = "<group>";
+		};
+		03DA667D1CBCEE4700E26CAA = {
+			isa = PBXGroup;
+			children = (
+				03DA66891CBCEE4700E26CAA /* Organismo */,
+				03DA66951CBCEE4700E26CAA /* OrganismoTests */,
+				03DA66881CBCEE4700E26CAA /* Products */,
+				9194B1267A557759B0D56614 /* Frameworks */,
+				C9311F4B79996BDBF17A6F77 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		03DA66881CBCEE4700E26CAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03DA66871CBCEE4700E26CAA /* Organismo.framework */,
+				03DA66911CBCEE4700E26CAA /* OrganismoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03DA66891CBCEE4700E26CAA /* Organismo */ = {
+			isa = PBXGroup;
+			children = (
+				03DA66B01CBD00C300E26CAA /* ORGCoreMotion.h */,
+				03DA66B11CBD00C300E26CAA /* ORGCoreMotion.m */,
+				03DA66A41CBCFFE400E26CAA /* Constants */,
+				0394AA791D23F1E0002ED6F0 /* UI */,
+				03DA66A71CBD000200E26CAA /* Categories */,
+				03DA66A51CBCFFED00E26CAA /* Instrumentation */,
+				03DA66A61CBCFFF600E26CAA /* Communication */,
+				03DA66A31CBCFFD300E26CAA /* Messages */,
+				03DA66A21CBCFFC600E26CAA /* Remote */,
+				039DA6C91D8EB98300F6937A /* Gestures */,
+				03DA66A11CBCFFB800E26CAA /* Supporting Files */,
+			);
+			path = Organismo;
+			sourceTree = "<group>";
+		};
+		03DA66951CBCEE4700E26CAA /* OrganismoTests */ = {
+			isa = PBXGroup;
+			children = (
+				03DA66961CBCEE4700E26CAA /* OrganismoTests.m */,
+				03DA66981CBCEE4700E26CAA /* Info.plist */,
+			);
+			path = OrganismoTests;
+			sourceTree = "<group>";
+		};
+		03DA66A11CBCFFB800E26CAA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03DA673D1CBD022200E26CAA /* OrganismoPrefixHeader.pch */,
+				03DA668A1CBCEE4700E26CAA /* Organismo.h */,
+				03DA668C1CBCEE4700E26CAA /* Info.plist */,
+				03DA66AE1CBD009A00E26CAA /* Web */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03DA66A21CBCFFC600E26CAA /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				03DA672B1CBD021200E26CAA /* ORGRemoteController.h */,
+				03DA672C1CBD021200E26CAA /* ORGRemoteController.m */,
+				03DA672D1CBD021200E26CAA /* ORGRemoteLocationManager.h */,
+				03DA672E1CBD021200E26CAA /* ORGRemoteLocationManager.m */,
+				03DA672F1CBD021200E26CAA /* ORGRemoteMotionManager.h */,
+				03DA67301CBD021200E26CAA /* ORGRemoteMotionManager.m */,
+				03DA67291CBD021200E26CAA /* ORGRemoteAltimeter.h */,
+				03DA672A1CBD021200E26CAA /* ORGRemoteAltimeter.m */,
+				03DA67311CBD021200E26CAA /* ORGRemotePedometer.h */,
+				03DA67321CBD021200E26CAA /* ORGRemotePedometer.m */,
+			);
+			name = Remote;
+			sourceTree = "<group>";
+		};
+		03DA66A31CBCFFD300E26CAA /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				03DA67041CBD01C100E26CAA /* ORGMessage.h */,
+				03DA67051CBD01C100E26CAA /* ORGMessage.m */,
+				03DA67061CBD01C100E26CAA /* ORGMessageBuilder.h */,
+				03DA67071CBD01C100E26CAA /* ORGMessageBuilder.m */,
+				0357A11B1CBECAC000A35556 /* Updates */,
+				03DA67101CBD01CB00E26CAA /* Requests */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		03DA66A41CBCFFE400E26CAA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				03DA67001CBD018A00E26CAA /* ORGConstants.h */,
+				03DA67011CBD018A00E26CAA /* ORGConstants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		03DA66A51CBCFFED00E26CAA /* Instrumentation */ = {
+			isa = PBXGroup;
+			children = (
+				03DA66E01CBD015D00E26CAA /* CLLocationManager+ORG.h */,
+				03DA66E11CBD015D00E26CAA /* CLLocationManager+ORG.m */,
+				03DA66E81CBD015D00E26CAA /* CMMotionManager+ORG.h */,
+				03DA66E91CBD015D00E26CAA /* CMMotionManager+ORG.m */,
+				03DA66E21CBD015D00E26CAA /* CMAltimeter+ORG.h */,
+				03DA66E31CBD015D00E26CAA /* CMAltimeter+ORG.m */,
+				03DA66E41CBD015D00E26CAA /* CMAttitude+ORG.h */,
+				03DA66E51CBD015D00E26CAA /* CMAttitude+ORG.m */,
+				03DA673F1CBD065C00E26CAA /* CMAltitudeData+ORG.h */,
+				03DA67401CBD065C00E26CAA /* CMAltitudeData+ORG.m */,
+				032863D41D06DD5800EF2FA2 /* CMDeviceMotion+ORG.h */,
+				032863D51D06DD5800EF2FA2 /* CMDeviceMotion+ORG.m */,
+				03DA66E61CBD015D00E26CAA /* CMMotionActivityManager+ORG.h */,
+				03DA66E71CBD015D00E26CAA /* CMMotionActivityManager+ORG.m */,
+				03DA66EA1CBD015D00E26CAA /* CMPedometer+ORG.h */,
+				03DA66EB1CBD015D00E26CAA /* CMPedometer+ORG.m */,
+				03DA66EC1CBD015D00E26CAA /* MKMapView+ORG.h */,
+				03DA66ED1CBD015D00E26CAA /* MKMapView+ORG.m */,
+				0357A11C1CBEE52C00A35556 /* CLHeading+ORG.h */,
+				0357A11D1CBEE52C00A35556 /* CLHeading+ORG.m */,
+				03B588B01D04082D0083DF15 /* NSDate+ORG.h */,
+				03B588B11D04082D0083DF15 /* NSDate+ORG.m */,
+				03DA66EE1CBD015D00E26CAA /* UIApplication+ORG.h */,
+				03DA66EF1CBD015D00E26CAA /* UIApplication+ORG.m */,
+				033677EF1D3E67F1009B86A4 /* UINibDecoderORG.h */,
+				033677F01D3E67F1009B86A4 /* UINibDecoderORG.m */,
+				033677DF1D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.h */,
+				033677E01D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m */,
+			);
+			name = Instrumentation;
+			sourceTree = "<group>";
+		};
+		03DA66A61CBCFFF600E26CAA /* Communication */ = {
+			isa = PBXGroup;
+			children = (
+				03DA66CC1CBD011900E26CAA /* ORGBaseWebSocket.h */,
+				03DA66CD1CBD011900E26CAA /* ORGBaseWebSocket.m */,
+				03DA66CE1CBD011900E26CAA /* ORGHTTPConnection.h */,
+				03DA66CF1CBD011900E26CAA /* ORGHTTPConnection.m */,
+				03DA66D01CBD011900E26CAA /* ORGInBoundMessageProcessor.h */,
+				03DA66D11CBD011900E26CAA /* ORGInBoundMessageProcessor.m */,
+				03DA66D21CBD011900E26CAA /* ORGMainWebSocket.h */,
+				03DA66D31CBD011900E26CAA /* ORGMainWebSocket.m */,
+				03DA66D41CBD011900E26CAA /* ORGOutboundMessageQueue.h */,
+				03DA66D51CBD011900E26CAA /* ORGOutboundMessageQueue.m */,
+			);
+			name = Communication;
+			sourceTree = "<group>";
+		};
+		03DA66A71CBD000200E26CAA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				03DA66BC1CBD00EF00E26CAA /* NSDictionary+ORG.h */,
+				03DA66BD1CBD00EF00E26CAA /* NSDictionary+ORG.m */,
+				03DA66BE1CBD00EF00E26CAA /* NSObject+ORG.h */,
+				03DA66BF1CBD00EF00E26CAA /* NSObject+ORG.m */,
+				03DA66C01CBD00EF00E26CAA /* NSString+ORG.h */,
+				03DA66C11CBD00EF00E26CAA /* NSString+ORG.m */,
+				03209FDE1D574A320091FC2E /* UIButton+ORG.h */,
+				03209FDF1D574A320091FC2E /* UIButton+ORG.m */,
+				035157441D3BA736004260A1 /* UIControl+ORG.h */,
+				035157451D3BA736004260A1 /* UIControl+ORG.m */,
+				03F87CD91CCC0A740018EFDC /* CLBeaconRegion+ORG.h */,
+				03F87CDA1CCC0A740018EFDC /* CLBeaconRegion+ORG.m */,
+				03209FEA1D574FFC0091FC2E /* UIDatePicker+ORG.h */,
+				03209FEB1D574FFC0091FC2E /* UIDatePicker+ORG.m */,
+				035157281D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h */,
+				035157291D3B9EAC004260A1 /* UIGestureRecognizer+ORG.m */,
+				035157241D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h */,
+				035157251D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m */,
+				0351572C1D3BA074004260A1 /* UILongPressGestureRecognizer+ORG.h */,
+				0351572D1D3BA074004260A1 /* UILongPressGestureRecognizer+ORG.m */,
+				035157301D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.h */,
+				035157311D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.m */,
+				03209FE61D574F390091FC2E /* UIPickerView+ORG.h */,
+				03209FE71D574F390091FC2E /* UIPickerView+ORG.m */,
+				035157381D3BA2A5004260A1 /* UIRotationGestureRecognizer+ORG.h */,
+				035157391D3BA2A5004260A1 /* UIRotationGestureRecognizer+ORG.m */,
+				0351573C1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.h */,
+				0351573D1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.m */,
+				03209FE21D574C300091FC2E /* UISegmentedControl+ORG.h */,
+				03209FE31D574C300091FC2E /* UISegmentedControl+ORG.m */,
+				035157341D3BA20D004260A1 /* UISwipeGestureRecognizer+ORG.h */,
+				035157351D3BA20D004260A1 /* UISwipeGestureRecognizer+ORG.m */,
+				031F745D1D4015F400DDC876 /* UITextView+ORG.h */,
+				031F745E1D4015F400DDC876 /* UITextView+ORG.m */,
+				031F74611D40167D00DDC876 /* UITextField+ORG.h */,
+				031F74621D40167D00DDC876 /* UITextField+ORG.m */,
+				03DA66C21CBD00EF00E26CAA /* UIView+ORG.h */,
+				03DA66C31CBD00EF00E26CAA /* UIView+ORG.m */,
+				031F74651D42C3C800DDC876 /* UIWindow+ORG.h */,
+				031F74661D42C3C800DDC876 /* UIWindow+ORG.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		03DA67101CBD01CB00E26CAA /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				03DA67191CBD01F700E26CAA /* ORGRequestFactory.h */,
+				03DA671A1CBD01F700E26CAA /* ORGRequestFactory.m */,
+				03DA67111CBD01F700E26CAA /* ORGRequest.h */,
+				03DA67121CBD01F700E26CAA /* ORGRequest.m */,
+				03DA67131CBD01F700E26CAA /* ORGRequestAppInfo.h */,
+				03DA67141CBD01F700E26CAA /* ORGRequestAppInfo.m */,
+				03DA67151CBD01F700E26CAA /* ORGRequestDeviceInfo.h */,
+				03DA67161CBD01F700E26CAA /* ORGRequestDeviceInfo.m */,
+				03DA67171CBD01F700E26CAA /* ORGRequestElementTree.h */,
+				03DA67181CBD01F700E26CAA /* ORGRequestElementTree.m */,
+				03DA671B1CBD01F700E26CAA /* ORGRequestScreenshot.h */,
+				03DA671C1CBD01F700E26CAA /* ORGRequestScreenshot.m */,
+				0320A0001D586CB40091FC2E /* ORGRequestElementInfo.h */,
+				0320A0011D586CB40091FC2E /* ORGRequestElementInfo.m */,
+				039DA6D61D8EBC3000F6937A /* ORGRequestTap.h */,
+				039DA6D71D8EBC3000F6937A /* ORGRequestTap.m */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		9194B1267A557759B0D56614 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				033677F31D3E6974009B86A4 /* UIKit.framework */,
+				0FEA7DB878D84135F931CD0E /* libPods-Organismo.a */,
+				B2479C6DEAC19610037FA354 /* libPods-OrganismoTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9311F4B79996BDBF17A6F77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA292CC67D06DC53A78A50F7 /* Pods-Organismo.debug.xcconfig */,
+				90E05018FD35D81D274B954F /* Pods-Organismo.release.xcconfig */,
+				54D6F66BB89336ECB8BF7ABD /* Pods-OrganismoTests.debug.xcconfig */,
+				DDF5B1C1671E69059FA1A392 /* Pods-OrganismoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		03DA66841CBCEE4700E26CAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DA66FA1CBD015D00E26CAA /* CMPedometer+ORG.h in Headers */,
+				03DA67211CBD01F700E26CAA /* ORGRequestDeviceInfo.h in Headers */,
+				03DA67271CBD01F700E26CAA /* ORGRequestScreenshot.h in Headers */,
+				03DA66DC1CBD011900E26CAA /* ORGMainWebSocket.h in Headers */,
+				03209FE81D574F390091FC2E /* UIPickerView+ORG.h in Headers */,
+				031F745F1D4015F400DDC876 /* UITextView+ORG.h in Headers */,
+				031F74631D40167D00DDC876 /* UITextField+ORG.h in Headers */,
+				03DA66F61CBD015D00E26CAA /* CMMotionActivityManager+ORG.h in Headers */,
+				03DA673E1CBD022200E26CAA /* OrganismoPrefixHeader.pch in Headers */,
+				03DA67331CBD021200E26CAA /* ORGRemoteAltimeter.h in Headers */,
+				03DA671F1CBD01F700E26CAA /* ORGRequestAppInfo.h in Headers */,
+				03F87CDB1CCC0A740018EFDC /* CLBeaconRegion+ORG.h in Headers */,
+				03DA66B81CBD00C300E26CAA /* ORGScreenshot.h in Headers */,
+				03DA67231CBD01F700E26CAA /* ORGRequestElementTree.h in Headers */,
+				0351572A1D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h in Headers */,
+				0351573E1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.h in Headers */,
+				032863D61D06DD5800EF2FA2 /* CMDeviceMotion+ORG.h in Headers */,
+				03DA66DE1CBD011900E26CAA /* ORGOutboundMessageQueue.h in Headers */,
+				03209FE01D574A320091FC2E /* UIButton+ORG.h in Headers */,
+				03DA670E1CBD01C100E26CAA /* ORGMessageUpdate.h in Headers */,
+				03DA66DA1CBD011900E26CAA /* ORGInBoundMessageProcessor.h in Headers */,
+				03DA67391CBD021200E26CAA /* ORGRemoteMotionManager.h in Headers */,
+				03DA66FE1CBD015D00E26CAA /* UIApplication+ORG.h in Headers */,
+				03DA66D81CBD011900E26CAA /* ORGHTTPConnection.h in Headers */,
+				039DA6D81D8EBC3000F6937A /* ORGRequestTap.h in Headers */,
+				03DA66C61CBD00EF00E26CAA /* NSObject+ORG.h in Headers */,
+				03B588B21D04082D0083DF15 /* NSDate+ORG.h in Headers */,
+				03DA67411CBD065C00E26CAA /* CMAltitudeData+ORG.h in Headers */,
+				03DA66B61CBD00C300E26CAA /* ORGCoreMotion.h in Headers */,
+				03209FEC1D574FFC0091FC2E /* UIDatePicker+ORG.h in Headers */,
+				03DA66BA1CBD00C300E26CAA /* ORGUIViewHierarchy.h in Headers */,
+				03DA67021CBD018A00E26CAA /* ORGConstants.h in Headers */,
+				03DA673B1CBD021200E26CAA /* ORGRemotePedometer.h in Headers */,
+				035157361D3BA20D004260A1 /* UISwipeGestureRecognizer+ORG.h in Headers */,
+				039DA6D01D8EBA1300F6937A /* ORGGestureTap.h in Headers */,
+				03DA67371CBD021200E26CAA /* ORGRemoteLocationManager.h in Headers */,
+				033677E11D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.h in Headers */,
+				035157461D3BA736004260A1 /* UIControl+ORG.h in Headers */,
+				0320A0021D586CB40091FC2E /* ORGRequestElementInfo.h in Headers */,
+				03DA671D1CBD01F700E26CAA /* ORGRequest.h in Headers */,
+				0351573A1D3BA2A5004260A1 /* UIRotationGestureRecognizer+ORG.h in Headers */,
+				03DA66F81CBD015D00E26CAA /* CMMotionManager+ORG.h in Headers */,
+				035157321D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.h in Headers */,
+				0357A11E1CBEE52C00A35556 /* CLHeading+ORG.h in Headers */,
+				03DA67351CBD021200E26CAA /* ORGRemoteController.h in Headers */,
+				03DA670C1CBD01C100E26CAA /* ORGMessageBuilder.h in Headers */,
+				0351572E1D3BA074004260A1 /* UILongPressGestureRecognizer+ORG.h in Headers */,
+				03DA66C81CBD00EF00E26CAA /* NSString+ORG.h in Headers */,
+				03DA66D61CBD011900E26CAA /* ORGBaseWebSocket.h in Headers */,
+				039DA6CC1D8EB9F800F6937A /* ORGGesture.h in Headers */,
+				03DA670A1CBD01C100E26CAA /* ORGMessage.h in Headers */,
+				03DA67251CBD01F700E26CAA /* ORGRequestFactory.h in Headers */,
+				035157261D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h in Headers */,
+				03DA66C41CBD00EF00E26CAA /* NSDictionary+ORG.h in Headers */,
+				03209FE41D574C300091FC2E /* UISegmentedControl+ORG.h in Headers */,
+				03DA66F01CBD015D00E26CAA /* CLLocationManager+ORG.h in Headers */,
+				03DA66F21CBD015D00E26CAA /* CMAltimeter+ORG.h in Headers */,
+				033677F11D3E67F1009B86A4 /* UINibDecoderORG.h in Headers */,
+				03DA66F41CBD015D00E26CAA /* CMAttitude+ORG.h in Headers */,
+				03DA66FC1CBD015D00E26CAA /* MKMapView+ORG.h in Headers */,
+				031F74671D42C3C800DDC876 /* UIWindow+ORG.h in Headers */,
+				03DA66CA1CBD00EF00E26CAA /* UIView+ORG.h in Headers */,
+				03DA668B1CBCEE4700E26CAA /* Organismo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03DA66861CBCEE4700E26CAA /* Organismo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03DA669B1CBCEE4700E26CAA /* Build configuration list for PBXNativeTarget "Organismo" */;
+			buildPhases = (
+				EB760E3B14C1F7B6136E4C79 /* [CP] Check Pods Manifest.lock */,
+				03DA66821CBCEE4700E26CAA /* Sources */,
+				03DA66831CBCEE4700E26CAA /* Frameworks */,
+				03DA66841CBCEE4700E26CAA /* Headers */,
+				03DA66851CBCEE4700E26CAA /* Resources */,
+				5245D03821B1B032E2CEF46C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Organismo;
+			productName = Organismo;
+			productReference = 03DA66871CBCEE4700E26CAA /* Organismo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		03DA66901CBCEE4700E26CAA /* OrganismoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03DA669E1CBCEE4700E26CAA /* Build configuration list for PBXNativeTarget "OrganismoTests" */;
+			buildPhases = (
+				BDDBB43653C086BE410A1CD0 /* [CP] Check Pods Manifest.lock */,
+				03DA668D1CBCEE4700E26CAA /* Sources */,
+				03DA668E1CBCEE4700E26CAA /* Frameworks */,
+				03DA668F1CBCEE4700E26CAA /* Resources */,
+				DF9DE9DDC6728ACA29CB541C /* [CP] Embed Pods Frameworks */,
+				482F3D785869BD7261ACCE3F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03DA66941CBCEE4700E26CAA /* PBXTargetDependency */,
+			);
+			name = OrganismoTests;
+			productName = OrganismoTests;
+			productReference = 03DA66911CBCEE4700E26CAA /* OrganismoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03DA667E1CBCEE4700E26CAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "organismo-mobile";
+				TargetAttributes = {
+					03DA66861CBCEE4700E26CAA = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					03DA66901CBCEE4700E26CAA = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 03DA66811CBCEE4700E26CAA /* Build configuration list for PBXProject "Organismo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 03DA667D1CBCEE4700E26CAA;
+			productRefGroup = 03DA66881CBCEE4700E26CAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03DA66861CBCEE4700E26CAA /* Organismo */,
+				03DA66901CBCEE4700E26CAA /* OrganismoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03DA66851CBCEE4700E26CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DA66AF1CBD009A00E26CAA /* Web in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DA668F1CBCEE4700E26CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		482F3D785869BD7261ACCE3F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrganismoTests/Pods-OrganismoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5245D03821B1B032E2CEF46C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Organismo/Pods-Organismo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDDBB43653C086BE410A1CD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DF9DE9DDC6728ACA29CB541C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OrganismoTests/Pods-OrganismoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB760E3B14C1F7B6136E4C79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03DA66821CBCEE4700E26CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0351572B1D3B9EAC004260A1 /* UIGestureRecognizer+ORG.m in Sources */,
+				03DA67201CBD01F700E26CAA /* ORGRequestAppInfo.m in Sources */,
+				03DA670B1CBD01C100E26CAA /* ORGMessage.m in Sources */,
+				03DA673A1CBD021200E26CAA /* ORGRemoteMotionManager.m in Sources */,
+				0351573F1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.m in Sources */,
+				035157331D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.m in Sources */,
+				03DA673C1CBD021200E26CAA /* ORGRemotePedometer.m in Sources */,
+				03DA67421CBD065C00E26CAA /* CMAltitudeData+ORG.m in Sources */,
+				03DA67341CBD021200E26CAA /* ORGRemoteAltimeter.m in Sources */,
+				03DA670F1CBD01C100E26CAA /* ORGMessageUpdate.m in Sources */,
+				03DA66C91CBD00EF00E26CAA /* NSString+ORG.m in Sources */,
+				0351572F1D3BA074004260A1 /* UILongPressGestureRecognizer+ORG.m in Sources */,
+				03DA66F11CBD015D00E26CAA /* CLLocationManager+ORG.m in Sources */,
+				035157371D3BA20D004260A1 /* UISwipeGestureRecognizer+ORG.m in Sources */,
+				03DA66BB1CBD00C300E26CAA /* ORGUIViewHierarchy.m in Sources */,
+				03DA66DF1CBD011900E26CAA /* ORGOutboundMessageQueue.m in Sources */,
+				039DA6D91D8EBC3000F6937A /* ORGRequestTap.m in Sources */,
+				03DA67361CBD021200E26CAA /* ORGRemoteController.m in Sources */,
+				0357A11F1CBEE52C00A35556 /* CLHeading+ORG.m in Sources */,
+				03DA671E1CBD01F700E26CAA /* ORGRequest.m in Sources */,
+				03DA66CB1CBD00EF00E26CAA /* UIView+ORG.m in Sources */,
+				03DA67221CBD01F700E26CAA /* ORGRequestDeviceInfo.m in Sources */,
+				0351573B1D3BA2A5004260A1 /* UIRotationGestureRecognizer+ORG.m in Sources */,
+				03209FE11D574A320091FC2E /* UIButton+ORG.m in Sources */,
+				0320A0031D586CB40091FC2E /* ORGRequestElementInfo.m in Sources */,
+				03DA66B91CBD00C300E26CAA /* ORGScreenshot.m in Sources */,
+				039DA6CD1D8EB9F800F6937A /* ORGGesture.m in Sources */,
+				03F87CDC1CCC0A740018EFDC /* CLBeaconRegion+ORG.m in Sources */,
+				03DA66D91CBD011900E26CAA /* ORGHTTPConnection.m in Sources */,
+				031F74681D42C3C800DDC876 /* UIWindow+ORG.m in Sources */,
+				03DA67261CBD01F700E26CAA /* ORGRequestFactory.m in Sources */,
+				031F74641D40167D00DDC876 /* UITextField+ORG.m in Sources */,
+				03209FED1D574FFC0091FC2E /* UIDatePicker+ORG.m in Sources */,
+				03DA66DB1CBD011900E26CAA /* ORGInBoundMessageProcessor.m in Sources */,
+				03DA67241CBD01F700E26CAA /* ORGRequestElementTree.m in Sources */,
+				03209FE91D574F390091FC2E /* UIPickerView+ORG.m in Sources */,
+				03DA66C71CBD00EF00E26CAA /* NSObject+ORG.m in Sources */,
+				03DA66F91CBD015D00E26CAA /* CMMotionManager+ORG.m in Sources */,
+				033677E21D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m in Sources */,
+				039DA6D11D8EBA1300F6937A /* ORGGestureTap.m in Sources */,
+				032863D71D06DD5800EF2FA2 /* CMDeviceMotion+ORG.m in Sources */,
+				03DA67381CBD021200E26CAA /* ORGRemoteLocationManager.m in Sources */,
+				03DA670D1CBD01C100E26CAA /* ORGMessageBuilder.m in Sources */,
+				03DA67031CBD018A00E26CAA /* ORGConstants.m in Sources */,
+				03B588B31D04082D0083DF15 /* NSDate+ORG.m in Sources */,
+				03DA66F71CBD015D00E26CAA /* CMMotionActivityManager+ORG.m in Sources */,
+				03DA66FF1CBD015D00E26CAA /* UIApplication+ORG.m in Sources */,
+				035157271D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m in Sources */,
+				031F74601D4015F400DDC876 /* UITextView+ORG.m in Sources */,
+				033677F21D3E67F1009B86A4 /* UINibDecoderORG.m in Sources */,
+				03DA66B71CBD00C300E26CAA /* ORGCoreMotion.m in Sources */,
+				03DA66FD1CBD015D00E26CAA /* MKMapView+ORG.m in Sources */,
+				03209FE51D574C300091FC2E /* UISegmentedControl+ORG.m in Sources */,
+				03DA66F31CBD015D00E26CAA /* CMAltimeter+ORG.m in Sources */,
+				03DA67281CBD01F700E26CAA /* ORGRequestScreenshot.m in Sources */,
+				03DA66F51CBD015D00E26CAA /* CMAttitude+ORG.m in Sources */,
+				03DA66FB1CBD015D00E26CAA /* CMPedometer+ORG.m in Sources */,
+				035157471D3BA736004260A1 /* UIControl+ORG.m in Sources */,
+				03DA66C51CBD00EF00E26CAA /* NSDictionary+ORG.m in Sources */,
+				03DA66D71CBD011900E26CAA /* ORGBaseWebSocket.m in Sources */,
+				03DA66DD1CBD011900E26CAA /* ORGMainWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03DA668D1CBCEE4700E26CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DA66971CBCEE4700E26CAA /* OrganismoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03DA66941CBCEE4700E26CAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03DA66861CBCEE4700E26CAA /* Organismo */;
+			targetProxy = 03DA66931CBCEE4700E26CAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03DA66991CBCEE4700E26CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		03DA669A1CBCEE4700E26CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		03DA669C1CBCEE4700E26CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA292CC67D06DC53A78A50F7 /* Pods-Organismo.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = organismo/OrganismoPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaHTTPServer\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					ThirdParty/KIF/KIFFramework,
+				);
+				INFOPLIST_FILE = Organismo/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"CocoaAsyncSocket\"",
+					"-l\"CocoaHTTPServer\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"xml2\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"IOKit\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.organismo-mobile.Organismo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		03DA669D1CBCEE4700E26CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E05018FD35D81D274B954F /* Pods-Organismo.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = organismo/OrganismoPrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaHTTPServer\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					ThirdParty/KIF/KIFFramework,
+				);
+				INFOPLIST_FILE = Organismo/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"CocoaAsyncSocket\"",
+					"-l\"CocoaHTTPServer\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"xml2\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"IOKit\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.organismo-mobile.Organismo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		03DA669F1CBCEE4700E26CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D6F66BB89336ECB8BF7ABD /* Pods-OrganismoTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = OrganismoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.organismo-mobile.OrganismoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		03DA66A01CBCEE4700E26CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDF5B1C1671E69059FA1A392 /* Pods-OrganismoTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = OrganismoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.organismo-mobile.OrganismoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03DA66811CBCEE4700E26CAA /* Build configuration list for PBXProject "Organismo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DA66991CBCEE4700E26CAA /* Debug */,
+				03DA669A1CBCEE4700E26CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03DA669B1CBCEE4700E26CAA /* Build configuration list for PBXNativeTarget "Organismo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DA669C1CBCEE4700E26CAA /* Debug */,
+				03DA669D1CBCEE4700E26CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03DA669E1CBCEE4700E26CAA /* Build configuration list for PBXNativeTarget "OrganismoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03DA669F1CBCEE4700E26CAA /* Debug */,
+				03DA66A01CBCEE4700E26CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03DA667E1CBCEE4700E26CAA /* Project object */;
+}

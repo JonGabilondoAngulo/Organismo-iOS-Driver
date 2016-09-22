@@ -1,0 +1,26 @@
+//
+//  OrganismoPrefixHeader.pch
+//  organismo
+//
+//  Created by Jon Gabilondo on 26/03/2016.
+//  Copyright © 2016 organismo-mobile. All rights reserved.
+//
+
+#import <DDLog.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <MapKit/Mapkit.h>
+#import <CoreMotion/CoreMotion.h>
+
+#ifndef OrganismoPrefixHeader_pch
+#define OrganismoPrefixHeader_pch
+
+#ifdef DEBUG
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+#else
+static const int ddLogLevel = LOG_LEVEL_WARN;
+#endif
+
+#endif /* OrganismoPrefixHeader_pch */

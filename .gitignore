@@ -24,8 +24,5 @@ build
 *.orig
 DerivedData/*
 
-Podfile.lock
-
-Pods/
 SampleApps/
 

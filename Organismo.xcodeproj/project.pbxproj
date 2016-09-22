@@ -1139,7 +1139,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = organismo/OrganismoPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
@@ -1150,6 +1153,7 @@
 					"\"${PODS_ROOT}/Headers/Public/CocoaHTTPServer\"",
 					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
 					KIF/KIFFramework,
+					"XCTest-Stub/XCTest-Stub",
 				);
 				INFOPLIST_FILE = Organismo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1190,7 +1194,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = organismo/OrganismoPrefixHeader.pch;
 				HEADER_SEARCH_PATHS = (
@@ -1201,6 +1208,7 @@
 					"\"${PODS_ROOT}/Headers/Public/CocoaHTTPServer\"",
 					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
 					KIF/KIFFramework,
+					"XCTest-Stub/XCTest-Stub",
 				);
 				INFOPLIST_FILE = Organismo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

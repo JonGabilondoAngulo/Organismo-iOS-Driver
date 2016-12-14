@@ -101,21 +101,24 @@ static IMP originalIMP = nil;
                 if (control) {
                     NSMutableDictionary * segue = [NSMutableDictionary dictionary];
                     
-                    NSObject * segueTemplate = [element performSelector:@selector(target)];
-                    if (segueTemplate) {
-                        segue[@"kind"] = NSStringFromClass([segueTemplate class]); //  UIStoryboardPushSegueTemplate, Modal, Popover, Preview ..
+                    NSObject * target = [element performSelector:@selector(target)];
+                    if (target && [NSStringFromClass(target.class) isEqualToString:@"UIStoryboardSegueTemplate"]) {
+                        segue[@"kind"] = NSStringFromClass([target class]); //  UIStoryboardPushSegueTemplate, Modal, Popover, Preview ..
                         
-                        NSString * identifier = [segueTemplate performSelector:@selector(identifier)];  //https://github.com/nst/iOS-Runtime-Headers/blob/master/Frameworks/UIKit.framework/UIStoryboardSegueTemplate.h
+                        NSString * identifier = [target performSelector:@selector(identifier)];  //https://github.com/nst/iOS-Runtime-Headers/blob/master/Frameworks/UIKit.framework/UIStoryboardSegueTemplate.h
                         if (identifier) {
                             segue[@"identifier"] = identifier;
                         }
                         
-                        if ([segueTemplate respondsToSelector:@selector(viewController)]) {
-                            UIViewController * destinationViewController = [segueTemplate performSelector:@selector(viewController)];
+                        if ([target respondsToSelector:@selector(viewController)]) {
+                            UIViewController * destinationViewController = [target performSelector:@selector(viewController)];
                             if (destinationViewController) {
                                 segue[@"destinationViewController"] = NSStringFromClass([destinationViewController class]);
                             }
                         }
+                    } else {
+                        // Could be things like SwitchOptionTableViewCell base class UITableViewCell
+                        segue[@"target"] = NSStringFromClass(target.class);
                     }
                     // destination same as target ?
                     //NSObject * destination = [element performSelector:@selector(destination)];
@@ -126,7 +129,9 @@ static IMP originalIMP = nil;
                     if (label) {
                         segue[@"label"] = label;
                     }
-                    [control ORG_addSegueInfo:segue];
+                    if ([control respondsToSelector:@selector(ORG_addSegueInfo:)]) {
+                        [control ORG_addSegueInfo:segue];
+                    }
                     
                     //NSLog(@"This element has a segue !:%@. Class:%@", control, [control class]);
                 }

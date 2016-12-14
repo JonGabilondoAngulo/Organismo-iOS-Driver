@@ -24,10 +24,10 @@
         properties[@"currentAttributedTitle"] = self.currentAttributedTitle;
     }
     if (self.currentTitleColor) {
-        properties[@"currentTitleColor"] = self.currentTitleColor;
+        properties[@"currentTitleColor"] = self.currentTitleColor.description;
     }
     if (self.currentTitleShadowColor) {
-        properties[@"currentTitleShadowColor"] = self.currentTitleShadowColor;
+        properties[@"currentTitleShadowColor"] = self.currentTitleShadowColor.description;
     }
     properties[@"currentImage"] = (self.currentImage ? @YES :@NO);
     properties[@"currentBackgroundImage"] = (self.currentBackgroundImage ? @YES :@NO);

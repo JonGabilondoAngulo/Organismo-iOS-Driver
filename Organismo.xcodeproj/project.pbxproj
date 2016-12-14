@@ -134,6 +134,8 @@
 		03DA673E1CBD022200E26CAA /* OrganismoPrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 03DA673D1CBD022200E26CAA /* OrganismoPrefixHeader.pch */; };
 		03DA67411CBD065C00E26CAA /* CMAltitudeData+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA673F1CBD065C00E26CAA /* CMAltitudeData+ORG.h */; };
 		03DA67421CBD065C00E26CAA /* CMAltitudeData+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67401CBD065C00E26CAA /* CMAltitudeData+ORG.m */; };
+		03F1A7221DA2F0C200711E51 /* UILabel+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1A7201DA2F0C200711E51 /* UILabel+ORG.h */; };
+		03F1A7231DA2F0C200711E51 /* UILabel+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1A7211DA2F0C200711E51 /* UILabel+ORG.m */; };
 		03F87CDB1CCC0A740018EFDC /* CLBeaconRegion+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F87CD91CCC0A740018EFDC /* CLBeaconRegion+ORG.h */; };
 		03F87CDC1CCC0A740018EFDC /* CLBeaconRegion+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F87CDA1CCC0A740018EFDC /* CLBeaconRegion+ORG.m */; };
 		5D5781C9E30947AC7C8B0949 /* libPods-OrganismoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2479C6DEAC19610037FA354 /* libPods-OrganismoTests.a */; };
@@ -330,6 +332,8 @@
 		03DA673D1CBD022200E26CAA /* OrganismoPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganismoPrefixHeader.pch; sourceTree = "<group>"; };
 		03DA673F1CBD065C00E26CAA /* CMAltitudeData+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMAltitudeData+ORG.h"; sourceTree = "<group>"; };
 		03DA67401CBD065C00E26CAA /* CMAltitudeData+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMAltitudeData+ORG.m"; sourceTree = "<group>"; };
+		03F1A7201DA2F0C200711E51 /* UILabel+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ORG.h"; sourceTree = "<group>"; };
+		03F1A7211DA2F0C200711E51 /* UILabel+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ORG.m"; sourceTree = "<group>"; };
 		03F87CD91CCC0A740018EFDC /* CLBeaconRegion+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLBeaconRegion+ORG.h"; sourceTree = "<group>"; };
 		03F87CDA1CCC0A740018EFDC /* CLBeaconRegion+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLBeaconRegion+ORG.m"; sourceTree = "<group>"; };
 		0FEA7DB878D84135F931CD0E /* libPods-Organismo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Organismo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -576,6 +580,8 @@
 				03209FEB1D574FFC0091FC2E /* UIDatePicker+ORG.m */,
 				035157281D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h */,
 				035157291D3B9EAC004260A1 /* UIGestureRecognizer+ORG.m */,
+				03F1A7201DA2F0C200711E51 /* UILabel+ORG.h */,
+				03F1A7211DA2F0C200711E51 /* UILabel+ORG.m */,
 				035157241D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h */,
 				035157251D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m */,
 				0351572C1D3BA074004260A1 /* UILongPressGestureRecognizer+ORG.h */,
@@ -707,6 +713,7 @@
 				039DA6CC1D8EB9F800F6937A /* ORGGesture.h in Headers */,
 				03DA670A1CBD01C100E26CAA /* ORGMessage.h in Headers */,
 				03DA67251CBD01F700E26CAA /* ORGRequestFactory.h in Headers */,
+				03F1A7221DA2F0C200711E51 /* UILabel+ORG.h in Headers */,
 				035157261D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h in Headers */,
 				03DA66C41CBD00EF00E26CAA /* NSDictionary+ORG.h in Headers */,
 				03209FE41D574C300091FC2E /* UISegmentedControl+ORG.h in Headers */,
@@ -982,6 +989,7 @@
 				039DA6CD1D8EB9F800F6937A /* ORGGesture.m in Sources */,
 				03F87CDC1CCC0A740018EFDC /* CLBeaconRegion+ORG.m in Sources */,
 				03DA66D91CBD011900E26CAA /* ORGHTTPConnection.m in Sources */,
+				03F1A7231DA2F0C200711E51 /* UILabel+ORG.m in Sources */,
 				031F74681D42C3C800DDC876 /* UIWindow+ORG.m in Sources */,
 				03DA67261CBD01F700E26CAA /* ORGRequestFactory.m in Sources */,
 				031F74641D40167D00DDC876 /* UITextField+ORG.m in Sources */,

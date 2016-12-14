@@ -37,7 +37,7 @@
     
     if (![view ORG_isApplePrivateClass]) {
         if (viewScreenshots && [view ORG_needsScreenshot]) {
-            NSData *imageData = [ORGScreenshot viewScreenshotJPEG:view];
+            NSData *imageData = [ORGScreenshot viewScreenshotPNG:view];
             if (imageData) {
                 node[@"screenshot"] = [NSString ORG_base64StringFromData:imageData length:imageData.length];
             }

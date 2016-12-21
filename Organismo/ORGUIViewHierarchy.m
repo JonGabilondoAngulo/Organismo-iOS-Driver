@@ -14,6 +14,20 @@
 
 @implementation ORGUIViewHierarchy
 
++ (NSArray*)windowsElementTree:(NSDictionary*)properties skipPrivateClasses:(BOOL)skipPrivate viewScreenshots:(BOOL)viewScreenshots {
+    
+    NSMutableArray * tree = [NSMutableArray array];
+    for (UIWindow * window in [UIApplication sharedApplication].windows) {
+        if ([self mustReportTreeOfWindow:window properties:properties]) {
+            NSDictionary * node = [self viewElementTree:window skipPrivateClasses:skipPrivate viewScreenshots:viewScreenshots];
+            if (node) {
+                [tree addObject:node];
+            }
+        }
+    }
+    return tree;
+}
+
 + (NSArray*)mainWindowElementTree:(NSDictionary*)properties skipPrivateClasses:(BOOL)skipPrivate viewScreenshots:(BOOL)viewScreenshots {
     
     UIWindow * mainWindow = [ORGUIViewHierarchy rootWindow:[UIApplication sharedApplication]];
@@ -44,18 +58,31 @@
         }
     }
     
-    // Run subview. Unless is some kind of control that there is no need to dive in.
+    // Run subviews. Unless is some kind of control that there is no need to dive in.
     if ([view ORG_ignoreSubviews]) {
         return node;
     }
     
     NSMutableArray * children = [NSMutableArray array];
     for (UIView *subView in view.subviews) {
-        NSDictionary * child = [self viewElementTree:subView skipPrivateClasses:skipPrivate viewScreenshots:(BOOL)viewScreenshots];
+        NSDictionary * child = [self viewElementTree:subView skipPrivateClasses:skipPrivate viewScreenshots:viewScreenshots];
         if (child) {
             [children addObject:child];
         }
     }
+    
+    // Attention. Handle the case of "_UIRemoteKeyboardPlaceholderView" where the "subview" is actually in "placeheldView"
+    // http://developer.limneos.net/?ios=8.0&framework=UIKit.framework&header=_UIRemoteKeyboardPlaceholderView.h
+    if ([view respondsToSelector:@selector(placeheldView)]) {
+        UIView * subView = [view performSelector:@selector(placeheldView)];
+        if (subView) {
+            NSDictionary * child = [self viewElementTree:subView skipPrivateClasses:skipPrivate viewScreenshots:viewScreenshots];
+            if (child) {
+                [children addObject:child];
+            }
+        }
+    }
+    
     if (children.count) {
         node[@"subviews"] = children;
     }
@@ -99,6 +126,24 @@
 
 
 #pragma mark Windows
+
+
++ (BOOL)mustReportTreeOfWindow:(UIWindow*)window properties:(NSDictionary*)properties {
+    BOOL result = false;
+    if (window.windowLevel == UIWindowLevelAlert) {
+        return [properties[@"alert"] boolValue];
+    }
+    if (window.windowLevel == UIWindowLevelStatusBar) {
+        return [properties[@"status-bar"] boolValue];
+    }
+    if ([NSStringFromClass([window class]) isEqual:@"UITextEffectsWindow"]) {
+        return [properties[@"keyboard"] boolValue];
+    }
+    if (window.windowLevel == UIWindowLevelNormal) {
+        return [properties[@"normal"] boolValue];
+    }
+    return result;
+}
 
 + (NSArray*)appWindows:(UIApplication*)app ignoreKeyboards:(BOOL)ignoreKeyboards {
     NSMutableArray * windows = [NSMutableArray array];

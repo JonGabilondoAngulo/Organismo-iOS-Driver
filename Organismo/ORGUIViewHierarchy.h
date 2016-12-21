@@ -7,6 +7,17 @@
 
 @interface ORGUIViewHierarchy : NSObject
 
+
+/**
+ Returns a tree of all the elements in the windows defined in "properties".
+
+ @param properties A dictionary of the window type and of to get thir element tree.
+ @param skipPrivate Do not report views with private classes.
+ @param viewScreenshots Get screenshots for every view.
+ @return An array of windows with their trees.
+ */
++ (NSArray*)windowsElementTree:(NSDictionary*)properties skipPrivateClasses:(BOOL)skipPrivate viewScreenshots:(BOOL)viewScreenshots;
+
 /**
  *  Returns a tree of all the UI elements of the App's main window.
  *

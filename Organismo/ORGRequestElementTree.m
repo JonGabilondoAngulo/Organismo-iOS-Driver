@@ -17,7 +17,7 @@
 
     // working on UI better done on main thread
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSArray * tree = [ORGUIViewHierarchy mainWindowElementTree:[self parameters] skipPrivateClasses:YES viewScreenshots:YES];
+        NSArray * tree = [ORGUIViewHierarchy windowsElementTree:[self parameters] skipPrivateClasses:NO viewScreenshots:YES];
 
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             [self respondSuccessWithResult:tree];

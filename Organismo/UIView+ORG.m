@@ -86,7 +86,8 @@ static NSString * const AORGAssociatedKey_Segues = @"ORG_Segues";
             NSMutableArray * gestures = [NSMutableArray array];
             
             for (UIGestureRecognizer * gestureRecognizer in self.gestureRecognizers) {
-                if ([gestureRecognizer ORG_mustBeIgnored] == NO) {
+                // MKMapView may have private gestures but we need to give their description so the web UI can tell what gestures it answers to.
+                if ( [self isKindOfClass:[MKMapView class]] || [gestureRecognizer ORG_mustBeIgnored] == NO) {
                     NSDictionary * gestureDescription = [gestureRecognizer ORG_description];
                     if (gestureDescription) {
                         [gestures addObject:gestureDescription];
@@ -101,6 +102,17 @@ static NSString * const AORGAssociatedKey_Segues = @"ORG_Segues";
     
     if (self.ORG_segues.count) {
         properties[@"segues"] = self.ORG_segues;
+    }
+    
+    // UIKBKeyView
+    if ([self respondsToSelector:@selector(key)]) {
+        NSObject *keyTree = [self performSelector:@selector(key)]; //UIKBTree
+        if (keyTree) {
+            NSString * name = [keyTree performSelector:@selector(name)];
+            if (name) {
+                properties[@"name"] = name;
+            }
+        }
     }
     
     return properties;

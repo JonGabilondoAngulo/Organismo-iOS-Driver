@@ -15,6 +15,8 @@
 #import "ORGRequestAppInfo.h"
 #import "ORGRequestElementInfo.h"
 #import "ORGRequestTap.h"
+#import "ORGRequestLongPress.h"
+#import "ORGRequestSwipe.h"
 
 @implementation ORGRequestFactory
 
@@ -35,6 +37,10 @@
         request = [[ORGRequestElementInfo alloc] initWith:message];
     } else if ([requestName ORG_isEqualToStringIgnoreCase:@"tap"]) {
         request = [[ORGRequestTap alloc] initWith:message];
+    } else if ([requestName ORG_isEqualToStringIgnoreCase:@"long-press"]) {
+        request = [[ORGRequestLongPress alloc] initWith:message];
+    } else if ([requestName ORG_isEqualToStringIgnoreCase:@"swipe-left"] || [requestName ORG_isEqualToStringIgnoreCase:@"swipe-right"] || [requestName ORG_isEqualToStringIgnoreCase:@"swipe-up"] || [requestName ORG_isEqualToStringIgnoreCase:@"swipe-down"]) {
+        request = [[ORGRequestSwipe alloc] initWith:message];
     }
     return request;
 }

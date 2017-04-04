@@ -57,6 +57,14 @@
 		03A89A6F1D92CCE7000AB035 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033677F31D3E6974009B86A4 /* UIKit.framework */; };
 		03B588B21D04082D0083DF15 /* NSDate+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B588B01D04082D0083DF15 /* NSDate+ORG.h */; };
 		03B588B31D04082D0083DF15 /* NSDate+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B588B11D04082D0083DF15 /* NSDate+ORG.m */; };
+		03C2CD001E9395DB00508AD9 /* ORGRequestLongPress.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C2CCFE1E9395DB00508AD9 /* ORGRequestLongPress.h */; };
+		03C2CD011E9395DB00508AD9 /* ORGRequestLongPress.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C2CCFF1E9395DB00508AD9 /* ORGRequestLongPress.m */; };
+		03C2CD0A1E9395F200508AD9 /* ORGRequestSwipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C2CD081E9395F200508AD9 /* ORGRequestSwipe.h */; };
+		03C2CD0B1E9395F200508AD9 /* ORGRequestSwipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C2CD091E9395F200508AD9 /* ORGRequestSwipe.m */; };
+		03C2CD0E1E93969800508AD9 /* ORGGestureLongPress.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C2CD0C1E93969800508AD9 /* ORGGestureLongPress.h */; };
+		03C2CD0F1E93969800508AD9 /* ORGGestureLongPress.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C2CD0D1E93969800508AD9 /* ORGGestureLongPress.m */; };
+		03C2CD121E9396B200508AD9 /* ORGGestureSwipe.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C2CD101E9396B200508AD9 /* ORGGestureSwipe.h */; };
+		03C2CD131E9396B200508AD9 /* ORGGestureSwipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C2CD111E9396B200508AD9 /* ORGGestureSwipe.m */; };
 		03DA668B1CBCEE4700E26CAA /* Organismo.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA668A1CBCEE4700E26CAA /* Organismo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03DA66921CBCEE4700E26CAA /* Organismo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03DA66871CBCEE4700E26CAA /* Organismo.framework */; };
 		03DA66971CBCEE4700E26CAA /* OrganismoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA66961CBCEE4700E26CAA /* OrganismoTests.m */; };
@@ -252,6 +260,14 @@
 		039DA6D71D8EBC3000F6937A /* ORGRequestTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestTap.m; sourceTree = "<group>"; };
 		03B588B01D04082D0083DF15 /* NSDate+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ORG.h"; sourceTree = "<group>"; };
 		03B588B11D04082D0083DF15 /* NSDate+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ORG.m"; sourceTree = "<group>"; };
+		03C2CCFE1E9395DB00508AD9 /* ORGRequestLongPress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequestLongPress.h; sourceTree = "<group>"; };
+		03C2CCFF1E9395DB00508AD9 /* ORGRequestLongPress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestLongPress.m; sourceTree = "<group>"; };
+		03C2CD081E9395F200508AD9 /* ORGRequestSwipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequestSwipe.h; sourceTree = "<group>"; };
+		03C2CD091E9395F200508AD9 /* ORGRequestSwipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestSwipe.m; sourceTree = "<group>"; };
+		03C2CD0C1E93969800508AD9 /* ORGGestureLongPress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGGestureLongPress.h; sourceTree = "<group>"; };
+		03C2CD0D1E93969800508AD9 /* ORGGestureLongPress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGGestureLongPress.m; sourceTree = "<group>"; };
+		03C2CD101E9396B200508AD9 /* ORGGestureSwipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGGestureSwipe.h; sourceTree = "<group>"; };
+		03C2CD111E9396B200508AD9 /* ORGGestureSwipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGGestureSwipe.m; sourceTree = "<group>"; };
 		03DA66871CBCEE4700E26CAA /* Organismo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Organismo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		03DA668A1CBCEE4700E26CAA /* Organismo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Organismo.h; sourceTree = "<group>"; };
 		03DA668C1CBCEE4700E26CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -407,6 +423,10 @@
 				039DA6CB1D8EB9F800F6937A /* ORGGesture.m */,
 				039DA6CE1D8EBA1300F6937A /* ORGGestureTap.h */,
 				039DA6CF1D8EBA1300F6937A /* ORGGestureTap.m */,
+				03C2CD0C1E93969800508AD9 /* ORGGestureLongPress.h */,
+				03C2CD0D1E93969800508AD9 /* ORGGestureLongPress.m */,
+				03C2CD101E9396B200508AD9 /* ORGGestureSwipe.h */,
+				03C2CD111E9396B200508AD9 /* ORGGestureSwipe.m */,
 			);
 			name = Gestures;
 			sourceTree = "<group>";
@@ -629,6 +649,10 @@
 				0320A0011D586CB40091FC2E /* ORGRequestElementInfo.m */,
 				039DA6D61D8EBC3000F6937A /* ORGRequestTap.h */,
 				039DA6D71D8EBC3000F6937A /* ORGRequestTap.m */,
+				03C2CCFE1E9395DB00508AD9 /* ORGRequestLongPress.h */,
+				03C2CCFF1E9395DB00508AD9 /* ORGRequestLongPress.m */,
+				03C2CD081E9395F200508AD9 /* ORGRequestSwipe.h */,
+				03C2CD091E9395F200508AD9 /* ORGRequestSwipe.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -681,12 +705,14 @@
 				03DA66DE1CBD011900E26CAA /* ORGOutboundMessageQueue.h in Headers */,
 				03209FE01D574A320091FC2E /* UIButton+ORG.h in Headers */,
 				03DA670E1CBD01C100E26CAA /* ORGMessageUpdate.h in Headers */,
+				03C2CD0E1E93969800508AD9 /* ORGGestureLongPress.h in Headers */,
 				03DA66DA1CBD011900E26CAA /* ORGInBoundMessageProcessor.h in Headers */,
 				03DA67391CBD021200E26CAA /* ORGRemoteMotionManager.h in Headers */,
 				03DA66FE1CBD015D00E26CAA /* UIApplication+ORG.h in Headers */,
 				03DA66D81CBD011900E26CAA /* ORGHTTPConnection.h in Headers */,
 				039DA6D81D8EBC3000F6937A /* ORGRequestTap.h in Headers */,
 				03DA66C61CBD00EF00E26CAA /* NSObject+ORG.h in Headers */,
+				03C2CD0A1E9395F200508AD9 /* ORGRequestSwipe.h in Headers */,
 				03B588B21D04082D0083DF15 /* NSDate+ORG.h in Headers */,
 				03DA67411CBD065C00E26CAA /* CMAltitudeData+ORG.h in Headers */,
 				03DA66B61CBD00C300E26CAA /* ORGCoreMotion.h in Headers */,
@@ -703,7 +729,9 @@
 				03DA671D1CBD01F700E26CAA /* ORGRequest.h in Headers */,
 				0351573A1D3BA2A5004260A1 /* UIRotationGestureRecognizer+ORG.h in Headers */,
 				03DA66F81CBD015D00E26CAA /* CMMotionManager+ORG.h in Headers */,
+				03C2CD001E9395DB00508AD9 /* ORGRequestLongPress.h in Headers */,
 				035157321D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.h in Headers */,
+				03C2CD121E9396B200508AD9 /* ORGGestureSwipe.h in Headers */,
 				0357A11E1CBEE52C00A35556 /* CLHeading+ORG.h in Headers */,
 				03DA67351CBD021200E26CAA /* ORGRemoteController.h in Headers */,
 				03DA670C1CBD01C100E26CAA /* ORGMessageBuilder.h in Headers */,
@@ -965,6 +993,7 @@
 				03DA670B1CBD01C100E26CAA /* ORGMessage.m in Sources */,
 				03DA673A1CBD021200E26CAA /* ORGRemoteMotionManager.m in Sources */,
 				0351573F1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.m in Sources */,
+				03C2CD0B1E9395F200508AD9 /* ORGRequestSwipe.m in Sources */,
 				035157331D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.m in Sources */,
 				03DA673C1CBD021200E26CAA /* ORGRemotePedometer.m in Sources */,
 				03DA67421CBD065C00E26CAA /* CMAltitudeData+ORG.m in Sources */,
@@ -977,6 +1006,7 @@
 				03DA66BB1CBD00C300E26CAA /* ORGUIViewHierarchy.m in Sources */,
 				03DA66DF1CBD011900E26CAA /* ORGOutboundMessageQueue.m in Sources */,
 				039DA6D91D8EBC3000F6937A /* ORGRequestTap.m in Sources */,
+				03C2CD011E9395DB00508AD9 /* ORGRequestLongPress.m in Sources */,
 				03DA67361CBD021200E26CAA /* ORGRemoteController.m in Sources */,
 				0357A11F1CBEE52C00A35556 /* CLHeading+ORG.m in Sources */,
 				03DA671E1CBD01F700E26CAA /* ORGRequest.m in Sources */,
@@ -1009,6 +1039,7 @@
 				03DA66F71CBD015D00E26CAA /* CMMotionActivityManager+ORG.m in Sources */,
 				03DA66FF1CBD015D00E26CAA /* UIApplication+ORG.m in Sources */,
 				035157271D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m in Sources */,
+				03C2CD0F1E93969800508AD9 /* ORGGestureLongPress.m in Sources */,
 				031F74601D4015F400DDC876 /* UITextView+ORG.m in Sources */,
 				033677F21D3E67F1009B86A4 /* UINibDecoderORG.m in Sources */,
 				03DA66B71CBD00C300E26CAA /* ORGCoreMotion.m in Sources */,
@@ -1020,6 +1051,7 @@
 				03DA66FB1CBD015D00E26CAA /* CMPedometer+ORG.m in Sources */,
 				035157471D3BA736004260A1 /* UIControl+ORG.m in Sources */,
 				03DA66C51CBD00EF00E26CAA /* NSDictionary+ORG.m in Sources */,
+				03C2CD131E9396B200508AD9 /* ORGGestureSwipe.m in Sources */,
 				03DA66D71CBD011900E26CAA /* ORGBaseWebSocket.m in Sources */,
 				03DA66DD1CBD011900E26CAA /* ORGMainWebSocket.m in Sources */,
 			);

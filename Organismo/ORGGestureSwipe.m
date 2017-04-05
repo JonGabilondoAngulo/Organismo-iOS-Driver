@@ -15,18 +15,18 @@
 - (void)execute {
     
     NSDictionary * location = self.parameters[@"location"];
-    NSString * direction = self.parameters[@"direaction"];
+    NSString * direction = self.parameters[@"direction"];
     if (location && direction) {
         KIFUITestActor * kifTestActor = [[KIFUITestActor alloc] init]; // Unorthodox usage of KIF !
         
-        KIFSwipeDirection kDirection;
+        KIFSwipeDirection kDirection = KIFSwipeDirectionRight;
         if ([direction isEqualToString:@"left"]) {
             kDirection = KIFSwipeDirectionLeft;
         } else if ([direction isEqualToString:@"right"]) {
             kDirection = KIFSwipeDirectionRight;
         } else if ([direction isEqualToString:@"up"]) {
             kDirection = KIFSwipeDirectionUp;
-        }else if ([direction isEqualToString:@"down"]) {
+        } else if ([direction isEqualToString:@"down"]) {
             kDirection = KIFSwipeDirectionDown;
         }
         

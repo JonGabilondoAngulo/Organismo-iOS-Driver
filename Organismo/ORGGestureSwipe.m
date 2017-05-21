@@ -30,7 +30,7 @@
             kDirection = KIFSwipeDirectionDown;
         }
         
-        [kifTestActor swipeScreenAtPoint:[location ORG_CGPoint] direction:kDirection];
+        //[kifTestActor swipeScreenAtPoint:[location ORG_CGPoint] direction:kDirection];
     }
 }
 

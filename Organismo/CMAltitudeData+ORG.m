@@ -23,9 +23,15 @@
     CMAltitudeData * altitudeData = [[CMAltitudeData alloc] initWithAltitude:0.f andTimestamp:timestamp atBaseAltitude:0.f];
     
     id internal = [altitudeData valueForKey:@"_internal"]; // https://github.com/nst/iOS-Runtime-Headers/blob/master/Frameworks/CoreMotion.framework/CMAltitudeDataInternal.h
-    [internal setValue:altitude forKey:@"fAltitude"];
-    [internal setValue:pressure forKey:@"fPressure"];
-    [altitudeData setValue:internal forKey:@"_internal"];
+    if (internal) {
+        if (altitude) {
+            [internal setValue:altitude forKey:@"fAltitude"];
+        }
+        if (pressure) {
+            [internal setValue:pressure forKey:@"fPressure"];
+        }
+        [altitudeData setValue:internal forKey:@"_internal"];
+    }
     
     return altitudeData;
 }

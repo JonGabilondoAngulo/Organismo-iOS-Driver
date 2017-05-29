@@ -8,7 +8,7 @@
 
 #import "ORGMessageUpdate.h"
 #import "ORGRemoteAltimeter.h"
-#import "ORGRemoteLocationManager.h"
+#import "ORGRemoteLocationProviderProxy.h"
 #import "ORGRemoteMotionManager.h"
 #import "CMAltitudeData+ORG.h"
 #import "CLLocationManager+ORG.h"
@@ -94,7 +94,7 @@
         CLLocationCoordinate2D loc = {lat.floatValue, lng.floatValue};
         CLRegion * region = [[CLRegion alloc] initCircularRegionWithCenter:loc radius:radius.floatValue identifier:identifier];
 
-        [[ORGRemoteLocationManager sharedInstance] broadcastRegion:region event:regionEventType]; // broadcast to local listeners
+        [[ORGRemoteLocationProviderProxy sharedInstance] broadcastRegion:region event:regionEventType]; // broadcast to local listeners
     }
 }
 
@@ -103,6 +103,8 @@
     if (!location) {
         return;
     }
+    
+    [CLLocationManager ORG_enableBypass];
 
     NSNumber * lat = location[@"lat"];
     NSNumber * lng = location[@"lng"];
@@ -110,10 +112,18 @@
     NSNumber * course = location[@"course"];
     NSNumber * speed = location[@"speed"];
     
+    //some healthy stuff
+    if (!course) {
+        course = @-1.0; // This seems to be a common value sent by iOS when device still
+    }
+    if (!speed) {
+        speed = @-1.0;
+    }
+    
     CLLocationCoordinate2D loc = {lat.floatValue, lng.floatValue};
     CLLocation *newLocation = [[CLLocation alloc] initWithCoordinate:loc altitude:altitude.floatValue horizontalAccuracy:10.0 verticalAccuracy:10.0 course:course.floatValue speed:speed.floatValue timestamp:[NSDate date]];
     
-    [[ORGRemoteLocationManager sharedInstance] broadcastLocation:newLocation]; // broadcast to local listeners
+    [[ORGRemoteLocationProviderProxy sharedInstance] broadcastLocation:newLocation]; // broadcast to local listeners
 }
 
 - (void)processHeadingUpdate:(NSDictionary*)heading {
@@ -129,7 +139,7 @@
 //    NSNumber * omponentZ = location[@"z"];
     
     CLHeading *newHeading = [CLHeading ORG_createWithHeading:trueHeading accuracy:@1.0];
-    [[ORGRemoteLocationManager sharedInstance] broadcastHeading:newHeading]; // broadcast to local listeners
+    [[ORGRemoteLocationProviderProxy sharedInstance] broadcastHeading:newHeading]; // broadcast to local listeners
 }
 
 

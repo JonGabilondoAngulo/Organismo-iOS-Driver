@@ -7,15 +7,24 @@
 //
 
 #import <dlfcn.h>
+#import <objc/runtime.h>
 #import "CLLocationManager+ORG.h"
 #import "NSObject+ORG.h"
-#import "ORGRemoteLocationManager.h"
+#import "ORGRemoteLocationProviderProxy.h"
+
+#define ORG_IMPLEMENT_BYPASSING_DELEGATES 1
 
 @interface CLLocationManager()
 - (void)requestLocation;
 //- (void)onClientEventLocation:(id)arg1;
 //- (void)onClientEvent:(int)arg1 supportInfo:(id)arg2;
 @end
+
+#if ORG_IMPLEMENT_BYPASSING_DELEGATES
+static BOOL ORG_bypass = NO;
+#else
+static BOOL ORG_bypass = YES;
+#endif
 
 @implementation CLLocationManager (ORG)
 
@@ -46,72 +55,186 @@
         [self ORG_swizzleMethod:@selector(locationManagerDidResumeLocationUpdates:) withMethod:@selector(ORG_locationManagerDidResumeLocationUpdates:)];
 //      [self ORG_swizzleMethod:@selector(onClientEvent:supportInfo:) withMethod:@selector(ORG_onClientEvent:supportInfo:)];
 //      [self ORG_swizzleMethod:@selector(onClientEventLocation:) withMethod:@selector(ORG_onClientEventLocation:)];
+        
+        [self ORG_swizzleMethod:NSSelectorFromString(@"dealloc") withMethod:@selector(ORG_dealloc)]; // @selector(dealloc) -> compile error !
     }
 }
 
++ (void)ORG_enableBypass {
+    ORG_bypass = YES;
+}
++ (void)ORG_disableBypass {
+    ORG_bypass = NO;
+}
+
 - (instancetype)ORG_init {
-    
     CLLocationManager * newManager = [self ORG_init];
-    [[ORGRemoteLocationManager sharedInstance] addLocalManager:newManager];
+    [[ORGRemoteLocationProviderProxy sharedInstance] addLocalManager:newManager];
     return newManager;
 }
 
+/**
+ Our lucky strike to know when the instance is disposed. We must remove the remote provider object from our list.
+ */
+-(void)ORG_dealloc {
+    
+    [[ORGRemoteLocationProviderProxy sharedInstance] removeLocalManager:self];
+
+    // remove the manager from our list.
+//    for (NSDictionary<NSString*, NSValue*> * locationManagerDict in ORG_locationManagers) {
+//        
+//        // We could not use the value in "object", iOS would know that the object is in process on deallocation and would throw exception.
+//        // Therefore we need to use the something that will not touch the object but will tell us if its the object we want to eliminate. "pointer" does the job.
+//        NSValue * locationManagerPointerValue = locationManagerDict[@"pointer"];
+//        if ( self == locationManagerPointerValue.pointerValue) {
+//            [ORG_locationManagers removeObject:locationManagerDict];
+//            break;
+//        }
+//    }
+    [self ORG_dealloc];
+}
+
+
 - (void)ORG_setDelegate:(NSObject<CLLocationManagerDelegate>*)delegate {
+    
+#if ORG_IMPLEMENT_BYPASSING_DELEGATES
+    if ([delegate respondsToSelector:@selector(locationManager:didUpdateLocations:)] &&
+        ![delegate respondsToSelector:@selector(ORG_swizzle_locationManager:didUpdateLocations:)]) {
+        
+        [delegate.class ORG_swizzleMethod:@selector(locationManager:didUpdateLocations:)
+                               withMethod:@selector(ORG_swizzle_locationManager:didUpdateLocations:)
+                                  ofClass:self.class];
+    }
+
+    if ([delegate respondsToSelector:@selector(locationManager:didUpdateToLocation:fromLocation:)] &&
+        ![delegate respondsToSelector:@selector(ORG_swizzle_locationManager:didUpdateToLocation:fromLocation:)]) {
+        [delegate.class ORG_swizzleMethod:@selector(locationManager:didUpdateToLocation:fromLocation:)
+                               withMethod:@selector(ORG_swizzle_locationManager:didUpdateToLocation:fromLocation:)
+                                  ofClass:self.class];
+    }
+#endif
+    
     [self ORG_setDelegate:delegate];
 }
 
 - (CLLocation*)ORG_location {
-    return [[ORGRemoteLocationManager sharedInstance] location];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] location];
+    } else {
+        return [self ORG_location];
+    }
 }
 - (CLHeading*)ORG_heading {
-    return [[ORGRemoteLocationManager sharedInstance] heading];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] heading];
+    } else {
+        return [self ORG_heading];
+    }
 }
 - (void)ORG_requestLocation {
-    [[ORGRemoteLocationManager sharedInstance] requestLocation];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] requestLocation];
+    } else {
+        return [self ORG_requestLocation];
+    }
 }
 - (void)ORG_startUpdatingLocation {
-    [[ORGRemoteLocationManager sharedInstance] startUpdatingLocation];
-    //[self ORG_startUpdatingLocation];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] startUpdatingLocation];
+    } else {
+        return [self ORG_startUpdatingLocation];
+    }
 }
 - (void)ORG_stopUpdatingLocation {
-    [[ORGRemoteLocationManager sharedInstance] stopUpdatingLocation];
-    //[self ORG_stopUpdatingLocation];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] stopUpdatingLocation];
+    } else {
+        return [self ORG_stopUpdatingLocation];
+    }
 }
 - (void)ORG_startUpdatingHeading {
-    [[ORGRemoteLocationManager sharedInstance] startUpdatingHeading];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] startUpdatingHeading];
+    } else {
+        return [self ORG_startUpdatingHeading];
+    }
 }
 - (void)ORG_stopUpdatingHeading {
-    [[ORGRemoteLocationManager sharedInstance] stopUpdatingHeading];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] stopUpdatingHeading];
+    } else {
+        return [self ORG_stopUpdatingHeading];
+    }
 }
 - (void)ORG_startMonitoringSignificantLocationChanges {
-    [[ORGRemoteLocationManager sharedInstance] startMonitoringSignificantLocationChanges];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] startMonitoringSignificantLocationChanges];
+    } else {
+        return [self ORG_startMonitoringSignificantLocationChanges];
+    }
 }
 - (void)ORG_stopMonitoringSignificantLocationChanges {
-    [[ORGRemoteLocationManager sharedInstance] stopMonitoringSignificantLocationChanges];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] stopMonitoringSignificantLocationChanges];
+    } else {
+        return [self ORG_stopMonitoringSignificantLocationChanges];
+    }
 }
 - (void)ORG_startMonitoringForRegion:(CLRegion *)region desiredAccuracy:(CLLocationAccuracy)accuracy {
-    [[ORGRemoteLocationManager sharedInstance] startMonitoringForRegion:region desiredAccuracy:accuracy];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] startMonitoringForRegion:region desiredAccuracy:accuracy];
+    } else {
+        return [self ORG_startMonitoringForRegion:region desiredAccuracy:accuracy];
+    }
 }
 - (void)ORG_stopMonitoringForRegion:(CLRegion *)region {
-    [[ORGRemoteLocationManager sharedInstance] stopMonitoringForRegion:region];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] stopMonitoringForRegion:region];
+    } else {
+        return [self ORG_stopMonitoringForRegion:region];
+    }
 }
 - (void)ORG_startMonitoringForRegion:(CLRegion *)region {
-    [[ORGRemoteLocationManager sharedInstance] startMonitoringForRegion:region];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] startMonitoringForRegion:region];
+    } else {
+        return [self ORG_startMonitoringForRegion:region];
+    }
 }
 - (void)ORG_requestStateForRegion:(CLRegion *)region {
-    [[ORGRemoteLocationManager sharedInstance] requestStateForRegion:region locationManager:self];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] requestStateForRegion:region locationManager:self];
+    } else {
+        return [self ORG_requestStateForRegion:region];
+    }
 }
 - (void)ORG_startRangingBeaconsInRegion:(CLBeaconRegion *)region {
-    [[ORGRemoteLocationManager sharedInstance] startRangingBeaconsInRegion:region];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] startRangingBeaconsInRegion:region];
+    } else {
+        return [self ORG_startRangingBeaconsInRegion:region];
+    }
 }
 - (void)ORG_stopRangingBeaconsInRegion:(CLBeaconRegion *)region {
-    [[ORGRemoteLocationManager sharedInstance] stopRangingBeaconsInRegion:region];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] stopRangingBeaconsInRegion:region];
+    } else {
+        return [self ORG_stopRangingBeaconsInRegion:region];
+    }
 }
 - (void)ORG_locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager {
-    [[ORGRemoteLocationManager sharedInstance] locationManagerDidPauseLocationUpdates:manager];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] locationManagerDidPauseLocationUpdates:manager];
+    } else {
+        return [self ORG_locationManagerDidPauseLocationUpdates:manager];
+    }
 }
 - (void)ORG_locationManagerDidResumeLocationUpdates:(CLLocationManager *)manager {
-    [[ORGRemoteLocationManager sharedInstance] locationManagerDidResumeLocationUpdates:manager];
+    if (ORG_bypass) {
+        return [[ORGRemoteLocationProviderProxy sharedInstance] locationManagerDidResumeLocationUpdates:manager];
+    } else {
+        return [self ORG_locationManagerDidResumeLocationUpdates:manager];
+    }
 }
 
 /*
@@ -156,55 +279,25 @@
 - (void)ORG_requestLocation {
     [self ORG_requestLocation];
 }
-
-+ (void)ORG_broadcastLocation:(CLLocation*)location {
-
-    CLLocationCoordinate2D c2d = {32.0,34.8};
-    CLLocation * newLoc = [[CLLocation alloc] initWithCoordinate:c2d altitude:100.0 horizontalAccuracy:10.0 verticalAccuracy:10.0 course:0.0 speed:0.0 timestamp:[NSDate date]];
-
-    for (NSValue * locationManagerValue in ORG_locationManagers) {
-        __weak CLLocationManager * locationManager = [locationManagerValue nonretainedObjectValue];
-        if (locationManager.delegate) {
-            [self ORG_broadcastLocation:newLoc toDelegate:locationManager.delegate];
-        }
-    }
-//    if (m1.delegate) {
-//        [self ORG_broadcastLocation:newLoc toDelegate:m1.delegate];
-//    }
-//    if (m2.delegate) {
-//        [self ORG_broadcastLocation:newLoc toDelegate:m2.delegate];
-//    }
-    
-    NSDictionary * d = @{
-                         @"kCLClientEventKey":@"kCLConnectionMessageLocation",
-                         @"ForceMapMatching":@0,
-                         @"LocationCount":@1,
-                         @"IsFitnessMatch":@1,
-                         @"Location":[NSData dataWithBytes:"123" length:3]
-                         };
-
-    if (m1.delegate) {
-        //if ([m1.delegate respondsToSelector:@selector(locationManager:didUpdateLocations:)]) {
-            
-//            <ffff0000 12e86eb3 a2034040 ecfce78c d3724140 00000000 00405040 000000a0 e6454440 00000000 00002440 00000000 0000f0bf 00000000 0000f0bf 00000000 0000f0bf 00000000 0000f0bf 09c6498f 1ab5bc41 42000000 000050b8 1e8b7b40 04000000 12e86eb3 a2034040 ecfce78c d3724140 00000000 0000f0bf ffffff7f 19000000>
-            
-            [m1 ORG_onClientEvent:0 supportInfo:d];
-        //}
-    }
-    if (m2.delegate) {
-        [m2 ORG_onClientEvent:0 supportInfo:d];
-    }
-}
-
-+ (void)ORG_broadcastLocation:(CLLocation*)location toDelegate:(id)delegate {
-    
-    if (delegate && location) {
-        if ([delegate respondsToSelector:@selector(locationManager:didUpdateLocations:)]) {
-            [delegate performSelector:@selector(locationManager:didUpdateLocations:) withObject:@[location]];
-        }
-    }
-}
 */
 
+
+#pragma mark Swizzle
+
+#if ORG_IMPLEMENT_BYPASSING_DELEGATES
+
+- (void)ORG_swizzle_locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+    [self ORG_swizzle_locationManager:manager didUpdateToLocation:newLocation fromLocation:oldLocation];
+}
+
+- (void)ORG_swizzle_locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
+    
+    if (ORG_bypass) {
+        [self ORG_swizzle_locationManager:manager didUpdateLocations:@[[[ORGRemoteLocationProviderProxy sharedInstance] location]]];
+    } else {
+        [self ORG_swizzle_locationManager:manager didUpdateLocations:locations];
+    }
+}
+#endif
 
 @end

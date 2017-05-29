@@ -11,6 +11,15 @@
       location = "container:"
       name = "SampleApps">
       <FileRef
+         location = "group:SampleApps/DPMeterView-master/Example/Example.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:SampleApps/BEMAnalogClock-master/Sample Project/BEMAnalogClock.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:SampleApps/CurrentAddress/CurrentAddress.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:SampleApps/CMAltimeterDemo/CMAltimeterDemo.xcodeproj">
       </FileRef>
       <FileRef

@@ -113,7 +113,7 @@ typedef struct {
     CLLocationDegrees step = 0.05;
     static CLLocationDegrees lng = 34;
     NSLog(@"LOC:%@", arg2[0]);
-    /*
+    / *
     (lldb) po arg1
     <CLLocationManager: 0x170216fb0>
     

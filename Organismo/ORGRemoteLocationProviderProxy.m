@@ -1,18 +1,18 @@
 //
-//  ORGRemoteLocationManager.m
+//  ORGRemoteLocationProviderProxy.m
 //  organismo
 //
 //  Created by Jon Gabilondo on 09/04/2016.
 //  Copyright © 2016 organismo-mobile. All rights reserved.
 //
 
-#import "ORGRemoteLocationManager.h"
+#import "ORGRemoteLocationProviderProxy.h"
 #import "ORGOutboundMessageQueue.h"
 #import "ORGMessageBuilder.h"
 #import "CLBeaconRegion+ORG.h"
 
-@interface ORGRemoteLocationManager()
-@property (nonatomic) NSMutableArray *locationManagers;
+@interface ORGRemoteLocationProviderProxy()
+@property (nonatomic) NSMutableArray<NSDictionary<NSString*, NSValue*> *> * locationManagers; // Keep object and pointer to delete the object during dealloc.
 @property (nonatomic) CLLocation *location;
 @property (nonatomic) NSMapTable * regions; // Key is weak and is a CLRegion object. The value is a Boolean = YES if region contains location.
 
@@ -22,14 +22,15 @@
 - (void)broadcastExitRegion:(CLRegion*)region toLocationManager:(CLLocationManager*)manager;
 @end
 
-@implementation ORGRemoteLocationManager
+@implementation ORGRemoteLocationProviderProxy
 
 + (instancetype)sharedInstance
 {
-    static ORGRemoteLocationManager * singleton;
+    static ORGRemoteLocationProviderProxy * singleton;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        singleton = [[ORGRemoteLocationManager alloc] init];
+        singleton = [[ORGRemoteLocationProviderProxy alloc] init];
+        //singleton.locationManagers = [NSMutableArray array];
         singleton.locationManagers = [NSMutableArray array];
         singleton.regions = [NSMapTable weakToStrongObjectsMapTable];
     });
@@ -37,7 +38,35 @@
 }
 
 - (void)addLocalManager:(CLLocationManager*)manager {
-    [_locationManagers addObject:[NSValue valueWithNonretainedObject:manager]];
+    //[_locationManagers addObject:[NSValue valueWithNonretainedObject:manager]];
+    
+    [self.locationManagers addObject:@{@"object" : [NSValue valueWithNonretainedObject:manager],
+                                           @"pointer" : [NSValue valueWithPointer:(__bridge const void * _Nullable)(manager)]}];
+
+}
+
+- (void)removeLocalManager:(CLLocationManager*)manager {
+    
+    // remove the manager from our list.
+    for (NSDictionary<NSString*, NSValue*> * locationManagerDict in self.locationManagers) {
+        
+        // We could not use the value in "object", iOS would know that the object is in process on deallocation and would throw exception.
+        // Therefore we need to use the something that will not touch the object but will tell us if its the object we want to eliminate. "pointer" does the job.
+        NSValue * locationManagerPointerValue = locationManagerDict[@"pointer"];
+        if ( manager == locationManagerPointerValue.pointerValue) {
+            [self.locationManagers removeObject:locationManagerDict];
+            break;
+        }
+    }
+
+    // remove the manager from our list.
+//    for (NSValue * locationManagerValue in self.locationManagers) {
+//        __weak CLLocationManager * locationManager = [locationManagerValue nonretainedObjectValue];
+//        if ([self isEqual:locationManager]) {
+//            [self.locationManagers removeObject:locationManagerValue];
+//            break;
+//        }
+//    }
 }
 
 - (void)requestLocation {
@@ -100,13 +129,23 @@
 
 - (void)broadcastLocation:(CLLocation*)location {
     
+    self.location = location;
+    
     // Broadcast the new location
-    for (NSValue * locationManagerValue in _locationManagers) {
-        __weak CLLocationManager * locationManager = [locationManagerValue nonretainedObjectValue];
-        if (locationManager.delegate) {
+    for (NSDictionary<NSString*, NSValue*> * locationManagerDict in self.locationManagers) {
+        __weak CLLocationManager * locationManager = [locationManagerDict[@"object"] nonretainedObjectValue];
+        if (locationManager && locationManager.delegate) {
             [self broadcastLocation:location toLocationManager:locationManager];
         }
     }
+
+    // Broadcast the new location
+//    for (NSValue * locationManagerValue in _locationManagers) {
+//        __weak CLLocationManager * locationManager = [locationManagerValue nonretainedObjectValue];
+//        if (locationManager.delegate) {
+//            [self broadcastLocation:location toLocationManager:locationManager];
+//        }
+//    }
     
     // Broadcast changes in regions
     for (CLCircularRegion * region in _regions) {
@@ -135,31 +174,31 @@
      Property
      The minimum angular change (measured in degrees) required to generate new heading events.
      */
-    for (NSValue * locationManagerValue in _locationManagers) {
-        __weak CLLocationManager * locationManager = [locationManagerValue nonretainedObjectValue];
-        if (locationManager.delegate) {
-            [self broadcastHeading:heading toLocationManager:locationManager];
-        }
-    }
+//    for (NSValue * locationManagerValue in _locationManagers) {
+//        __weak CLLocationManager * locationManager = [locationManagerValue nonretainedObjectValue];
+//        if (locationManager.delegate) {
+//            [self broadcastHeading:heading toLocationManager:locationManager];
+//        }
+//    }
 }
 
 - (void)broadcastRegion:(CLRegion*)region event:(enum ORGRegionEventType)regionEventType {
     
-    for (NSValue * locationManagerValue in _locationManagers) {
-        __weak CLLocationManager * locationManager = [locationManagerValue nonretainedObjectValue];
-        if (locationManager.delegate) {
-            switch (regionEventType) {
-                case kEnter:
-                    [self broadcastEnterRegion:region toLocationManager:locationManager];
-                    break;
-                case kExit:
-                    [self broadcastExitRegion:region toLocationManager:locationManager];
-                    break;
-                default:
-                    break;
-            }
-        }
-    }
+//    for (NSValue * locationManagerValue in _locationManagers) {
+//        __weak CLLocationManager * locationManager = [locationManagerValue nonretainedObjectValue];
+//        if (locationManager.delegate) {
+//            switch (regionEventType) {
+//                case kEnter:
+//                    [self broadcastEnterRegion:region toLocationManager:locationManager];
+//                    break;
+//                case kExit:
+//                    [self broadcastExitRegion:region toLocationManager:locationManager];
+//                    break;
+//                default:
+//                    break;
+//            }
+//        }
+//    }
 }
 
 
@@ -202,6 +241,7 @@
         }
     }
 }
+
 
 
 @end

@@ -1,5 +1,5 @@
 //
-//  ORGRemoteLocationManager.h
+//  ORGRemoteLocationProviderProxy.h
 //  organismo
 //
 //  Created by Jon Gabilondo on 09/04/2016.
@@ -16,14 +16,15 @@ typedef NS_ENUM(NSUInteger, ORGRegionEventType) {
     kExit
 };
 
-@interface ORGRemoteLocationManager : ORGRemoteController
+@interface ORGRemoteLocationProviderProxy : ORGRemoteController
 
 @property(readonly, nonatomic, copy, nullable) CLLocation *location;
 @property(readonly, nonatomic, copy, nullable) CLHeading *heading;
 
-+ (instancetype)sharedInstance;
++ (instancetype _Nonnull )sharedInstance;
 
-- (void)addLocalManager:(CLLocationManager*)manager;
+- (void)addLocalManager:(CLLocationManager*_Nonnull)manager;
+- (void)removeLocalManager:(CLLocationManager*_Nonnull)manager;
 
 - (void)requestLocation;
 - (void)startUpdatingLocation;

@@ -133,8 +133,8 @@
 		03DA67341CBD021200E26CAA /* ORGRemoteAltimeter.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA672A1CBD021200E26CAA /* ORGRemoteAltimeter.m */; };
 		03DA67351CBD021200E26CAA /* ORGRemoteController.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA672B1CBD021200E26CAA /* ORGRemoteController.h */; };
 		03DA67361CBD021200E26CAA /* ORGRemoteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA672C1CBD021200E26CAA /* ORGRemoteController.m */; };
-		03DA67371CBD021200E26CAA /* ORGRemoteLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA672D1CBD021200E26CAA /* ORGRemoteLocationManager.h */; };
-		03DA67381CBD021200E26CAA /* ORGRemoteLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA672E1CBD021200E26CAA /* ORGRemoteLocationManager.m */; };
+		03DA67371CBD021200E26CAA /* ORGRemoteLocationProviderProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA672D1CBD021200E26CAA /* ORGRemoteLocationProviderProxy.h */; };
+		03DA67381CBD021200E26CAA /* ORGRemoteLocationProviderProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA672E1CBD021200E26CAA /* ORGRemoteLocationProviderProxy.m */; };
 		03DA67391CBD021200E26CAA /* ORGRemoteMotionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA672F1CBD021200E26CAA /* ORGRemoteMotionManager.h */; };
 		03DA673A1CBD021200E26CAA /* ORGRemoteMotionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67301CBD021200E26CAA /* ORGRemoteMotionManager.m */; };
 		03DA673B1CBD021200E26CAA /* ORGRemotePedometer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA67311CBD021200E26CAA /* ORGRemotePedometer.h */; };
@@ -339,8 +339,8 @@
 		03DA672A1CBD021200E26CAA /* ORGRemoteAltimeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRemoteAltimeter.m; sourceTree = "<group>"; };
 		03DA672B1CBD021200E26CAA /* ORGRemoteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRemoteController.h; sourceTree = "<group>"; };
 		03DA672C1CBD021200E26CAA /* ORGRemoteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRemoteController.m; sourceTree = "<group>"; };
-		03DA672D1CBD021200E26CAA /* ORGRemoteLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRemoteLocationManager.h; sourceTree = "<group>"; };
-		03DA672E1CBD021200E26CAA /* ORGRemoteLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRemoteLocationManager.m; sourceTree = "<group>"; };
+		03DA672D1CBD021200E26CAA /* ORGRemoteLocationProviderProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRemoteLocationProviderProxy.h; sourceTree = "<group>"; };
+		03DA672E1CBD021200E26CAA /* ORGRemoteLocationProviderProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRemoteLocationProviderProxy.m; sourceTree = "<group>"; };
 		03DA672F1CBD021200E26CAA /* ORGRemoteMotionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRemoteMotionManager.h; sourceTree = "<group>"; };
 		03DA67301CBD021200E26CAA /* ORGRemoteMotionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRemoteMotionManager.m; sourceTree = "<group>"; };
 		03DA67311CBD021200E26CAA /* ORGRemotePedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRemotePedometer.h; sourceTree = "<group>"; };
@@ -495,8 +495,8 @@
 			children = (
 				03DA672B1CBD021200E26CAA /* ORGRemoteController.h */,
 				03DA672C1CBD021200E26CAA /* ORGRemoteController.m */,
-				03DA672D1CBD021200E26CAA /* ORGRemoteLocationManager.h */,
-				03DA672E1CBD021200E26CAA /* ORGRemoteLocationManager.m */,
+				03DA672D1CBD021200E26CAA /* ORGRemoteLocationProviderProxy.h */,
+				03DA672E1CBD021200E26CAA /* ORGRemoteLocationProviderProxy.m */,
 				03DA672F1CBD021200E26CAA /* ORGRemoteMotionManager.h */,
 				03DA67301CBD021200E26CAA /* ORGRemoteMotionManager.m */,
 				03DA67291CBD021200E26CAA /* ORGRemoteAltimeter.h */,
@@ -722,7 +722,7 @@
 				03DA673B1CBD021200E26CAA /* ORGRemotePedometer.h in Headers */,
 				035157361D3BA20D004260A1 /* UISwipeGestureRecognizer+ORG.h in Headers */,
 				039DA6D01D8EBA1300F6937A /* ORGGestureTap.h in Headers */,
-				03DA67371CBD021200E26CAA /* ORGRemoteLocationManager.h in Headers */,
+				03DA67371CBD021200E26CAA /* ORGRemoteLocationProviderProxy.h in Headers */,
 				033677E11D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.h in Headers */,
 				035157461D3BA736004260A1 /* UIControl+ORG.h in Headers */,
 				0320A0021D586CB40091FC2E /* ORGRequestElementInfo.h in Headers */,
@@ -812,6 +812,7 @@
 				TargetAttributes = {
 					03DA66861CBCEE4700E26CAA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = NRRF7234ZC;
 					};
 					03DA66901CBCEE4700E26CAA = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -1032,7 +1033,7 @@
 				033677E21D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m in Sources */,
 				039DA6D11D8EBA1300F6937A /* ORGGestureTap.m in Sources */,
 				032863D71D06DD5800EF2FA2 /* CMDeviceMotion+ORG.m in Sources */,
-				03DA67381CBD021200E26CAA /* ORGRemoteLocationManager.m in Sources */,
+				03DA67381CBD021200E26CAA /* ORGRemoteLocationProviderProxy.m in Sources */,
 				03DA670D1CBD01C100E26CAA /* ORGMessageBuilder.m in Sources */,
 				03DA67031CBD018A00E26CAA /* ORGConstants.m in Sources */,
 				03B588B31D04082D0083DF15 /* NSDate+ORG.m in Sources */,
@@ -1119,7 +1120,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1161,7 +1162,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1175,7 +1176,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BA292CC67D06DC53A78A50F7 /* Pods-Organismo.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NRRF7234ZC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1231,6 +1234,7 @@
 			baseConfigurationReference = 90E05018FD35D81D274B954F /* Pods-Organismo.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NRRF7234ZC;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

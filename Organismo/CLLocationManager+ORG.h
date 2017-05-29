@@ -10,4 +10,7 @@
 
 @interface CLLocationManager (ORG)
 
++ (void)ORG_enableBypass;
++ (void)ORG_disableBypass;
+
 @end

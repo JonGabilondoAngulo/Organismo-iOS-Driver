@@ -89,6 +89,7 @@ static HTTPServer *httpServer;
                        // This allows browsers such as Safari to automatically discover our service.
                        //-
                        [httpServer setType:@"_http._tcp."];
+                       [httpServer setName:@"Organismo"];
 
                        [httpServer setConnectionClass:[ORGHTTPConnection class]];
                        [httpServer setPort:5567];

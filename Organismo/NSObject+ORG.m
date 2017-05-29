@@ -32,22 +32,44 @@
 
 + (BOOL)ORG_swizzleMethod:(SEL)origSelector withMethod:(SEL)newSelector ofClass:(Class)newSelectorClass {
     BOOL success = NO;
-    Method origMethod = class_getInstanceMethod(self, origSelector);
+    Method origMethod = class_getInstanceMethod(self.class, origSelector);
     Method newMethod = class_getInstanceMethod(newSelectorClass, newSelector);
     
     if (origMethod && newMethod) {
-        if (class_addMethod(self, origSelector, method_getImplementation(newMethod), method_getTypeEncoding(newMethod))) {
-            class_replaceMethod(self, newSelector, method_getImplementation(origMethod), method_getTypeEncoding(origMethod));
-        } else {
-            method_exchangeImplementations(origMethod, newMethod);
+        if (class_addMethod(self.class, newSelector, method_getImplementation(origMethod), method_getTypeEncoding(origMethod))) {
+            class_replaceMethod(self.class, origSelector, method_getImplementation(newMethod), method_getTypeEncoding(newMethod));
         }
-        success = YES;
     }
+//    Method origMethod = class_getInstanceMethod(self.class, origSelector);
+//    Method newMethod = class_getInstanceMethod(newSelectorClass, newSelector);
+//    
+//    if (origMethod && newMethod) {
+//        if (class_addMethod(self.class, newSelector, method_getImplementation(newMethod), method_getTypeEncoding(newMethod))) {
+//            method_exchangeImplementations(origMethod, newMethod);
+//            success = YES;
+//        }
+//    }
     if (!success) {
         NSLog(@"ERROR INSTRUMENTING CLASS:%@ Method:%@. ", self.class, NSStringFromSelector(origSelector));
     }
     return success;
 }
+
+//+ (BOOL)ORG_swizzleMethod:(SEL)origSelector ofClass:(Class)orginalClass withMethod:(SEL)newSelector ofClass:(Class)newSelectorClass {
+//    BOOL success = NO;
+//    Method origMethod = class_getInstanceMethod(self.class, origSelector);
+//    Method newMethod = class_getInstanceMethod(newSelectorClass.class, newSelector);
+//    
+//    if (origMethod && newMethod) {
+//        if (class_addMethod(self.class, newSelector, method_getImplementation(origMethod), method_getTypeEncoding(origMethod))) {
+//            class_replaceMethod(self.class, origSelector, method_getImplementation(newMethod), method_getTypeEncoding(newMethod));
+//        }
+//    }
+//    if (!success) {
+//        NSLog(@"ERROR INSTRUMENTING CLASS:%@ Method:%@. ", self.class, NSStringFromSelector(origSelector));
+//    }
+//    return success;
+//}
 
 
 /**

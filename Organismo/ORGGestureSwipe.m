@@ -13,7 +13,7 @@
 @implementation ORGGestureSwipe
 
 - (void)execute {
-    
+#if ORG_USER_GESTURES_ENABLED
     NSDictionary * location = self.parameters[@"location"];
     NSString * direction = self.parameters[@"direction"];
     if (location && direction) {
@@ -32,6 +32,7 @@
         
         //[kifTestActor swipeScreenAtPoint:[location ORG_CGPoint] direction:kDirection];
     }
+#endif
 }
 
 @end

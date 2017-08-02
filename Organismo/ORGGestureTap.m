@@ -14,12 +14,13 @@
 
 
 - (void)execute {
-    
+#if ORG_USER_GESTURES_ENABLED
     NSDictionary * location = self.parameters[@"location"];
     if (location) {
         KIFUITestActor * kifTestActor = [[KIFUITestActor alloc] init]; // Unorthodox usage of KIF !
         [kifTestActor tapScreenAtPoint:[location ORG_CGPoint]];
     }
+#endif
 }
 
 

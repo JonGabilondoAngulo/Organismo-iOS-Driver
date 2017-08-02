@@ -23,4 +23,6 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 static const int ddLogLevel = LOG_LEVEL_WARN;
 #endif
 
+#define ORG_USER_GESTURES_ENABLED 0
+
 #endif /* OrganismoPrefixHeader_pch */

@@ -21,7 +21,7 @@
         properties[@"currentTitle"] = self.currentTitle;
     }
     if (self.currentAttributedTitle) {
-        properties[@"currentAttributedTitle"] = self.currentAttributedTitle;
+        properties[@"currentAttributedTitle"] = self.currentAttributedTitle.string;
     }
     if (self.currentTitleColor) {
         properties[@"currentTitleColor"] = self.currentTitleColor.description;

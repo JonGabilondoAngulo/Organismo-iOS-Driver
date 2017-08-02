@@ -47,7 +47,6 @@
 		035157471D3BA736004260A1 /* UIControl+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157451D3BA736004260A1 /* UIControl+ORG.m */; };
 		0357A11E1CBEE52C00A35556 /* CLHeading+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 0357A11C1CBEE52C00A35556 /* CLHeading+ORG.h */; };
 		0357A11F1CBEE52C00A35556 /* CLHeading+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 0357A11D1CBEE52C00A35556 /* CLHeading+ORG.m */; };
-		035C14B81D94042E00B0239D /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 035C14AB1D94040B00B0239D /* libKIF.a */; };
 		039DA6CC1D8EB9F800F6937A /* ORGGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DA6CA1D8EB9F800F6937A /* ORGGesture.h */; };
 		039DA6CD1D8EB9F800F6937A /* ORGGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DA6CB1D8EB9F800F6937A /* ORGGesture.m */; };
 		039DA6D01D8EBA1300F6937A /* ORGGestureTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DA6CE1D8EBA1300F6937A /* ORGGestureTap.h */; };
@@ -365,7 +364,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				035C14B81D94042E00B0239D /* libKIF.a in Frameworks */,
 				03A89A6F1D92CCE7000AB035 /* UIKit.framework in Frameworks */,
 				CA4C4D307B138D6A6FC4E0CF /* libPods-Organismo.a in Frameworks */,
 			);

@@ -13,7 +13,7 @@
 @implementation ORGGestureLongPress
 
 - (void)execute {
-    
+#if ORG_USER_GESTURES_ENABLED
     NSDictionary * location = self.parameters[@"location"];
     NSNumber * durationNumber = self.parameters[@"duration"];
     if (location) {
@@ -21,6 +21,7 @@
         KIFUITestActor * kifTestActor = [[KIFUITestActor alloc] init]; // Unorthodox usage of KIF !
         [kifTestActor longPressScreenAtPoint:[location ORG_CGPoint] duration:duration];
     }
+#endif
 }
 
 @end

@@ -141,6 +141,8 @@
 		03DA673E1CBD022200E26CAA /* OrganismoPrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 03DA673D1CBD022200E26CAA /* OrganismoPrefixHeader.pch */; };
 		03DA67411CBD065C00E26CAA /* CMAltitudeData+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA673F1CBD065C00E26CAA /* CMAltitudeData+ORG.h */; };
 		03DA67421CBD065C00E26CAA /* CMAltitudeData+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03DA67401CBD065C00E26CAA /* CMAltitudeData+ORG.m */; };
+		03EC44741FB1E5B5009FB435 /* ORGRequestSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 03EC44721FB1E5B5009FB435 /* ORGRequestSystemInfo.h */; };
+		03EC44751FB1E5B5009FB435 /* ORGRequestSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EC44731FB1E5B5009FB435 /* ORGRequestSystemInfo.m */; };
 		03F1A7221DA2F0C200711E51 /* UILabel+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F1A7201DA2F0C200711E51 /* UILabel+ORG.h */; };
 		03F1A7231DA2F0C200711E51 /* UILabel+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F1A7211DA2F0C200711E51 /* UILabel+ORG.m */; };
 		03F87CDB1CCC0A740018EFDC /* CLBeaconRegion+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03F87CD91CCC0A740018EFDC /* CLBeaconRegion+ORG.h */; };
@@ -347,6 +349,8 @@
 		03DA673D1CBD022200E26CAA /* OrganismoPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganismoPrefixHeader.pch; sourceTree = "<group>"; };
 		03DA673F1CBD065C00E26CAA /* CMAltitudeData+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMAltitudeData+ORG.h"; sourceTree = "<group>"; };
 		03DA67401CBD065C00E26CAA /* CMAltitudeData+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMAltitudeData+ORG.m"; sourceTree = "<group>"; };
+		03EC44721FB1E5B5009FB435 /* ORGRequestSystemInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORGRequestSystemInfo.h; sourceTree = "<group>"; };
+		03EC44731FB1E5B5009FB435 /* ORGRequestSystemInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORGRequestSystemInfo.m; sourceTree = "<group>"; };
 		03F1A7201DA2F0C200711E51 /* UILabel+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ORG.h"; sourceTree = "<group>"; };
 		03F1A7211DA2F0C200711E51 /* UILabel+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ORG.m"; sourceTree = "<group>"; };
 		03F87CD91CCC0A740018EFDC /* CLBeaconRegion+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLBeaconRegion+ORG.h"; sourceTree = "<group>"; };
@@ -645,6 +649,8 @@
 				03DA671C1CBD01F700E26CAA /* ORGRequestScreenshot.m */,
 				0320A0001D586CB40091FC2E /* ORGRequestElementInfo.h */,
 				0320A0011D586CB40091FC2E /* ORGRequestElementInfo.m */,
+				03EC44721FB1E5B5009FB435 /* ORGRequestSystemInfo.h */,
+				03EC44731FB1E5B5009FB435 /* ORGRequestSystemInfo.m */,
 				039DA6D61D8EBC3000F6937A /* ORGRequestTap.h */,
 				039DA6D71D8EBC3000F6937A /* ORGRequestTap.m */,
 				03C2CCFE1E9395DB00508AD9 /* ORGRequestLongPress.h */,
@@ -706,6 +712,7 @@
 				03C2CD0E1E93969800508AD9 /* ORGGestureLongPress.h in Headers */,
 				03DA66DA1CBD011900E26CAA /* ORGInBoundMessageProcessor.h in Headers */,
 				03DA67391CBD021200E26CAA /* ORGRemoteMotionManager.h in Headers */,
+				03EC44741FB1E5B5009FB435 /* ORGRequestSystemInfo.h in Headers */,
 				03DA66FE1CBD015D00E26CAA /* UIApplication+ORG.h in Headers */,
 				03DA66D81CBD011900E26CAA /* ORGHTTPConnection.h in Headers */,
 				039DA6D81D8EBC3000F6937A /* ORGRequestTap.h in Headers */,
@@ -1043,6 +1050,7 @@
 				033677F21D3E67F1009B86A4 /* UINibDecoderORG.m in Sources */,
 				03DA66B71CBD00C300E26CAA /* ORGCoreMotion.m in Sources */,
 				03DA66FD1CBD015D00E26CAA /* MKMapView+ORG.m in Sources */,
+				03EC44751FB1E5B5009FB435 /* ORGRequestSystemInfo.m in Sources */,
 				03209FE51D574C300091FC2E /* UISegmentedControl+ORG.m in Sources */,
 				03DA66F31CBD015D00E26CAA /* CMAltimeter+ORG.m in Sources */,
 				03DA67281CBD01F700E26CAA /* ORGRequestScreenshot.m in Sources */,

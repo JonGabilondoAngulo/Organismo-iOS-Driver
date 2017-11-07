@@ -12,6 +12,7 @@
 #import "ORGRequestElementTree.h"
 #import "ORGRequestScreenshot.h"
 #import "ORGRequestDeviceInfo.h"
+#import "ORGRequestSystemInfo.h"
 #import "ORGRequestAppInfo.h"
 #import "ORGRequestElementInfo.h"
 #import "ORGRequestTap.h"
@@ -29,6 +30,8 @@
         request = [[ORGRequestElementTree alloc] initWith:message];
     } else if ([requestName ORG_isEqualToStringIgnoreCase:@"screenshot"]) {
         request = [[ORGRequestScreenshot alloc] initWith:message];
+    } else if ([requestName ORG_isEqualToStringIgnoreCase:@"system-info"]) {
+        request = [[ORGRequestSystemInfo alloc] initWith:message];
     } else if ([requestName ORG_isEqualToStringIgnoreCase:@"device-info"]) {
         request = [[ORGRequestDeviceInfo alloc] initWith:message];
     } else if ([requestName ORG_isEqualToStringIgnoreCase:@"app-info"]) {

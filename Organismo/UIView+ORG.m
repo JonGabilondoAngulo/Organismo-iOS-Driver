@@ -115,6 +115,9 @@ static NSString * const AORGAssociatedKey_Segues = @"ORG_Segues";
         }
     }
     
+    // Some advanced info
+    properties[@"pointer"] = [NSString stringWithFormat:@"%p", self];
+    
     return properties;
 }
 

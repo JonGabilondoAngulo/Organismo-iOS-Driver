@@ -13,15 +13,18 @@ PODS:
     - CocoaLumberjack/Core
   - CocoaLumberjack/Extensions (2.4.0):
     - CocoaLumberjack/Default
+  - SystemServices (2.0.1)
 
 DEPENDENCIES:
   - CocoaHTTPServer (~> 2.3)
+  - SystemServices (~> 2.0.1)
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: 3baeb1ddd969f81cf9fca81053ae49ef2d1cbbfa
   CocoaHTTPServer: 5624681fc3473d43b18202f635f9b3abb013b530
   CocoaLumberjack: aa9dcab71bdf9eaf2a63bbd9ddc87863efe45457
+  SystemServices: 7af348493ece8951449b476c41532df72569b181
 
-PODFILE CHECKSUM: 1522209baac36b1838e778ee16bf19182ea0c1e7
+PODFILE CHECKSUM: 7d76dce53271f5af29055c727d2968c076457d21
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.1

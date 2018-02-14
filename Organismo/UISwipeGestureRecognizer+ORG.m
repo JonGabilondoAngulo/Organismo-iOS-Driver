@@ -19,10 +19,10 @@
 
     NSString * direction = @"";
     switch (self.direction) {
-        case UISwipeGestureRecognizerDirectionRight: @"Right"; break;
-        case UISwipeGestureRecognizerDirectionLeft: @"Left"; break;
-        case UISwipeGestureRecognizerDirectionUp: @"Up"; break;
-        case UISwipeGestureRecognizerDirectionDown: @"Down"; break;
+        case UISwipeGestureRecognizerDirectionRight: direction = @"Right"; break;
+        case UISwipeGestureRecognizerDirectionLeft: direction = @"Left"; break;
+        case UISwipeGestureRecognizerDirectionUp: direction = @"Up"; break;
+        case UISwipeGestureRecognizerDirectionDown: direction = @"Down"; break;
         default: break;
     }
     dictionary[@"direction"] = direction;

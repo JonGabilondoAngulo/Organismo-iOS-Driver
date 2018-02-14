@@ -11,6 +11,9 @@
       location = "container:"
       name = "SampleApps">
       <FileRef
+         location = "group:SampleApps/UIKitCatalogiOSCreatingandCustomizingUIKitControls/Objective-C/UIKitCatalog.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:SampleApps/DPMeterView-master/Example/Example.xcodeproj">
       </FileRef>
       <FileRef
@@ -24,9 +27,6 @@
       </FileRef>
       <FileRef
          location = "group:SampleApps/Breadcrumb/Breadcrumb.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:SampleApps/UIKitCatalogiOSCreatingandCustomizingUIKitControls/Objective-C/UIKitCatalog.xcodeproj">
       </FileRef>
    </Group>
 </Workspace>

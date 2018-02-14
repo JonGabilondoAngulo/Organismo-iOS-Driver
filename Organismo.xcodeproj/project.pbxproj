@@ -53,6 +53,8 @@
 		039DA6D11D8EBA1300F6937A /* ORGGestureTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DA6CF1D8EBA1300F6937A /* ORGGestureTap.m */; };
 		039DA6D81D8EBC3000F6937A /* ORGRequestTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DA6D61D8EBC3000F6937A /* ORGRequestTap.h */; };
 		039DA6D91D8EBC3000F6937A /* ORGRequestTap.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DA6D71D8EBC3000F6937A /* ORGRequestTap.m */; };
+		03A06CC92033752D00751692 /* ORGRequestClassHierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A06CC72033752D00751692 /* ORGRequestClassHierarchy.h */; };
+		03A06CCA2033752D00751692 /* ORGRequestClassHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A06CC82033752D00751692 /* ORGRequestClassHierarchy.m */; };
 		03A89A6F1D92CCE7000AB035 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033677F31D3E6974009B86A4 /* UIKit.framework */; };
 		03B588B21D04082D0083DF15 /* NSDate+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03B588B01D04082D0083DF15 /* NSDate+ORG.h */; };
 		03B588B31D04082D0083DF15 /* NSDate+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B588B11D04082D0083DF15 /* NSDate+ORG.m */; };
@@ -259,6 +261,8 @@
 		039DA6CF1D8EBA1300F6937A /* ORGGestureTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGGestureTap.m; sourceTree = "<group>"; };
 		039DA6D61D8EBC3000F6937A /* ORGRequestTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequestTap.h; sourceTree = "<group>"; };
 		039DA6D71D8EBC3000F6937A /* ORGRequestTap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestTap.m; sourceTree = "<group>"; };
+		03A06CC72033752D00751692 /* ORGRequestClassHierarchy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORGRequestClassHierarchy.h; sourceTree = "<group>"; };
+		03A06CC82033752D00751692 /* ORGRequestClassHierarchy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORGRequestClassHierarchy.m; sourceTree = "<group>"; };
 		03B588B01D04082D0083DF15 /* NSDate+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ORG.h"; sourceTree = "<group>"; };
 		03B588B11D04082D0083DF15 /* NSDate+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ORG.m"; sourceTree = "<group>"; };
 		03C2CCFE1E9395DB00508AD9 /* ORGRequestLongPress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGRequestLongPress.h; sourceTree = "<group>"; };
@@ -657,6 +661,8 @@
 				03C2CCFF1E9395DB00508AD9 /* ORGRequestLongPress.m */,
 				03C2CD081E9395F200508AD9 /* ORGRequestSwipe.h */,
 				03C2CD091E9395F200508AD9 /* ORGRequestSwipe.m */,
+				03A06CC72033752D00751692 /* ORGRequestClassHierarchy.h */,
+				03A06CC82033752D00751692 /* ORGRequestClassHierarchy.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -701,6 +707,7 @@
 				03DA67331CBD021200E26CAA /* ORGRemoteAltimeter.h in Headers */,
 				03DA671F1CBD01F700E26CAA /* ORGRequestAppInfo.h in Headers */,
 				03F87CDB1CCC0A740018EFDC /* CLBeaconRegion+ORG.h in Headers */,
+				03A06CC92033752D00751692 /* ORGRequestClassHierarchy.h in Headers */,
 				03DA66B81CBD00C300E26CAA /* ORGScreenshot.h in Headers */,
 				03DA67231CBD01F700E26CAA /* ORGRequestElementTree.h in Headers */,
 				0351572A1D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h in Headers */,
@@ -1013,6 +1020,7 @@
 				03DA66DF1CBD011900E26CAA /* ORGOutboundMessageQueue.m in Sources */,
 				039DA6D91D8EBC3000F6937A /* ORGRequestTap.m in Sources */,
 				03C2CD011E9395DB00508AD9 /* ORGRequestLongPress.m in Sources */,
+				03A06CCA2033752D00751692 /* ORGRequestClassHierarchy.m in Sources */,
 				03DA67361CBD021200E26CAA /* ORGRemoteController.m in Sources */,
 				0357A11F1CBEE52C00A35556 /* CLHeading+ORG.m in Sources */,
 				03DA671E1CBD01F700E26CAA /* ORGRequest.m in Sources */,

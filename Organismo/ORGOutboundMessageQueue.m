@@ -19,7 +19,6 @@
 @implementation ORGOutboundMessageQueue
 
 + (instancetype)sharedInstance {
-    
     static ORGOutboundMessageQueue * singleton;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -32,7 +31,6 @@
 }
 
 - (void)postMessage:(ORGMessage*)message {
-   
     NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:self
                                                                             selector:@selector(send:)
                                                                               object:message];
@@ -43,7 +41,6 @@
 #pragma mark Private
 
 - (void)send:(ORGMessage*)message {
-    
     NSString * messageStr = [message serialize];
     [_webSocket sendMessage:messageStr];
 }

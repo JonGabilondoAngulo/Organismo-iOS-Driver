@@ -16,7 +16,6 @@
 @implementation ORGInBoundMessageProcessor
 
 + (instancetype)sharedInstance {
-    
     static ORGInBoundMessageProcessor * singleton;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -29,7 +28,6 @@
 
 
 - (void)processMessage:(ORGMessage*)message {
-    
     NSInvocationOperation *operation = [[NSInvocationOperation alloc] initWithTarget:message
                                                                             selector:@selector(process)
                                                                               object:nil];

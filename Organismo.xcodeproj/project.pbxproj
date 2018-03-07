@@ -781,6 +781,7 @@
 				03DA66841CBCEE4700E26CAA /* Headers */,
 				03DA66851CBCEE4700E26CAA /* Resources */,
 				5245D03821B1B032E2CEF46C /* [CP] Copy Pods Resources */,
+				033276E42035DD0A005A56F8 /* Copy Product to dist folder */,
 			);
 			buildRules = (
 			);
@@ -919,6 +920,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		033276E42035DD0A005A56F8 /* Copy Product to dist folder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Product to dist folder";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -d ./dist ] ; then\n    rm -R dist\nfi\nmkdir dist\ncp -r $BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME ./dist";
+		};
 		482F3D785869BD7261ACCE3F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

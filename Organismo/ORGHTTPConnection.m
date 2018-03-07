@@ -10,9 +10,7 @@
 
 @implementation ORGHTTPConnection
 
-- (WebSocket *)webSocketForURI:(NSString *)path
-{
-    
+- (WebSocket *)webSocketForURI:(NSString *)path {
     WebSocket * webSocket;
 	if([path isEqualToString:@"/main"]) {
         webSocket = [[ORGMainWebSocket alloc] initWithRequest:request socket:asyncSocket];

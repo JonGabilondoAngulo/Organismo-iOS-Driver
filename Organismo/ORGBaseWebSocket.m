@@ -7,10 +7,7 @@
 
 @implementation ORGBaseWebSocket
 
-
-
-- (void)didReceiveMessage:(NSString *)msg
-{
+- (void)didReceiveMessage:(NSString *)msg {
     if (msg == nil) {
         return;
     }
@@ -26,8 +23,7 @@
     }
 }
 
-- (void)dispatchMessage:(NSDictionary *)messageDict
-{
+- (void)dispatchMessage:(NSDictionary *)messageDict {
     // subclasses override
 }
 

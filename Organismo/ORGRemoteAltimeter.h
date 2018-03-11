@@ -8,13 +8,17 @@
 
 #import "ORGRemoteController.h"
 
+@class ORGMainWebSocket;
+
+
 @interface ORGRemoteAltimeter : ORGRemoteController
+
+@property (nonatomic) ORGMainWebSocket * webSocket;
 
 + (instancetype)sharedInstance;
 
 - (void)startRelativeAltitudeUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMAltitudeHandler)handler altimeter:(CMAltimeter*)altimeter;
 - (void)stopRelativeAltitudeUpdates:(CMAltimeter*)altimeter;
-
 - (void)broadcast:(CMAltitudeData*)altitudeData;
 
 @end

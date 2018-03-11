@@ -148,10 +148,10 @@ static HTTPServer *httpServer;
             break;
     }
 
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildNotification:@"orientation-change"
-                                                                                withParameters:@{@"orientation":orientationStr,
-                                                                                                 @"screenSize":[NSDictionary ORG_createWithCGSize:[UIScreen mainScreen].bounds.size]
-                                                                                                 }]];
+//    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildNotification:@"orientation-change"
+//                                                                                withParameters:@{@"orientation":orientationStr,
+//                                                                                                 @"screenSize":[NSDictionary ORG_createWithCGSize:[UIScreen mainScreen].bounds.size]
+//                                                                                                 }]];
 }
 
 @end

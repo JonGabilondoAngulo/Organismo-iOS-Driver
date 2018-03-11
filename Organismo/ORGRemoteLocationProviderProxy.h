@@ -16,10 +16,13 @@ typedef NS_ENUM(NSUInteger, ORGRegionEventType) {
     kExit
 };
 
+@class ORGMainWebSocket;
+
 @interface ORGRemoteLocationProviderProxy : ORGRemoteController
 
 @property(readonly, nonatomic, copy, nullable) CLLocation *location;
 @property(readonly, nonatomic, copy, nullable) CLHeading *heading;
+@property (nonatomic) ORGMainWebSocket * webSocket;
 
 + (instancetype _Nonnull )sharedInstance;
 

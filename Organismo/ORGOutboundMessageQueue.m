@@ -13,21 +13,30 @@
 @property (nonatomic) NSOperationQueue * queue;
 @property (nonatomic) ORGMainWebSocket * webSocket;
 - (void)send:(ORGMessage*)message;
-- (void)suspend:(BOOL)value;
 @end
 
 @implementation ORGOutboundMessageQueue
 
-+ (instancetype)sharedInstance {
-    static ORGOutboundMessageQueue * singleton;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        singleton = [[ORGOutboundMessageQueue alloc] init];
-        singleton.queue = [[NSOperationQueue alloc] init];
-        [singleton.queue setMaxConcurrentOperationCount:1];
-        singleton.queue.suspended = YES;
-    });
-    return singleton;
+//+ (instancetype)sharedInstance {
+//    static ORGOutboundMessageQueue * singleton;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        singleton = [[ORGOutboundMessageQueue alloc] init];
+//        singleton.queue = [[NSOperationQueue alloc] init];
+//        [singleton.queue setMaxConcurrentOperationCount:1];
+//        singleton.queue.suspended = YES;
+//    });
+//    return singleton;
+//}
+
+- (instancetype)initWithWebSocket:(ORGMainWebSocket *)webSocket {
+    if (self = [super init]) {
+        _queue = [[NSOperationQueue alloc] init];
+        [_queue setMaxConcurrentOperationCount:1];
+        _queue.suspended = YES;
+        _webSocket = webSocket;
+    }
+    return self;
 }
 
 - (void)postMessage:(ORGMessage*)message {
@@ -46,17 +55,6 @@
 }
 - (void)suspend:(BOOL)value {
     _queue.suspended = value;
-}
-
-#pragma mark @protocol WebSocketDelegate
-
-- (void)webSocketDidOpen:(WebSocket *)ws {
-    _webSocket = ws;
-    [self suspend:NO];
-}
-- (void)webSocketDidClose:(WebSocket *)ws {
-    _webSocket = nil;
-    [self suspend:YES];
 }
 
 @end

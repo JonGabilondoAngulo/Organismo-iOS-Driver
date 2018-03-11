@@ -43,7 +43,10 @@
         request = [[ORGRequestTap alloc] initWith:message];
     } else if ([requestName ORG_isEqualToStringIgnoreCase:@"long-press"]) {
         request = [[ORGRequestLongPress alloc] initWith:message];
-    } else if ([requestName ORG_isEqualToStringIgnoreCase:@"swipe-left"] || [requestName ORG_isEqualToStringIgnoreCase:@"swipe-right"] || [requestName ORG_isEqualToStringIgnoreCase:@"swipe-up"] || [requestName ORG_isEqualToStringIgnoreCase:@"swipe-down"]) {
+    } else if ([requestName ORG_isEqualToStringIgnoreCase:@"swipe-left"] ||
+               [requestName ORG_isEqualToStringIgnoreCase:@"swipe-right"] ||
+               [requestName ORG_isEqualToStringIgnoreCase:@"swipe-up"] ||
+               [requestName ORG_isEqualToStringIgnoreCase:@"swipe-down"]) {
         request = [[ORGRequestSwipe alloc] initWith:message];
     } else if ([requestName ORG_isEqualToStringIgnoreCase:@"class-hierarchy"]) {
         request = [[ORGRequestClassHierarchy alloc] initWith:message];

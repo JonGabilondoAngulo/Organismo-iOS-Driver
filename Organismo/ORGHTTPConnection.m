@@ -11,15 +11,16 @@
 @implementation ORGHTTPConnection
 
 - (WebSocket *)webSocketForURI:(NSString *)path {
-    WebSocket * webSocket;
-	if([path isEqualToString:@"/main"]) {
+    ORGMainWebSocket * webSocket;
+	if ([path isEqualToString:@"/main"] || [path isEqualToString:@"/second"] || [path isEqualToString:@"/third"]) {
         webSocket = [[ORGMainWebSocket alloc] initWithRequest:request socket:asyncSocket];
-        webSocket.delegate = [ORGOutboundMessageQueue sharedInstance];
+        webSocket.outboundQueue = [[ORGOutboundMessageQueue alloc] initWithWebSocket:webSocket];
+        webSocket.delegate = webSocket;
     } else {
-        webSocket = [super webSocketForURI:path];
+        webSocket = (ORGMainWebSocket*)[super webSocketForURI:path];
     }
 
-    return webSocket;
+    return (WebSocket *)webSocket;
 }
 
 

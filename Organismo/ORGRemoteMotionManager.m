@@ -14,8 +14,7 @@
 @implementation ORGRemoteMotionManager
 
 
-+ (instancetype)sharedInstance
-{
++ (instancetype)sharedInstance {
     static ORGRemoteMotionManager * singleton;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -29,19 +28,24 @@
     _accelerometerActive = YES;
     _accelerometerHandler = nil;
     _accelerometerQueue = nil;
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
+    [self.webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
 }
+
 - (void)startAccelerometerUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMAccelerometerHandler)handler {
     _accelerometerActive = YES;
     _accelerometerHandler = handler;
     _accelerometerQueue = queue;
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
+    [self.webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
 }
+
 - (void)stopAccelerometerUpdates {
     _accelerometerActive = NO;
     _accelerometerHandler = nil;
     _accelerometerQueue = nil;
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopAccelerometerUpdates"]];
+    [self.webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"stopAccelerometerUpdates"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopAccelerometerUpdates"]];
 }
 
 
@@ -51,17 +55,20 @@
     _deviceMotionHandler = nil;
     _deviceMotionActive = YES;
 }
+
 - (void)startDeviceMotionUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMDeviceMotionHandler)handler {
     _deviceMotionQueue = queue;
     _deviceMotionHandler = handler;
     _deviceMotionActive = YES;
 }
+
 - (void)startDeviceMotionUpdatesUsingReferenceFrame:(CMAttitudeReferenceFrame)referenceFrame toQueue:(NSOperationQueue *)queue withHandler:(CMDeviceMotionHandler)handler {
     _deviceMotionQueue = queue;
     _deviceMotionHandler = handler;
     _attitudeReferenceFrame = referenceFrame;
     _deviceMotionActive = YES;
 }
+
 - (void)stopDeviceMotionUpdates {
     _deviceMotionQueue = nil;
     _deviceMotionHandler = nil;
@@ -86,11 +93,13 @@
     _gyroQueue = nil;
     _gyroHandler = nil;
 }
+
 - (void)startGyroUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMGyroHandler)handler {
     _gyroActive = YES;
     _gyroQueue = queue;
     _gyroHandler = handler;
 }
+
 - (void)stopGyroUpdates {
     _gyroActive = NO;
     _gyroQueue = nil;
@@ -104,11 +113,13 @@
     _magnetometerQueue = nil;
     _magnetometerHandler = nil;
 }
+
 - (void)startMagnetometerUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMMagnetometerHandler)handler {
     _magnetometerActive = YES;
     _magnetometerQueue = queue;
     _magnetometerHandler = nil;
 }
+
 - (void)stopMagnetometerUpdates {
     _magnetometerActive = NO;
     _magnetometerQueue = nil;

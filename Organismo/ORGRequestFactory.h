@@ -9,8 +9,10 @@
 #import "ORGMessage.h"
 #import "ORGRequest.h"
 
+@class ORGMainWebSocket;
+
 @interface ORGRequestFactory : ORGMessage
 
-+ (ORGRequest*)createRequestWith:(NSDictionary*)messageDict;
++ (ORGRequest*)createRequestWith:(NSDictionary*)messageDict andWebSocket:(ORGMainWebSocket*)webSocket;
 
 @end

@@ -8,11 +8,8 @@
 
 #import "ORGRemoteController.h"
 
-@class ORGMainWebSocket;
-
 @interface ORGRemoteMotionManager : ORGRemoteController
 
-@property (nonatomic) ORGMainWebSocket * webSocket;
 @property (nonatomic) BOOL remoteControllerEnabled;
 
 @property(readonly, nonatomic, getter=isAccelerometerActive) BOOL accelerometerActive;

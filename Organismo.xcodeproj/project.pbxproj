@@ -29,6 +29,10 @@
 		033677E21D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 033677E01D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m */; };
 		033677F11D3E67F1009B86A4 /* UINibDecoderORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 033677EF1D3E67F1009B86A4 /* UINibDecoderORG.h */; };
 		033677F21D3E67F1009B86A4 /* UINibDecoderORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 033677F01D3E67F1009B86A4 /* UINibDecoderORG.m */; };
+		03471F24205D413800B6735F /* ORGRequestDeviceOrientationFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 03471F22205D413800B6735F /* ORGRequestDeviceOrientationFeed.h */; };
+		03471F25205D413800B6735F /* ORGRequestDeviceOrientationFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 03471F23205D413800B6735F /* ORGRequestDeviceOrientationFeed.m */; };
+		03471F2E205D41DC00B6735F /* ORGRequestCoreMotionFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 03471F2C205D41DC00B6735F /* ORGRequestCoreMotionFeed.h */; };
+		03471F2F205D41DC00B6735F /* ORGRequestCoreMotionFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 03471F2D205D41DC00B6735F /* ORGRequestCoreMotionFeed.m */; };
 		035157261D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157241D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h */; };
 		035157271D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157251D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m */; };
 		0351572A1D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157281D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h */; };
@@ -236,6 +240,10 @@
 		033677EF1D3E67F1009B86A4 /* UINibDecoderORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINibDecoderORG.h; sourceTree = "<group>"; };
 		033677F01D3E67F1009B86A4 /* UINibDecoderORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINibDecoderORG.m; sourceTree = "<group>"; };
 		033677F31D3E6974009B86A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		03471F22205D413800B6735F /* ORGRequestDeviceOrientationFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORGRequestDeviceOrientationFeed.h; sourceTree = "<group>"; };
+		03471F23205D413800B6735F /* ORGRequestDeviceOrientationFeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORGRequestDeviceOrientationFeed.m; sourceTree = "<group>"; };
+		03471F2C205D41DC00B6735F /* ORGRequestCoreMotionFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORGRequestCoreMotionFeed.h; sourceTree = "<group>"; };
+		03471F2D205D41DC00B6735F /* ORGRequestCoreMotionFeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORGRequestCoreMotionFeed.m; sourceTree = "<group>"; };
 		035157241D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
 		035157251D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+ORG.m"; sourceTree = "<group>"; };
 		035157281D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
@@ -663,6 +671,10 @@
 				03C2CD091E9395F200508AD9 /* ORGRequestSwipe.m */,
 				03A06CC72033752D00751692 /* ORGRequestClassHierarchy.h */,
 				03A06CC82033752D00751692 /* ORGRequestClassHierarchy.m */,
+				03471F22205D413800B6735F /* ORGRequestDeviceOrientationFeed.h */,
+				03471F23205D413800B6735F /* ORGRequestDeviceOrientationFeed.m */,
+				03471F2C205D41DC00B6735F /* ORGRequestCoreMotionFeed.h */,
+				03471F2D205D41DC00B6735F /* ORGRequestCoreMotionFeed.m */,
 			);
 			name = Requests;
 			sourceTree = "<group>";
@@ -715,6 +727,7 @@
 				032863D61D06DD5800EF2FA2 /* CMDeviceMotion+ORG.h in Headers */,
 				03DA66DE1CBD011900E26CAA /* ORGOutboundMessageQueue.h in Headers */,
 				03209FE01D574A320091FC2E /* UIButton+ORG.h in Headers */,
+				03471F2E205D41DC00B6735F /* ORGRequestCoreMotionFeed.h in Headers */,
 				03DA670E1CBD01C100E26CAA /* ORGMessageUpdate.h in Headers */,
 				03C2CD0E1E93969800508AD9 /* ORGGestureLongPress.h in Headers */,
 				03DA66DA1CBD011900E26CAA /* ORGInBoundMessageProcessor.h in Headers */,
@@ -725,6 +738,7 @@
 				039DA6D81D8EBC3000F6937A /* ORGRequestTap.h in Headers */,
 				03DA66C61CBD00EF00E26CAA /* NSObject+ORG.h in Headers */,
 				03C2CD0A1E9395F200508AD9 /* ORGRequestSwipe.h in Headers */,
+				03471F24205D413800B6735F /* ORGRequestDeviceOrientationFeed.h in Headers */,
 				03B588B21D04082D0083DF15 /* NSDate+ORG.h in Headers */,
 				03DA67411CBD065C00E26CAA /* CMAltitudeData+ORG.h in Headers */,
 				03DA66B61CBD00C300E26CAA /* ORGCoreMotion.h in Headers */,
@@ -1071,6 +1085,7 @@
 				03C2CD0F1E93969800508AD9 /* ORGGestureLongPress.m in Sources */,
 				031F74601D4015F400DDC876 /* UITextView+ORG.m in Sources */,
 				033677F21D3E67F1009B86A4 /* UINibDecoderORG.m in Sources */,
+				03471F2F205D41DC00B6735F /* ORGRequestCoreMotionFeed.m in Sources */,
 				03DA66B71CBD00C300E26CAA /* ORGCoreMotion.m in Sources */,
 				03DA66FD1CBD015D00E26CAA /* MKMapView+ORG.m in Sources */,
 				03EC44751FB1E5B5009FB435 /* ORGRequestSystemInfo.m in Sources */,
@@ -1082,6 +1097,7 @@
 				035157471D3BA736004260A1 /* UIControl+ORG.m in Sources */,
 				03DA66C51CBD00EF00E26CAA /* NSDictionary+ORG.m in Sources */,
 				03C2CD131E9396B200508AD9 /* ORGGestureSwipe.m in Sources */,
+				03471F25205D413800B6735F /* ORGRequestDeviceOrientationFeed.m in Sources */,
 				03DA66D71CBD011900E26CAA /* ORGBaseWebSocket.m in Sources */,
 				03DA66DD1CBD011900E26CAA /* ORGMainWebSocket.m in Sources */,
 			);

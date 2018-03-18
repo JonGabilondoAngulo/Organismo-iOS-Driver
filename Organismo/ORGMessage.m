@@ -18,9 +18,10 @@
 
 @implementation ORGMessage
 
-- (instancetype)initWith:(NSDictionary*)message {
+- (instancetype)initWith:(NSDictionary*)message andWebSocket:(ORGMainWebSocket*)webSocket {
     self = [super init];
     _messageDict = message;
+    _webSocket = webSocket;
     return self;
 }
 
@@ -53,11 +54,11 @@
 - (void)process {
     
     if ([self.type ORG_isEqualToStringIgnoreCase:@"update"]) {
-        ORGMessageUpdate *update = [[ORGMessageUpdate alloc] initWith:self.messageDict];
+        ORGMessageUpdate *update = [[ORGMessageUpdate alloc] initWith:self.messageDict andWebSocket:self.webSocket];
         [update execute];
     } else if ([self.type ORG_isEqualToStringIgnoreCase:@"request"]) {
-            ORGRequest * request = [ORGRequestFactory createRequestWith:self.messageDict];
-            request.webSocket = self.webSocket;
+        ORGRequest * request = [ORGRequestFactory createRequestWith:self.messageDict andWebSocket:self.webSocket];
+//            request.webSocket = self.webSocket;
             [request execute];
     } else {
         [self respondWithError:1000 description:@"unknown message"];
@@ -68,12 +69,6 @@
 
 
 @implementation ORGMessage (Responder)
-
-- (instancetype)initWith:(NSDictionary*)message webSocket:(ORGMainWebSocket*)webSocket {
-    self = [self initWith:message];
-    self.webSocket = webSocket;
-    return self;
-}
 
 - (void)respondSuccessWithResult:(id)result {
     

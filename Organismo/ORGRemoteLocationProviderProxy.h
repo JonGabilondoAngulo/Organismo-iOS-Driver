@@ -22,7 +22,6 @@ typedef NS_ENUM(NSUInteger, ORGRegionEventType) {
 
 @property(readonly, nonatomic, copy, nullable) CLLocation *location;
 @property(readonly, nonatomic, copy, nullable) CLHeading *heading;
-@property (nonatomic) ORGMainWebSocket * webSocket;
 
 + (instancetype _Nonnull )sharedInstance;
 

@@ -10,6 +10,7 @@
 #import "ORGMessageBuilder.h"
 #import "ORGMessage.h"
 #import "ORGOutboundMessageQueue.h"
+#import "ORGCoreMotion.h"
 
 @implementation ORGRemoteMotionManager
 
@@ -28,7 +29,7 @@
     _accelerometerActive = YES;
     _accelerometerHandler = nil;
     _accelerometerQueue = nil;
-    [self.webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
     //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
 }
 
@@ -36,7 +37,7 @@
     _accelerometerActive = YES;
     _accelerometerHandler = handler;
     _accelerometerQueue = queue;
-    [self.webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
     //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startAccelerometerUpdates"]];
 }
 
@@ -44,7 +45,7 @@
     _accelerometerActive = NO;
     _accelerometerHandler = nil;
     _accelerometerQueue = nil;
-    [self.webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"stopAccelerometerUpdates"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"stopAccelerometerUpdates"]];
     //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopAccelerometerUpdates"]];
 }
 

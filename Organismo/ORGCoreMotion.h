@@ -4,9 +4,12 @@
 
 #import <Foundation/Foundation.h>
 
+@class ORGMainWebSocket;
+
 @interface ORGCoreMotion : NSObject
 
 @property (nonatomic) NSDictionary * externalFeedData;
+@property (nonatomic) ORGMainWebSocket * webSocket;
 
 + (instancetype)sharedInstance;
 

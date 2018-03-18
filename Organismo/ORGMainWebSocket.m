@@ -21,7 +21,7 @@
 //}
 
 - (void)dispatchMessage:(NSDictionary *)messageDict{
-    ORGMessage * message = [[ORGMessage alloc] initWith:messageDict webSocket:self];
+    ORGMessage * message = [[ORGMessage alloc] initWith:messageDict andWebSocket:self];
     [[ORGInBoundMessageProcessor sharedInstance] processMessage:message];
 }
 

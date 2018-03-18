@@ -9,6 +9,7 @@
 #import "ORGRemoteAltimeter.h"
 #import "ORGOutboundMessageQueue.h"
 #import "ORGMessageBuilder.h"
+#import "ORGCoreMotion.h"
 
 @interface ORGRemoteAltimeter()
 @property (nonatomic) NSMapTable * altimeters; // Key is weak and is the altimeter object.
@@ -29,7 +30,7 @@
 }
 
 - (void)startRelativeAltitudeUpdatesToQueue:(NSOperationQueue *)queue withHandler:(CMAltitudeHandler)handler altimeter:(CMAltimeter*)altimeter {
-    [self.webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startRelativeAltitudeUpdatesToQueue"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startRelativeAltitudeUpdatesToQueue"]];
     //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startRelativeAltitudeUpdatesToQueue"]];
     [_lock lock];
     [_altimeters setObject:@[queue, handler] forKey:altimeter];
@@ -37,7 +38,7 @@
 }
 
 - (void)stopRelativeAltitudeUpdates:(CMAltimeter*)altimeter {
-    [self.webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"stopRelativeAltitudeUpdates"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"stopRelativeAltitudeUpdates"]];
     //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopRelativeAltitudeUpdates"]];
     [_lock lock];
     [_altimeters removeObjectForKey:altimeter];

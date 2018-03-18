@@ -8,6 +8,7 @@
 
 #import "UIApplication+ORG.h"
 #import "NSDictionary+ORG.h"
+#import <objc/runtime.h>
 #import <HTTPServer.h>
 #import <HTTPConnection.h>
 #import "ORGHTTPConnection.h"
@@ -16,10 +17,16 @@
 #import "DDLog.h"
 #import "ORGOutboundMessageQueue.h"
 #import "ORGMessageBuilder.h"
+#import "ORGMainWebSocket.h"
 
 static HTTPServer *httpServer;
+static BOOL org_enableOrientationFeed;
+static ORGMainWebSocket * org_webSocket;
 
 @implementation UIApplication (ORG)
+
+CATEGORY_PROPERTY_GET_SET(ORGMainWebSocket*, org_webSocket, setOrg_webSocket:);
+CATEGORY_PROPERTY_GET_SET_BOOL(org_enableOrientationFeed, setOrg_enableOrientationFeed:);
 
 + (void)load
 {
@@ -137,21 +144,41 @@ static HTTPServer *httpServer;
 
 + (void)ORG_applicationDidChangeStatusBarOrientationNotification:(id)sender {
     
-    NSString * orientationStr = @"portrait";
+    NSString * orientationStr = @"UNKNOWN";
     UIInterfaceOrientation orientation = [UIApplication sharedApplication].statusBarOrientation;
     switch (orientation) {
-        case UIInterfaceOrientationPortrait:  break;
-        case UIInterfaceOrientationPortraitUpsideDown: orientationStr = @"portraitUpsideDown"; break;
-        case UIInterfaceOrientationLandscapeLeft: orientationStr = @"landscapeLeft"; break;
-        case UIInterfaceOrientationLandscapeRight: orientationStr = @"landscapeRight"; break;
+        case UIInterfaceOrientationPortrait:  orientationStr = @"UIInterfaceOrientationPortrait"; break;
+        case UIInterfaceOrientationPortraitUpsideDown: orientationStr = @"UIInterfaceOrientationPortraitUpsideDown"; break;
+        case UIInterfaceOrientationLandscapeLeft: orientationStr = @"UIInterfaceOrientationLandscapeLeft"; break;
+        case UIInterfaceOrientationLandscapeRight: orientationStr = @"UIInterfaceOrientationLandscapeRight"; break;
         default:
             break;
     }
 
-//    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildNotification:@"orientation-change"
-//                                                                                withParameters:@{@"orientation":orientationStr,
-//                                                                                                 @"screenSize":[NSDictionary ORG_createWithCGSize:[UIScreen mainScreen].bounds.size]
-//                                                                                                 }]];
+    if (org_enableOrientationFeed && org_webSocket) {
+        [org_webSocket.outboundQueue postMessage:[ORGMessageBuilder buildNotification:@"orientation-change"
+                                                                       withParameters:@{@"orientation":orientationStr,
+                                                                                        @"screenSize":[NSDictionary ORG_createWithCGSize:[UIScreen mainScreen].bounds.size]
+                                                                                        }]];
+    }
+}
+
+#pragma mark @ Get/Set
+
++ (BOOL)org_enableOrientationFeed {
+    return org_enableOrientationFeed;
+}
+
++ (void)org_setEnableOrientationFeed:(BOOL)enable {
+    org_enableOrientationFeed = enable;
+}
+
++ (ORGMainWebSocket*)org_webSocket {
+    return org_webSocket;
+}
+
++ (void)org_setWebSocket:(ORGMainWebSocket*)webSocket {
+    org_webSocket = webSocket;
 }
 
 @end

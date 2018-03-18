@@ -8,8 +8,6 @@
 
 #import "ORGMessage.h"
 
-@class ORGMainWebSocket;
-
 @interface ORGRequest : ORGMessage
 
 - (void)execute;

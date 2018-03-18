@@ -10,7 +10,6 @@
 
 @class ORGMainWebSocket;
 
-
 @interface ORGRemoteAltimeter : ORGRemoteController
 
 @property (nonatomic) ORGMainWebSocket * webSocket;

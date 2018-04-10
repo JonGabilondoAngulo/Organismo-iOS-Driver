@@ -18,7 +18,8 @@
                                                   @"request":request
                                                   }
                                            
-                                          }];
+                                          }
+                           andWebSocket:nil];
 }
 
 + (ORGMessage*)buildRequest:(NSString*)request withParameters:(NSDictionary*)parameters {
@@ -29,7 +30,8 @@
                                                   @"parameters":parameters
                                                   }
                                           
-                                          }];
+                                          }
+                           andWebSocket:nil];
 }
 
 
@@ -41,7 +43,8 @@
                                                   @"parameters":parameters
                                                   }
                                           
-                                          }];
+                                          }
+                           andWebSocket:nil];
 }
 
 @end

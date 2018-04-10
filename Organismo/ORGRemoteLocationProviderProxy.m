@@ -10,6 +10,7 @@
 #import "ORGOutboundMessageQueue.h"
 #import "ORGMessageBuilder.h"
 #import "CLBeaconRegion+ORG.h"
+#import "ORGCoreMotion.h"
 
 @interface ORGRemoteLocationProviderProxy()
 @property (nonatomic) NSMutableArray<NSDictionary<NSString*, NSValue*> *> * locationManagers; // Keep object and pointer to delete the object during dealloc.
@@ -70,25 +71,32 @@
 }
 
 - (void)requestLocation {
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"requestLocation"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"requestLocation"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"requestLocation"]];
 }
 - (void)startUpdatingLocation {
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startUpdatingLocation"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startUpdatingLocation"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startUpdatingLocation"]];
 }
 - (void)stopUpdatingLocation {
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopUpdatingLocation"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"stopUpdatingLocation"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopUpdatingLocation"]];
 }
 - (void)startUpdatingHeading {
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startUpdatingHeading"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startUpdatingHeading"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startUpdatingHeading"]];
 }
 - (void)stopUpdatingHeading {
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopUpdatingHeading"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"stopUpdatingHeading"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopUpdatingHeading"]];
 }
 - (void)startMonitoringSignificantLocationChanges {
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startMonitoringSignificantLocationChanges"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startMonitoringSignificantLocationChanges"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startMonitoringSignificantLocationChanges"]];
 }
 - (void)stopMonitoringSignificantLocationChanges {
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopMonitoringSignificantLocationChanges"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"stopMonitoringSignificantLocationChanges"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopMonitoringSignificantLocationChanges"]];
 }
 - (void)startMonitoringForRegion:(CLRegion *)region desiredAccuracy:(CLLocationAccuracy)accuracy {
     [_regions setObject:@NO forKey:region];
@@ -112,16 +120,20 @@
     }
 }
 - (void)startRangingBeaconsInRegion:(CLBeaconRegion *)region {
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startRangingBeaconsInRegion" withParameters:[region ORG_parameters]]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"startRangingBeaconsInRegion" withParameters:[region ORG_parameters]]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"startRangingBeaconsInRegion" withParameters:[region ORG_parameters]]];
 }
 - (void)stopRangingBeaconsInRegion:(CLBeaconRegion *)region {
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopRangingBeaconsInRegion" withParameters:[region ORG_parameters]]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"stopRangingBeaconsInRegion" withParameters:[region ORG_parameters]]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"stopRangingBeaconsInRegion" withParameters:[region ORG_parameters]]];
 }
 - (void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager;{
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"pauseLocationUpdates"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"pauseLocationUpdates"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"pauseLocationUpdates"]];
 }
 - (void)locationManagerDidResumeLocationUpdates:(CLLocationManager *)manager {
-    [[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"resumeLocationUpdates"]];
+    [[ORGCoreMotion sharedInstance].webSocket.outboundQueue postMessage:[ORGMessageBuilder buildRequest:@"resumeLocationUpdates"]];
+    //[[ORGOutboundMessageQueue sharedInstance] postMessage:[ORGMessageBuilder buildRequest:@"resumeLocationUpdates"]];
 }
 
 

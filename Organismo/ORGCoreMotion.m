@@ -87,7 +87,7 @@
                 if (attitudeDict) {
                     // send it to listener
                     
-                    NSDictionary * feedData = @{@"command":@"CoreMotionFeed", @"content":@{@"attitude":attitudeDict}};
+                    NSDictionary * feedData = @{@"command":@"core-motion-feed", @"content":@{@"attitude":attitudeDict}};
                     
                     // send via socket
 //                    NSError *error;

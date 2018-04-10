@@ -1,0 +1,23 @@
+PODS:
+  - DPMeterView (1.0.1)
+  - Kiwi (2.2.4):
+    - Kiwi/SenTestingKit (= 2.2.4)
+  - Kiwi/ARC (2.2.4)
+  - Kiwi/NonARC (2.2.4)
+  - Kiwi/SenTestingKit (2.2.4):
+    - Kiwi/ARC
+    - Kiwi/NonARC
+
+DEPENDENCIES:
+  - DPMeterView (from `../.`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  DPMeterView:
+    :path: ../.
+
+SPEC CHECKSUMS:
+  DPMeterView: f6a917eaec2b2ef7844cb43f2ce2c6ac4b4abc85
+  Kiwi: 5d574f31ceac18ba417f5dac6c7f9f1a3e86962d
+
+COCOAPODS: 0.36.3

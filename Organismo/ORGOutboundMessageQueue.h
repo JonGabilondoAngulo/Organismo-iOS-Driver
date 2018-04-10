@@ -11,10 +11,12 @@
 
 @class ORGMessage;
 
-@interface ORGOutboundMessageQueue : NSObject <WebSocketDelegate>
+@interface ORGOutboundMessageQueue : NSObject 
 
-+ (instancetype)sharedInstance;
+//+ (instancetype)sharedInstance;
 
+- (instancetype)initWithWebSocket:(ORGMainWebSocket *)webSocket;
 - (void)postMessage:(ORGMessage*)message;
+- (void)suspend:(BOOL)value;
 
 @end

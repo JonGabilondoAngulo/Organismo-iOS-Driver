@@ -11,7 +11,7 @@
 @property (nonatomic) NSDictionary * messageDict;
 @property (nonatomic) ORGMainWebSocket * webSocket;
 
-- (instancetype)initWith:(NSDictionary*)message;
+- (instancetype)initWith:(NSDictionary*)message andWebSocket:(ORGMainWebSocket*)webSocket;
 
 - (NSString*)type;
 - (NSString*)messageId;
@@ -35,7 +35,6 @@
 
 @interface ORGMessage (Responder)
 
-- (instancetype)initWith:(NSDictionary*)message webSocket:(ORGMainWebSocket*)webSocket;
 - (void)respondSuccessWithResult:(id)result;
 - (void)respondWithError:(NSInteger)errorNum description:(NSString*)description;
 

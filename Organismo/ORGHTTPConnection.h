@@ -1,11 +1,11 @@
 #import <Foundation/Foundation.h>
 #import "HTTPConnection.h"
 
-@class ORGBaseWebSocket;
+//@class ORGBaseWebSocket;
 
 @interface ORGHTTPConnection : HTTPConnection
 {
-	ORGBaseWebSocket *ws;
+	//ORGBaseWebSocket *ws;
 }
 
 @end

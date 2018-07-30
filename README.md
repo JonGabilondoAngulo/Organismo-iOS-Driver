@@ -11,6 +11,6 @@ Build the Organismo framework target from the Xcode workspace in this repository
 The App must embed the Organismo-iOS framework. This means that the framework must be copied to the Apps Frameworks folder. Xcode provides an easy way to embed a framework. Look in the target's General section.
 
 ## Injecting Organismo-iOS into Compiled Apps
-Look into "bypass" repository.
+It is possible to inject the framework into already compiled Apps (.ipa files). Look into "bypass" repository.
 
 ## Connecting to Organismo-Desktop

@@ -946,7 +946,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ -d ./dist ] ; then\n    rm -R dist\nfi\nmkdir dist\ncp -r $BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME ./dist";
+			shellScript = "if [ -d ./dist ] ; then\n    rm -R dist\nfi\nmkdir dist\ncp -r $BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME ./dist\n";
 		};
 		482F3D785869BD7261ACCE3F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

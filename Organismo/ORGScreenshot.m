@@ -46,24 +46,26 @@
 }
 
 + (UIImage*)viewScreenshot:(UIView*)view {
-    
+    const NSUInteger kImageAreaLimit = 1000000;  // Avoid unreasonable sized images that can gobble the memory.
     CGRect viewBounds = view.bounds;
-    if (CGRectGetWidth(viewBounds) * CGRectGetHeight(viewBounds) > 1000*1000) {
+    if (CGRectGetWidth(viewBounds) * CGRectGetHeight(viewBounds) > kImageAreaLimit) {
         return nil;
     }
     if (CGRectGetWidth(viewBounds)==0 || CGRectGetHeight(viewBounds)==0) {
         return nil;
     }
     
-    // hide subviews. Unless is some control that we are not diving in.
-    NSMutableArray * hiddenViews = [NSMutableArray array];
+    // hide subviews. Unless is some control that we are not diving in, (e.g. Pickers).
+    NSMutableArray * hiddenSubviews = [NSMutableArray array];
     if (![view ORG_ignoreSubviews]) {
         for (UIView *subview in view.subviews) {
             if (![subview isHidden]) {
                 [subview setHidden:YES];
-                [hiddenViews addObject:subview];
-                [view setNeedsDisplay];
+                [hiddenSubviews addObject:subview];
             }
+        }
+        if (hiddenSubviews.count) {
+            [view setNeedsDisplay];
         }
     }
     
@@ -73,8 +75,10 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    for (UIView *subview in hiddenViews) {
-        [subview setHidden:NO];
+    if (hiddenSubviews.count) {
+        for (UIView *subview in hiddenSubviews) {
+            [subview setHidden:NO];
+        }
         [view setNeedsDisplay];
     }
     return image;

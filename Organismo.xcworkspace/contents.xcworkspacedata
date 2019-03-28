@@ -10,26 +10,25 @@
    <Group
       location = "container:"
       name = "SampleApps">
-      <FileRef
-         location = "group:SampleApps/DPMeterView/Example/Example.xcodeproj">
-      </FileRef>
+      <Group
+         location = "container:"
+         name = "DPMeter">
+         <FileRef
+            location = "group:SampleApps/DPMeterView/Example/Example.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "Eureka">
+         <FileRef
+            location = "group:SampleApps/Eureka/Example.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:SampleApps/Eureka/Eureka.xcodeproj">
+         </FileRef>
+      </Group>
       <FileRef
          location = "group:SampleApps/UIKitCatalogiOSCreatingandCustomizingUIKitControls/Objective-C/UIKitCatalog.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:SampleApps/DPMeterView-master/Example/Example.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:SampleApps/BEMAnalogClock-master/Sample Project/BEMAnalogClock.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:SampleApps/CurrentAddress/CurrentAddress.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:SampleApps/CMAltimeterDemo/CMAltimeterDemo.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:SampleApps/Breadcrumb/Breadcrumb.xcodeproj">
       </FileRef>
    </Group>
 </Workspace>

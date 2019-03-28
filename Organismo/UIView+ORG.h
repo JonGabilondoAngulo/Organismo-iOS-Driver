@@ -21,5 +21,7 @@
 - (void)ORG_addSegueInfo:(NSDictionary*)segue;
 - (BOOL)ORG_needsScreenshot;
 - (BOOL)ORG_ignoreGestureRecognizers;
+- (id)ORG_superviewWithClass:(Class)superviewClass;
+- (id)ORG_subviewWithClass:(Class)subviewClass;
 
 @end

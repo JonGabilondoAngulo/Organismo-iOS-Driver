@@ -29,6 +29,8 @@
 		033677E21D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 033677E01D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m */; };
 		033677F11D3E67F1009B86A4 /* UINibDecoderORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 033677EF1D3E67F1009B86A4 /* UINibDecoderORG.h */; };
 		033677F21D3E67F1009B86A4 /* UINibDecoderORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 033677F01D3E67F1009B86A4 /* UINibDecoderORG.m */; };
+		03376E8E224BCAE300343646 /* UITableViewCell+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03376E8C224BCAE300343646 /* UITableViewCell+ORG.h */; };
+		03376E8F224BCAE300343646 /* UITableViewCell+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03376E8D224BCAE300343646 /* UITableViewCell+ORG.m */; };
 		03471F24205D413800B6735F /* ORGRequestDeviceOrientationFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 03471F22205D413800B6735F /* ORGRequestDeviceOrientationFeed.h */; };
 		03471F25205D413800B6735F /* ORGRequestDeviceOrientationFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 03471F23205D413800B6735F /* ORGRequestDeviceOrientationFeed.m */; };
 		03471F2E205D41DC00B6735F /* ORGRequestCoreMotionFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 03471F2C205D41DC00B6735F /* ORGRequestCoreMotionFeed.h */; };
@@ -240,6 +242,8 @@
 		033677EF1D3E67F1009B86A4 /* UINibDecoderORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINibDecoderORG.h; sourceTree = "<group>"; };
 		033677F01D3E67F1009B86A4 /* UINibDecoderORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINibDecoderORG.m; sourceTree = "<group>"; };
 		033677F31D3E6974009B86A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		03376E8C224BCAE300343646 /* UITableViewCell+ORG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ORG.h"; sourceTree = "<group>"; };
+		03376E8D224BCAE300343646 /* UITableViewCell+ORG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ORG.m"; sourceTree = "<group>"; };
 		03471F22205D413800B6735F /* ORGRequestDeviceOrientationFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORGRequestDeviceOrientationFeed.h; sourceTree = "<group>"; };
 		03471F23205D413800B6735F /* ORGRequestDeviceOrientationFeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORGRequestDeviceOrientationFeed.m; sourceTree = "<group>"; };
 		03471F2C205D41DC00B6735F /* ORGRequestCoreMotionFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORGRequestCoreMotionFeed.h; sourceTree = "<group>"; };
@@ -640,6 +644,8 @@
 				03DA66C31CBD00EF00E26CAA /* UIView+ORG.m */,
 				031F74651D42C3C800DDC876 /* UIWindow+ORG.h */,
 				031F74661D42C3C800DDC876 /* UIWindow+ORG.m */,
+				03376E8C224BCAE300343646 /* UITableViewCell+ORG.h */,
+				03376E8D224BCAE300343646 /* UITableViewCell+ORG.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -733,6 +739,7 @@
 				03DA66DA1CBD011900E26CAA /* ORGInBoundMessageProcessor.h in Headers */,
 				03DA67391CBD021200E26CAA /* ORGRemoteMotionManager.h in Headers */,
 				03EC44741FB1E5B5009FB435 /* ORGRequestSystemInfo.h in Headers */,
+				03376E8E224BCAE300343646 /* UITableViewCell+ORG.h in Headers */,
 				03DA66FE1CBD015D00E26CAA /* UIApplication+ORG.h in Headers */,
 				03DA66D81CBD011900E26CAA /* ORGHTTPConnection.h in Headers */,
 				039DA6D81D8EBC3000F6937A /* ORGRequestTap.h in Headers */,
@@ -851,6 +858,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 03DA667D1CBCEE4700E26CAA;
@@ -1042,6 +1050,7 @@
 				03DA673A1CBD021200E26CAA /* ORGRemoteMotionManager.m in Sources */,
 				0351573F1D3BA315004260A1 /* UIPinchGestureRecognizer+ORG.m in Sources */,
 				03C2CD0B1E9395F200508AD9 /* ORGRequestSwipe.m in Sources */,
+				03376E8F224BCAE300343646 /* UITableViewCell+ORG.m in Sources */,
 				035157331D3BA13A004260A1 /* UIPanGestureRecognizer+ORG.m in Sources */,
 				03DA673C1CBD021200E26CAA /* ORGRemotePedometer.m in Sources */,
 				03DA67421CBD065C00E26CAA /* CMAltitudeData+ORG.m in Sources */,
@@ -1233,6 +1242,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -1289,6 +1299,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",

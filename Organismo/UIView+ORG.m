@@ -134,6 +134,38 @@ static NSString * const AORGAssociatedKey_Segues = @"ORG_Segues";
     return YES;
 }
 
+#pragma mark Hierarchy Utils
+
+- (id)ORG_superviewWithClass:(Class)superviewClass
+{
+    UIView *theView;
+    
+    for (UIView *view = [self superview]; view; view = [view superview]) {
+        if ([view isKindOfClass:superviewClass]) {
+            theView = view;
+            break;
+        }
+    }
+    return theView;
+}
+- (id)ORG_subviewWithClass:(Class)subviewClass
+{
+    UIView *theView;
+    
+    for (UIView * view in [self subviews]) {
+        if ([view isKindOfClass:subviewClass]) {
+            theView = view;
+        } else {
+            theView = [view ORG_subviewWithClass:subviewClass];
+        }
+        if (theView) {
+            break;
+        }
+    }
+    return theView;
+}
+
+
 #pragma mark - Properties Utils
 
 - (NSArray *)ORG_allPropertyNames {

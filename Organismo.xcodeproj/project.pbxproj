@@ -25,6 +25,9 @@
 		0320A0031D586CB40091FC2E /* ORGRequestElementInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0320A0011D586CB40091FC2E /* ORGRequestElementInfo.m */; };
 		032863D61D06DD5800EF2FA2 /* CMDeviceMotion+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 032863D41D06DD5800EF2FA2 /* CMDeviceMotion+ORG.h */; };
 		032863D71D06DD5800EF2FA2 /* CMDeviceMotion+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 032863D51D06DD5800EF2FA2 /* CMDeviceMotion+ORG.m */; };
+		032C9FE522C8CA2700B2DBEA /* NSApplication+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 032C9FE322C8CA2700B2DBEA /* NSApplication+ORG.h */; };
+		032C9FE622C8CA2700B2DBEA /* NSApplication+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 032C9FE422C8CA2700B2DBEA /* NSApplication+ORG.m */; };
+		032C9FE822C8CC2600B2DBEA /* OrganismoPrefixHeader-mac.pch in Headers */ = {isa = PBXBuildFile; fileRef = 032C9FE722C8CC2600B2DBEA /* OrganismoPrefixHeader-mac.pch */; };
 		033677E11D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 033677DF1D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.h */; };
 		033677E21D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 033677E01D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m */; };
 		033677F11D3E67F1009B86A4 /* UINibDecoderORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 033677EF1D3E67F1009B86A4 /* UINibDecoderORG.h */; };
@@ -53,6 +56,8 @@
 		035157471D3BA736004260A1 /* UIControl+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157451D3BA736004260A1 /* UIControl+ORG.m */; };
 		0357A11E1CBEE52C00A35556 /* CLHeading+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 0357A11C1CBEE52C00A35556 /* CLHeading+ORG.h */; };
 		0357A11F1CBEE52C00A35556 /* CLHeading+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 0357A11D1CBEE52C00A35556 /* CLHeading+ORG.m */; };
+		039C336222C7D63600E61DA8 /* NSObject+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66BE1CBD00EF00E26CAA /* NSObject+ORG.h */; };
+		039C338C22C7D63600E61DA8 /* Organismo.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA668A1CBCEE4700E26CAA /* Organismo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		039DA6CC1D8EB9F800F6937A /* ORGGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DA6CA1D8EB9F800F6937A /* ORGGesture.h */; };
 		039DA6CD1D8EB9F800F6937A /* ORGGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 039DA6CB1D8EB9F800F6937A /* ORGGesture.m */; };
 		039DA6D01D8EBA1300F6937A /* ORGGestureTap.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DA6CE1D8EBA1300F6937A /* ORGGestureTap.h */; };
@@ -237,6 +242,9 @@
 		0320A0011D586CB40091FC2E /* ORGRequestElementInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGRequestElementInfo.m; sourceTree = "<group>"; };
 		032863D41D06DD5800EF2FA2 /* CMDeviceMotion+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMDeviceMotion+ORG.h"; sourceTree = "<group>"; };
 		032863D51D06DD5800EF2FA2 /* CMDeviceMotion+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CMDeviceMotion+ORG.m"; sourceTree = "<group>"; };
+		032C9FE322C8CA2700B2DBEA /* NSApplication+ORG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSApplication+ORG.h"; path = "Organismo/NSApplication+ORG.h"; sourceTree = "<group>"; };
+		032C9FE422C8CA2700B2DBEA /* NSApplication+ORG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSApplication+ORG.m"; path = "Organismo/NSApplication+ORG.m"; sourceTree = "<group>"; };
+		032C9FE722C8CC2600B2DBEA /* OrganismoPrefixHeader-mac.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OrganismoPrefixHeader-mac.pch"; sourceTree = "<group>"; };
 		033677DF1D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboardSegue+ORG.h"; sourceTree = "<group>"; };
 		033677E01D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+ORG.m"; sourceTree = "<group>"; };
 		033677EF1D3E67F1009B86A4 /* UINibDecoderORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINibDecoderORG.h; sourceTree = "<group>"; };
@@ -267,6 +275,8 @@
 		0357A11C1CBEE52C00A35556 /* CLHeading+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLHeading+ORG.h"; sourceTree = "<group>"; };
 		0357A11D1CBEE52C00A35556 /* CLHeading+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLHeading+ORG.m"; sourceTree = "<group>"; };
 		035C149F1D94040A00B0239D /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = KIF/KIF.xcodeproj; sourceTree = "<group>"; };
+		039C339422C7D63600E61DA8 /* Organismo-mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Organismo-mac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		039C339B22C7D63700E61DA8 /* mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "mac-Info.plist"; path = "/Development/Github/Organismo-iOS/mac-Info.plist"; sourceTree = "<absolute>"; };
 		039DA6CA1D8EB9F800F6937A /* ORGGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGGesture.h; sourceTree = "<group>"; };
 		039DA6CB1D8EB9F800F6937A /* ORGGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGGesture.m; sourceTree = "<group>"; };
 		039DA6CE1D8EBA1300F6937A /* ORGGestureTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGGestureTap.h; sourceTree = "<group>"; };
@@ -380,6 +390,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		039C334022C7D63600E61DA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03DA66831CBCEE4700E26CAA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -401,6 +418,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		032C9FE122C8B03600B2DBEA /* Motion */ = {
+			isa = PBXGroup;
+			children = (
+				03DA66B01CBD00C300E26CAA /* ORGCoreMotion.h */,
+				03DA66B11CBD00C300E26CAA /* ORGCoreMotion.m */,
+			);
+			name = Motion;
+			sourceTree = "<group>";
+		};
+		032C9FE222C8B09400B2DBEA /* Organismo-mac */ = {
+			isa = PBXGroup;
+			children = (
+				032C9FE322C8CA2700B2DBEA /* NSApplication+ORG.h */,
+				032C9FE422C8CA2700B2DBEA /* NSApplication+ORG.m */,
+			);
+			name = "Organismo-mac";
+			sourceTree = "<group>";
+		};
 		0357A11B1CBECAC000A35556 /* Updates */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +488,7 @@
 			isa = PBXGroup;
 			children = (
 				035C149F1D94040A00B0239D /* KIF.xcodeproj */,
+				032C9FE222C8B09400B2DBEA /* Organismo-mac */,
 				03DA66891CBCEE4700E26CAA /* Organismo */,
 				03DA66951CBCEE4700E26CAA /* OrganismoTests */,
 				03DA66881CBCEE4700E26CAA /* Products */,
@@ -466,6 +502,7 @@
 			children = (
 				03DA66871CBCEE4700E26CAA /* Organismo.framework */,
 				03DA66911CBCEE4700E26CAA /* OrganismoTests.xctest */,
+				039C339422C7D63600E61DA8 /* Organismo-mac.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -473,14 +510,13 @@
 		03DA66891CBCEE4700E26CAA /* Organismo */ = {
 			isa = PBXGroup;
 			children = (
-				03DA66B01CBD00C300E26CAA /* ORGCoreMotion.h */,
-				03DA66B11CBD00C300E26CAA /* ORGCoreMotion.m */,
 				03DA66A41CBCFFE400E26CAA /* Constants */,
 				0394AA791D23F1E0002ED6F0 /* UI */,
 				03DA66A71CBD000200E26CAA /* Categories */,
 				03DA66A51CBCFFED00E26CAA /* Instrumentation */,
 				03DA66A61CBCFFF600E26CAA /* Communication */,
 				03DA66A31CBCFFD300E26CAA /* Messages */,
+				032C9FE122C8B03600B2DBEA /* Motion */,
 				03DA66A21CBCFFC600E26CAA /* Remote */,
 				039DA6C91D8EB98300F6937A /* Gestures */,
 				03DA66A11CBCFFB800E26CAA /* Supporting Files */,
@@ -500,9 +536,11 @@
 		03DA66A11CBCFFB800E26CAA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				032C9FE722C8CC2600B2DBEA /* OrganismoPrefixHeader-mac.pch */,
 				03DA673D1CBD022200E26CAA /* OrganismoPrefixHeader.pch */,
 				03DA668A1CBCEE4700E26CAA /* Organismo.h */,
 				03DA668C1CBCEE4700E26CAA /* Info.plist */,
+				039C339B22C7D63700E61DA8 /* mac-Info.plist */,
 				03DA66AE1CBD009A00E26CAA /* Web */,
 			);
 			name = "Supporting Files";
@@ -709,6 +747,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		039C334322C7D63600E61DA8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032C9FE522C8CA2700B2DBEA /* NSApplication+ORG.h in Headers */,
+				039C336222C7D63600E61DA8 /* NSObject+ORG.h in Headers */,
+				039C338C22C7D63600E61DA8 /* Organismo.h in Headers */,
+				032C9FE822C8CC2600B2DBEA /* OrganismoPrefixHeader-mac.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03DA66841CBCEE4700E26CAA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -792,6 +841,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		039C32F422C7D63600E61DA8 /* Organismo-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039C339122C7D63600E61DA8 /* Build configuration list for PBXNativeTarget "Organismo-mac" */;
+			buildPhases = (
+				039C32F822C7D63600E61DA8 /* Sources */,
+				039C334022C7D63600E61DA8 /* Frameworks */,
+				039C334322C7D63600E61DA8 /* Headers */,
+				039C338D22C7D63600E61DA8 /* Resources */,
+				039C339022C7D63600E61DA8 /* Copy Product to dist folder */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Organismo-mac";
+			productName = Organismo;
+			productReference = 039C339422C7D63600E61DA8 /* Organismo-mac.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		03DA66861CBCEE4700E26CAA /* Organismo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03DA669B1CBCEE4700E26CAA /* Build configuration list for PBXNativeTarget "Organismo" */;
@@ -844,6 +912,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "organismo-mobile";
 				TargetAttributes = {
+					039C32F422C7D63600E61DA8 = {
+						DevelopmentTeam = NRRF7234ZC;
+						ProvisioningStyle = Automatic;
+					};
 					03DA66861CBCEE4700E26CAA = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = NRRF7234ZC;
@@ -874,6 +946,7 @@
 			targets = (
 				03DA66861CBCEE4700E26CAA /* Organismo */,
 				03DA66901CBCEE4700E26CAA /* OrganismoTests */,
+				039C32F422C7D63600E61DA8 /* Organismo-mac */,
 			);
 		};
 /* End PBXProject section */
@@ -924,6 +997,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		039C338D22C7D63600E61DA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03DA66851CBCEE4700E26CAA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -954,7 +1034,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ -d ./dist ] ; then\n    rm -R dist\nfi\nmkdir dist\ncp -r $BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME ./dist\n";
+			shellScript = "if [ -d ./dist ] ; then\nrm -R ./dist/Organismo.framework\nelse\nmkdir dist\nfi\n\ncp -a $BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME ./dist\n";
+		};
+		039C339022C7D63600E61DA8 /* Copy Product to dist folder */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Product to dist folder";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -d ./dist ] ; then\n    rm -R ./dist/Organismo-mac.framework\nelse\n    mkdir dist\nfi\n\ncp -a $BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME ./dist\n";
 		};
 		482F3D785869BD7261ACCE3F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1040,6 +1134,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		039C32F822C7D63600E61DA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032C9FE622C8CA2700B2DBEA /* NSApplication+ORG.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		03DA66821CBCEE4700E26CAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1142,6 +1244,94 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		039C339222C7D63600E61DA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "organismo/OrganismoPrefixHeader-mac.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaHTTPServer\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					KIF/KIFFramework,
+					"XCTest-Stub/XCTest-Stub",
+				);
+				INFOPLIST_FILE = "mac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)  @executable_path/../Frameworks @executable_path/Contents/Frameworks @loader_path/../Frameworks @loader_path/Frameworks @loader_path/Contents/Frameworks @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.organismo-mobile.Organismo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 0;
+			};
+			name = Debug;
+		};
+		039C339322C7D63600E61DA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "organismo/OrganismoPrefixHeader-mac.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/include/libxml2\"",
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaAsyncSocket\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaHTTPServer\"",
+					"\"${PODS_ROOT}/Headers/Public/CocoaLumberjack\"",
+					KIF/KIFFramework,
+					"XCTest-Stub/XCTest-Stub",
+				);
+				INFOPLIST_FILE = "mac-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)  @executable_path/../Frameworks @executable_path/Contents/Frameworks @loader_path/../Frameworks @loader_path/Frameworks @loader_path/Contents/Frameworks @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.organismo-mobile.Organismo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 0;
+			};
+			name = Release;
+		};
 		03DA66991CBCEE4700E26CAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1180,7 +1370,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1222,7 +1413,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1372,6 +1564,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		039C339122C7D63600E61DA8 /* Build configuration list for PBXNativeTarget "Organismo-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039C339222C7D63600E61DA8 /* Debug */,
+				039C339322C7D63600E61DA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		03DA66811CBCEE4700E26CAA /* Build configuration list for PBXProject "Organismo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1379,7 +1580,7 @@
 				03DA669A1CBCEE4700E26CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		03DA669B1CBCEE4700E26CAA /* Build configuration list for PBXNativeTarget "Organismo" */ = {
 			isa = XCConfigurationList;
@@ -1388,7 +1589,7 @@
 				03DA669D1CBCEE4700E26CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		03DA669E1CBCEE4700E26CAA /* Build configuration list for PBXNativeTarget "OrganismoTests" */ = {
 			isa = XCConfigurationList;
@@ -1397,7 +1598,7 @@
 				03DA66A01CBCEE4700E26CAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

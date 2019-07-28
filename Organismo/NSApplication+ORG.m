@@ -7,6 +7,13 @@
 //
 
 #import "NSApplication+ORG.h"
+#import "ATBasicTableViewWindowController.h"
+#import "ATComplexTableViewController.h"
+#import "ATComplexOutlineController.h"
+#import "ORGNSViewHierarchy.h"
+#import "ORGInspectorWindowController.h"
+
+static NSMutableArray *windowControllers;
 
 @implementation NSApplication (ORG)
 
@@ -107,20 +114,40 @@
         NSMenu *organismoMenu = [[NSMenu alloc] initWithTitle:@"Organismo"];
         organismoMenu.autoenablesItems = NO;
         [organismoMenubarItem setSubmenu:organismoMenu];
-        
-        NSMenuItem *orgMenuItem = [organismoMenu addItemWithTitle:@"About Organismo" action:@selector(ORG_submenuAction:) keyEquivalent:@""];
+
+        NSMenuItem *orgMenuItem = [organismoMenu addItemWithTitle:@"Inspector" action:@selector(ORG_submenuAction:) keyEquivalent:@""];
+        orgMenuItem.identifier = @"inspector";
+        orgMenuItem.target = NSApp;
+        orgMenuItem.enabled = YES;
+
+        orgMenuItem = [organismoMenu addItemWithTitle:@"About Organismo" action:@selector(ORG_submenuAction:) keyEquivalent:@""];
+        orgMenuItem.identifier = @"about";
         orgMenuItem.target = NSApp;
         orgMenuItem.enabled = YES;
     }
 }
 
-- (void)ORG_submenuAction:(id)menuItem {
-    NSAttributedString *credits = [[NSAttributedString alloc] initWithString:@""];
-    [NSApp orderFrontStandardAboutPanelWithOptions:@{NSAboutPanelOptionCredits:credits,
-                                                     NSAboutPanelOptionApplicationName:@"Organismo",
-                                                     NSAboutPanelOptionVersion:@"0.1",
-                                                     NSAboutPanelOptionApplicationVersion:@"0.1"
-                                                     }];
+- (void)ORG_submenuAction:(NSMenuItem*)menuItem {
+    
+    if ([menuItem.identifier isEqualToString:@"about"]) {
+        NSAttributedString *credits = [[NSAttributedString alloc] initWithString:@""];
+        [NSApp orderFrontStandardAboutPanelWithOptions:@{NSAboutPanelOptionCredits:credits,
+                                                         NSAboutPanelOptionApplicationName:@"Organismo Injected",
+                                                         NSAboutPanelOptionVersion:@"0.1",
+                                                         NSAboutPanelOptionApplicationVersion:@"0.1"
+                                                         }];
+    } else if ([menuItem.identifier isEqualToString:@"inspector"]) {
+        [self newWindowWithControllerClass:[ORGInspectorWindowController class]];
+    }
+}
+
+- (void)newWindowWithControllerClass:(Class)c {
+    NSWindowController *controller = [[c alloc] init];
+    if (windowControllers == nil) {
+        windowControllers = [NSMutableArray array];
+    }
+    [windowControllers addObject:controller];
+    [controller showWindow:self];
 }
 
 

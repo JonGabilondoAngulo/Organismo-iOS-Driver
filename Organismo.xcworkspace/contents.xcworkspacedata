@@ -12,6 +12,13 @@
       name = "SampleApps">
       <Group
          location = "container:"
+         name = "Mac">
+         <FileRef
+            location = "group:SampleApps/Mac/OrganismoHost/OrganismoHost.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
          name = "DPMeter">
          <FileRef
             location = "group:SampleApps/DPMeterView/Example/Example.xcodeproj">

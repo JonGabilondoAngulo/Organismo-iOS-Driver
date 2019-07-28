@@ -4,13 +4,33 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Resources/ATBasicTableViewWindow.nib</key>
+		<data>
+		AyWWKNinULcc1TPUhZCECpil6qA=
+		</data>
+		<key>Resources/ATColorTable.nib</key>
+		<data>
+		h4abOmthP+5o4Tb7L3csrBJy9Vo=
+		</data>
+		<key>Resources/ATComplexOutlineWindow.nib</key>
+		<data>
+		C+BeJYmIm/mGguSSYriF+AsBGA4=
+		</data>
+		<key>Resources/ATComplexTableViewWindow.nib</key>
+		<data>
+		C7NxCNhXobaO2IkMfftgeSKg3rM=
+		</data>
+		<key>Resources/Assets.car</key>
+		<data>
+		vVG+Mcaia9Eaz2viDqSniNBK7QY=
+		</data>
 		<key>Resources/Info.plist</key>
 		<data>
 		7+5f0JP00DaKU/jKskGrf04aRq8=
 		</data>
-		<key>Resources/Organismo-mac.storyboardc/Info.plist</key>
+		<key>Resources/ORGInspectorWindowController.nib</key>
 		<data>
-		WQRmGHzdWxV2Tq0bF11AM53LfXs=
+		hjuYtUb8YAK0Mzq6PLNKKHt6jss=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -22,6 +42,41 @@
 			68xkQl5UrcWLm64+M1hArg5s0m9RBnJBd2cfmOeEApk=
 			</data>
 		</dict>
+		<key>Resources/ATBasicTableViewWindow.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3ocg3Amp164OjyhqUI1m1WH+tKUY5rSPa24GYAHNy0k=
+			</data>
+		</dict>
+		<key>Resources/ATColorTable.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TDxih42zfc1tzWE0Cuah/2964e75dUjvdD6IRJGXRE8=
+			</data>
+		</dict>
+		<key>Resources/ATComplexOutlineWindow.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			v9Lnlu84juHEboPOT9kQA/qxdHSXF/T37mpGvec8Lks=
+			</data>
+		</dict>
+		<key>Resources/ATComplexTableViewWindow.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k8CyN4krNSIeQVK6xUqZfYsVWOk0heTLFuSIliJ2J0k=
+			</data>
+		</dict>
+		<key>Resources/Assets.car</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			b4AocftTSNfH22jyRZY3NN/U8ZaGp4eOE6R61msNKc8=
+			</data>
+		</dict>
 		<key>Resources/Info.plist</key>
 		<dict>
 			<key>hash2</key>
@@ -29,11 +84,11 @@
 			W0ZubovlxLbhYOE3h5MgWd2wpxOGK2RVJDNlRsRO9Yc=
 			</data>
 		</dict>
-		<key>Resources/Organismo-mac.storyboardc/Info.plist</key>
+		<key>Resources/ORGInspectorWindowController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BrNwUhSajtve8EjuvJmW7v+Lve85XR18vtJz7sHz6AM=
+			60LwwmrGNrbq1o5+64whUDdRgg9U9UZ6LyahqGuPxNg=
 			</data>
 		</dict>
 	</dict>

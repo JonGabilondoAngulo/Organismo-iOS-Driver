@@ -34,10 +34,23 @@
 		033677F21D3E67F1009B86A4 /* UINibDecoderORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 033677F01D3E67F1009B86A4 /* UINibDecoderORG.m */; };
 		03376E8E224BCAE300343646 /* UITableViewCell+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03376E8C224BCAE300343646 /* UITableViewCell+ORG.h */; };
 		03376E8F224BCAE300343646 /* UITableViewCell+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03376E8D224BCAE300343646 /* UITableViewCell+ORG.m */; };
+		033DCF9F22D4D6C800295555 /* NSWindow+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 033DCF9D22D4D6C800295555 /* NSWindow+ORG.h */; };
+		033DCFA022D4D6C800295555 /* NSWindow+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 033DCF9E22D4D6C800295555 /* NSWindow+ORG.m */; };
+		033DCFA322D4D6EA00295555 /* NSControl+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 033DCFA122D4D6EA00295555 /* NSControl+ORG.h */; };
+		033DCFA422D4D6EA00295555 /* NSControl+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 033DCFA222D4D6EA00295555 /* NSControl+ORG.m */; };
+		033DCFA722D4D70200295555 /* NSButton+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 033DCFA522D4D70200295555 /* NSButton+ORG.h */; };
+		033DCFA822D4D70200295555 /* NSButton+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 033DCFA622D4D70200295555 /* NSButton+ORG.m */; };
+		033DCFAD22D5F97000295555 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033DCFAC22D5F97000295555 /* Media.xcassets */; };
 		03471F24205D413800B6735F /* ORGRequestDeviceOrientationFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 03471F22205D413800B6735F /* ORGRequestDeviceOrientationFeed.h */; };
 		03471F25205D413800B6735F /* ORGRequestDeviceOrientationFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 03471F23205D413800B6735F /* ORGRequestDeviceOrientationFeed.m */; };
 		03471F2E205D41DC00B6735F /* ORGRequestCoreMotionFeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 03471F2C205D41DC00B6735F /* ORGRequestCoreMotionFeed.h */; };
 		03471F2F205D41DC00B6735F /* ORGRequestCoreMotionFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 03471F2D205D41DC00B6735F /* ORGRequestCoreMotionFeed.m */; };
+		034B1B6022CE4F9A00CFEDD0 /* ORGNSViewHierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 034B1B5E22CE4F9A00CFEDD0 /* ORGNSViewHierarchy.h */; };
+		034B1B6122CE4F9A00CFEDD0 /* ORGNSViewHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 034B1B5F22CE4F9A00CFEDD0 /* ORGNSViewHierarchy.m */; };
+		034B1B6522CFA7F300CFEDD0 /* ORGUITree.h in Headers */ = {isa = PBXBuildFile; fileRef = 034B1B6322CFA7F300CFEDD0 /* ORGUITree.h */; };
+		034B1B6622CFA7F300CFEDD0 /* ORGUITree.m in Sources */ = {isa = PBXBuildFile; fileRef = 034B1B6422CFA7F300CFEDD0 /* ORGUITree.m */; };
+		034B1B6922CFA80E00CFEDD0 /* ORGUITreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 034B1B6722CFA80E00CFEDD0 /* ORGUITreeNode.h */; };
+		034B1B6A22CFA80E00CFEDD0 /* ORGUITreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 034B1B6822CFA80E00CFEDD0 /* ORGUITreeNode.m */; };
 		035157261D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157241D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h */; };
 		035157271D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157251D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m */; };
 		0351572A1D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157281D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h */; };
@@ -56,6 +69,11 @@
 		035157471D3BA736004260A1 /* UIControl+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157451D3BA736004260A1 /* UIControl+ORG.m */; };
 		0357A11E1CBEE52C00A35556 /* CLHeading+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 0357A11C1CBEE52C00A35556 /* CLHeading+ORG.h */; };
 		0357A11F1CBEE52C00A35556 /* CLHeading+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 0357A11D1CBEE52C00A35556 /* CLHeading+ORG.m */; };
+		0394907A22D335BE0029BB9B /* ORGInspectorWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0394907722D335BE0029BB9B /* ORGInspectorWindowController.h */; };
+		0394907B22D335BE0029BB9B /* ORGInspectorWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0394907822D335BE0029BB9B /* ORGInspectorWindowController.m */; };
+		0394907E22D33C280029BB9B /* ORGInspectorWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0394907D22D33C280029BB9B /* ORGInspectorWindowController.xib */; };
+		0394908122D351790029BB9B /* ORGTableCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0394907F22D351790029BB9B /* ORGTableCellView.h */; };
+		0394908222D351790029BB9B /* ORGTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0394908022D351790029BB9B /* ORGTableCellView.m */; };
 		039C336222C7D63600E61DA8 /* NSObject+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA66BE1CBD00EF00E26CAA /* NSObject+ORG.h */; };
 		039C338C22C7D63600E61DA8 /* Organismo.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DA668A1CBCEE4700E26CAA /* Organismo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		039DA6CC1D8EB9F800F6937A /* ORGGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = 039DA6CA1D8EB9F800F6937A /* ORGGesture.h */; };
@@ -252,10 +270,23 @@
 		033677F31D3E6974009B86A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03376E8C224BCAE300343646 /* UITableViewCell+ORG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ORG.h"; sourceTree = "<group>"; };
 		03376E8D224BCAE300343646 /* UITableViewCell+ORG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ORG.m"; sourceTree = "<group>"; };
+		033DCF9D22D4D6C800295555 /* NSWindow+ORG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSWindow+ORG.h"; path = "Organismo/Mac/NSWindow+ORG.h"; sourceTree = "<group>"; };
+		033DCF9E22D4D6C800295555 /* NSWindow+ORG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSWindow+ORG.m"; path = "Organismo/Mac/NSWindow+ORG.m"; sourceTree = "<group>"; };
+		033DCFA122D4D6EA00295555 /* NSControl+ORG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSControl+ORG.h"; path = "Organismo/Mac/NSControl+ORG.h"; sourceTree = "<group>"; };
+		033DCFA222D4D6EA00295555 /* NSControl+ORG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSControl+ORG.m"; path = "Organismo/Mac/NSControl+ORG.m"; sourceTree = "<group>"; };
+		033DCFA522D4D70200295555 /* NSButton+ORG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSButton+ORG.h"; path = "Organismo/Mac/NSButton+ORG.h"; sourceTree = "<group>"; };
+		033DCFA622D4D70200295555 /* NSButton+ORG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSButton+ORG.m"; path = "Organismo/Mac/NSButton+ORG.m"; sourceTree = "<group>"; };
+		033DCFAC22D5F97000295555 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = Organismo/Mac/Media.xcassets; sourceTree = "<group>"; };
 		03471F22205D413800B6735F /* ORGRequestDeviceOrientationFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORGRequestDeviceOrientationFeed.h; sourceTree = "<group>"; };
 		03471F23205D413800B6735F /* ORGRequestDeviceOrientationFeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORGRequestDeviceOrientationFeed.m; sourceTree = "<group>"; };
 		03471F2C205D41DC00B6735F /* ORGRequestCoreMotionFeed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORGRequestCoreMotionFeed.h; sourceTree = "<group>"; };
 		03471F2D205D41DC00B6735F /* ORGRequestCoreMotionFeed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORGRequestCoreMotionFeed.m; sourceTree = "<group>"; };
+		034B1B5E22CE4F9A00CFEDD0 /* ORGNSViewHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORGNSViewHierarchy.h; path = Organismo/Mac/ORGNSViewHierarchy.h; sourceTree = "<group>"; };
+		034B1B5F22CE4F9A00CFEDD0 /* ORGNSViewHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORGNSViewHierarchy.m; path = Organismo/Mac/ORGNSViewHierarchy.m; sourceTree = "<group>"; };
+		034B1B6322CFA7F300CFEDD0 /* ORGUITree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ORGUITree.h; path = Organismo/Mac/ORGUITree.h; sourceTree = "<group>"; };
+		034B1B6422CFA7F300CFEDD0 /* ORGUITree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ORGUITree.m; path = Organismo/Mac/ORGUITree.m; sourceTree = "<group>"; };
+		034B1B6722CFA80E00CFEDD0 /* ORGUITreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORGUITreeNode.h; sourceTree = "<group>"; };
+		034B1B6822CFA80E00CFEDD0 /* ORGUITreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORGUITreeNode.m; sourceTree = "<group>"; };
 		035157241D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
 		035157251D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+ORG.m"; sourceTree = "<group>"; };
 		035157281D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
@@ -275,6 +306,11 @@
 		0357A11C1CBEE52C00A35556 /* CLHeading+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLHeading+ORG.h"; sourceTree = "<group>"; };
 		0357A11D1CBEE52C00A35556 /* CLHeading+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLHeading+ORG.m"; sourceTree = "<group>"; };
 		035C149F1D94040A00B0239D /* KIF.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KIF.xcodeproj; path = KIF/KIF.xcodeproj; sourceTree = "<group>"; };
+		0394907722D335BE0029BB9B /* ORGInspectorWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ORGInspectorWindowController.h; path = Organismo/Mac/ORGInspectorWindowController.h; sourceTree = "<group>"; };
+		0394907822D335BE0029BB9B /* ORGInspectorWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ORGInspectorWindowController.m; path = Organismo/Mac/ORGInspectorWindowController.m; sourceTree = "<group>"; };
+		0394907D22D33C280029BB9B /* ORGInspectorWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ORGInspectorWindowController.xib; path = Organismo/Mac/ORGInspectorWindowController.xib; sourceTree = "<group>"; };
+		0394907F22D351790029BB9B /* ORGTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORGTableCellView.h; path = Organismo/Mac/ORGTableCellView.h; sourceTree = "<group>"; };
+		0394908022D351790029BB9B /* ORGTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORGTableCellView.m; path = Organismo/Mac/ORGTableCellView.m; sourceTree = "<group>"; };
 		039C339422C7D63600E61DA8 /* Organismo-mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Organismo-mac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		039C339B22C7D63700E61DA8 /* mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "mac-Info.plist"; path = "/Development/Github/Organismo-iOS/mac-Info.plist"; sourceTree = "<absolute>"; };
 		039DA6CA1D8EB9F800F6937A /* ORGGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGGesture.h; sourceTree = "<group>"; };
@@ -432,8 +468,42 @@
 			children = (
 				032C9FE322C8CA2700B2DBEA /* NSApplication+ORG.h */,
 				032C9FE422C8CA2700B2DBEA /* NSApplication+ORG.m */,
+				034B1B5E22CE4F9A00CFEDD0 /* ORGNSViewHierarchy.h */,
+				034B1B5F22CE4F9A00CFEDD0 /* ORGNSViewHierarchy.m */,
+				034B1B6322CFA7F300CFEDD0 /* ORGUITree.h */,
+				034B1B6422CFA7F300CFEDD0 /* ORGUITree.m */,
+				034B1B6722CFA80E00CFEDD0 /* ORGUITreeNode.h */,
+				034B1B6822CFA80E00CFEDD0 /* ORGUITreeNode.m */,
+				0394907722D335BE0029BB9B /* ORGInspectorWindowController.h */,
+				0394907822D335BE0029BB9B /* ORGInspectorWindowController.m */,
+				0394907F22D351790029BB9B /* ORGTableCellView.h */,
+				0394908022D351790029BB9B /* ORGTableCellView.m */,
+				033DCF9C22D4D69A00295555 /* Categories */,
+				034B1B6222CE4FA000CFEDD0 /* Resources */,
 			);
 			name = "Organismo-mac";
+			sourceTree = "<group>";
+		};
+		033DCF9C22D4D69A00295555 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				033DCF9D22D4D6C800295555 /* NSWindow+ORG.h */,
+				033DCF9E22D4D6C800295555 /* NSWindow+ORG.m */,
+				033DCFA122D4D6EA00295555 /* NSControl+ORG.h */,
+				033DCFA222D4D6EA00295555 /* NSControl+ORG.m */,
+				033DCFA522D4D70200295555 /* NSButton+ORG.h */,
+				033DCFA622D4D70200295555 /* NSButton+ORG.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		034B1B6222CE4FA000CFEDD0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0394907D22D33C280029BB9B /* ORGInspectorWindowController.xib */,
+				033DCFAC22D5F97000295555 /* Media.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		0357A11B1CBECAC000A35556 /* Updates */ = {
@@ -751,10 +821,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				034B1B6522CFA7F300CFEDD0 /* ORGUITree.h in Headers */,
 				032C9FE522C8CA2700B2DBEA /* NSApplication+ORG.h in Headers */,
+				033DCFA722D4D70200295555 /* NSButton+ORG.h in Headers */,
+				033DCFA322D4D6EA00295555 /* NSControl+ORG.h in Headers */,
 				039C336222C7D63600E61DA8 /* NSObject+ORG.h in Headers */,
 				039C338C22C7D63600E61DA8 /* Organismo.h in Headers */,
+				034B1B6922CFA80E00CFEDD0 /* ORGUITreeNode.h in Headers */,
 				032C9FE822C8CC2600B2DBEA /* OrganismoPrefixHeader-mac.pch in Headers */,
+				033DCF9F22D4D6C800295555 /* NSWindow+ORG.h in Headers */,
+				0394908122D351790029BB9B /* ORGTableCellView.h in Headers */,
+				034B1B6022CE4F9A00CFEDD0 /* ORGNSViewHierarchy.h in Headers */,
+				0394907A22D335BE0029BB9B /* ORGInspectorWindowController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -932,6 +1010,7 @@
 			knownRegions = (
 				English,
 				en,
+				Base,
 			);
 			mainGroup = 03DA667D1CBCEE4700E26CAA;
 			productRefGroup = 03DA66881CBCEE4700E26CAA /* Products */;
@@ -1001,6 +1080,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033DCFAD22D5F97000295555 /* Media.xcassets in Resources */,
+				0394907E22D33C280029BB9B /* ORGInspectorWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1138,7 +1219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033DCFA422D4D6EA00295555 /* NSControl+ORG.m in Sources */,
+				034B1B6A22CFA80E00CFEDD0 /* ORGUITreeNode.m in Sources */,
+				034B1B6622CFA7F300CFEDD0 /* ORGUITree.m in Sources */,
+				0394907B22D335BE0029BB9B /* ORGInspectorWindowController.m in Sources */,
+				034B1B6122CE4F9A00CFEDD0 /* ORGNSViewHierarchy.m in Sources */,
+				033DCFA822D4D70200295555 /* NSButton+ORG.m in Sources */,
 				032C9FE622C8CA2700B2DBEA /* NSApplication+ORG.m in Sources */,
+				033DCFA022D4D6C800295555 /* NSWindow+ORG.m in Sources */,
+				0394908222D351790029BB9B /* ORGTableCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1250,6 +1339,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1294,6 +1384,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;

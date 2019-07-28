@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		039CEABD22CD229C00130474 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 039CEABC22CD229C00130474 /* AppDelegate.m */; };
+		039CEABF22CD229D00130474 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039CEABE22CD229D00130474 /* Assets.xcassets */; };
+		039CEAC222CD229D00130474 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039CEAC022CD229D00130474 /* Main.storyboard */; };
+		039CEAC522CD229D00130474 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 039CEAC422CD229D00130474 /* main.m */; };
+		039CEAD322CD240000130474 /* Organismo-mac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039CEAD222CD240000130474 /* Organismo-mac.framework */; };
+		039CEAD422CD240000130474 /* Organismo-mac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 039CEAD222CD240000130474 /* Organismo-mac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		039CEAD522CD240000130474 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				039CEAD422CD240000130474 /* Organismo-mac.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		039CEAB822CD229C00130474 /* OrganismoHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrganismoHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		039CEABB22CD229C00130474 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		039CEABC22CD229C00130474 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		039CEABE22CD229D00130474 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		039CEAC122CD229D00130474 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		039CEAC322CD229D00130474 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039CEAC422CD229D00130474 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		039CEAC622CD229D00130474 /* OrganismoHost.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OrganismoHost.entitlements; sourceTree = "<group>"; };
+		039CEAD222CD240000130474 /* Organismo-mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Organismo-mac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		039CEAB522CD229C00130474 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039CEAD322CD240000130474 /* Organismo-mac.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		039CEAAF22CD229C00130474 = {
+			isa = PBXGroup;
+			children = (
+				039CEABA22CD229C00130474 /* OrganismoHost */,
+				039CEAB922CD229C00130474 /* Products */,
+				039CEAD122CD240000130474 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		039CEAB922CD229C00130474 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				039CEAB822CD229C00130474 /* OrganismoHost.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		039CEABA22CD229C00130474 /* OrganismoHost */ = {
+			isa = PBXGroup;
+			children = (
+				039CEABB22CD229C00130474 /* AppDelegate.h */,
+				039CEABC22CD229C00130474 /* AppDelegate.m */,
+				039CEABE22CD229D00130474 /* Assets.xcassets */,
+				039CEAC022CD229D00130474 /* Main.storyboard */,
+				039CEAC322CD229D00130474 /* Info.plist */,
+				039CEAC422CD229D00130474 /* main.m */,
+				039CEAC622CD229D00130474 /* OrganismoHost.entitlements */,
+			);
+			path = OrganismoHost;
+			sourceTree = "<group>";
+		};
+		039CEAD122CD240000130474 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				039CEAD222CD240000130474 /* Organismo-mac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		039CEAB722CD229C00130474 /* OrganismoHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039CEAC922CD229D00130474 /* Build configuration list for PBXNativeTarget "OrganismoHost" */;
+			buildPhases = (
+				039CEAB422CD229C00130474 /* Sources */,
+				039CEAB522CD229C00130474 /* Frameworks */,
+				039CEAB622CD229C00130474 /* Resources */,
+				039CEAD522CD240000130474 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrganismoHost;
+			productName = OrganismoHost;
+			productReference = 039CEAB822CD229C00130474 /* OrganismoHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		039CEAB022CD229C00130474 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = JonGabilondo;
+				TargetAttributes = {
+					039CEAB722CD229C00130474 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 039CEAB322CD229C00130474 /* Build configuration list for PBXProject "OrganismoHost" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 039CEAAF22CD229C00130474;
+			productRefGroup = 039CEAB922CD229C00130474 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				039CEAB722CD229C00130474 /* OrganismoHost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		039CEAB622CD229C00130474 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039CEABF22CD229D00130474 /* Assets.xcassets in Resources */,
+				039CEAC222CD229D00130474 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		039CEAB422CD229C00130474 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039CEAC522CD229D00130474 /* main.m in Sources */,
+				039CEABD22CD229C00130474 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		039CEAC022CD229D00130474 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				039CEAC122CD229D00130474 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		039CEAC722CD229D00130474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		039CEAC822CD229D00130474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		039CEACA22CD229D00130474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OrganismoHost/OrganismoHost.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NRRF7234ZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = OrganismoHost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.org.JonGabilondo.OrganismoHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		039CEACB22CD229D00130474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OrganismoHost/OrganismoHost.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = NRRF7234ZC;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = OrganismoHost/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.org.JonGabilondo.OrganismoHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		039CEAB322CD229C00130474 /* Build configuration list for PBXProject "OrganismoHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039CEAC722CD229D00130474 /* Debug */,
+				039CEAC822CD229D00130474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		039CEAC922CD229D00130474 /* Build configuration list for PBXNativeTarget "OrganismoHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039CEACA22CD229D00130474 /* Debug */,
+				039CEACB22CD229D00130474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 039CEAB022CD229C00130474 /* Project object */;
+}

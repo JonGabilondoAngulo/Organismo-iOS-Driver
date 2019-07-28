@@ -8,7 +8,6 @@
 
 #import "ORGGestureLongPress.h"
 #import "NSDictionary+ORG.h"
-#import <KIF.h>
 
 @implementation ORGGestureLongPress
 

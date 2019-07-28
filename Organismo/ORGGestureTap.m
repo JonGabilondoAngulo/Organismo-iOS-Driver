@@ -8,7 +8,6 @@
 
 #import "ORGGestureTap.h"
 #import "NSDictionary+ORG.h"
-#import <KIF.h>
 
 @implementation ORGGestureTap
 

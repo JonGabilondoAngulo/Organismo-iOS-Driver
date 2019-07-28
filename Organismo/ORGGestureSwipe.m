@@ -8,7 +8,6 @@
 
 #import "ORGGestureSwipe.h"
 #import "NSDictionary+ORG.h"
-#import <KIF.h>
 
 @implementation ORGGestureSwipe
 

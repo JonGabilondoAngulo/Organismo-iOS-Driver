@@ -7,9 +7,6 @@
 //
 
 #import "NSApplication+ORG.h"
-#import "ATBasicTableViewWindowController.h"
-#import "ATComplexTableViewController.h"
-#import "ATComplexOutlineController.h"
 #import "ORGNSViewHierarchy.h"
 #import "ORGInspectorWindowController.h"
 

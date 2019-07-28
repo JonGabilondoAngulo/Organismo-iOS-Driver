@@ -7,7 +7,6 @@
  */
 
 #import "ORGTableCellView.h"
-#import "ATColorView.h"
 
 @interface ORGTableCellView ()
 

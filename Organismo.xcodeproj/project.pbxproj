@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0300F9D922EECA73007DF323 /* ORGUITreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0300F9D722EECA73007DF323 /* ORGUITreeNode.m */; };
+		0300F9DA22EECA73007DF323 /* ORGUITreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0300F9D822EECA73007DF323 /* ORGUITreeNode.h */; };
 		031F745F1D4015F400DDC876 /* UITextView+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 031F745D1D4015F400DDC876 /* UITextView+ORG.h */; };
 		031F74601D4015F400DDC876 /* UITextView+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 031F745E1D4015F400DDC876 /* UITextView+ORG.m */; };
 		031F74631D40167D00DDC876 /* UITextField+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 031F74611D40167D00DDC876 /* UITextField+ORG.h */; };
@@ -49,8 +51,6 @@
 		034B1B6122CE4F9A00CFEDD0 /* ORGNSViewHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 034B1B5F22CE4F9A00CFEDD0 /* ORGNSViewHierarchy.m */; };
 		034B1B6522CFA7F300CFEDD0 /* ORGUITree.h in Headers */ = {isa = PBXBuildFile; fileRef = 034B1B6322CFA7F300CFEDD0 /* ORGUITree.h */; };
 		034B1B6622CFA7F300CFEDD0 /* ORGUITree.m in Sources */ = {isa = PBXBuildFile; fileRef = 034B1B6422CFA7F300CFEDD0 /* ORGUITree.m */; };
-		034B1B6922CFA80E00CFEDD0 /* ORGUITreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 034B1B6722CFA80E00CFEDD0 /* ORGUITreeNode.h */; };
-		034B1B6A22CFA80E00CFEDD0 /* ORGUITreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 034B1B6822CFA80E00CFEDD0 /* ORGUITreeNode.m */; };
 		035157261D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157241D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h */; };
 		035157271D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m in Sources */ = {isa = PBXBuildFile; fileRef = 035157251D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m */; };
 		0351572A1D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h in Headers */ = {isa = PBXBuildFile; fileRef = 035157281D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h */; };
@@ -193,6 +193,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0300F9D722EECA73007DF323 /* ORGUITreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORGUITreeNode.m; path = Organismo/Mac/ORGUITreeNode.m; sourceTree = "<group>"; };
+		0300F9D822EECA73007DF323 /* ORGUITreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORGUITreeNode.h; path = Organismo/Mac/ORGUITreeNode.h; sourceTree = "<group>"; };
+		0300F9DD22EECB56007DF323 /* mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "mac-Info.plist"; path = "Organismo/Mac/mac-Info.plist"; sourceTree = "<group>"; };
 		031F745D1D4015F400DDC876 /* UITextView+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+ORG.h"; sourceTree = "<group>"; };
 		031F745E1D4015F400DDC876 /* UITextView+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+ORG.m"; sourceTree = "<group>"; };
 		031F74611D40167D00DDC876 /* UITextField+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ORG.h"; sourceTree = "<group>"; };
@@ -236,8 +239,6 @@
 		034B1B5F22CE4F9A00CFEDD0 /* ORGNSViewHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORGNSViewHierarchy.m; path = Organismo/Mac/ORGNSViewHierarchy.m; sourceTree = "<group>"; };
 		034B1B6322CFA7F300CFEDD0 /* ORGUITree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ORGUITree.h; path = Organismo/Mac/ORGUITree.h; sourceTree = "<group>"; };
 		034B1B6422CFA7F300CFEDD0 /* ORGUITree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ORGUITree.m; path = Organismo/Mac/ORGUITree.m; sourceTree = "<group>"; };
-		034B1B6722CFA80E00CFEDD0 /* ORGUITreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORGUITreeNode.h; sourceTree = "<group>"; };
-		034B1B6822CFA80E00CFEDD0 /* ORGUITreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORGUITreeNode.m; sourceTree = "<group>"; };
 		035157241D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
 		035157251D3B9D6A004260A1 /* UITapGestureRecognizer+ORG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+ORG.m"; sourceTree = "<group>"; };
 		035157281D3B9EAC004260A1 /* UIGestureRecognizer+ORG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+ORG.h"; sourceTree = "<group>"; };
@@ -262,7 +263,6 @@
 		0394907F22D351790029BB9B /* ORGTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORGTableCellView.h; path = Organismo/Mac/ORGTableCellView.h; sourceTree = "<group>"; };
 		0394908022D351790029BB9B /* ORGTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORGTableCellView.m; path = Organismo/Mac/ORGTableCellView.m; sourceTree = "<group>"; };
 		039C339422C7D63600E61DA8 /* Organismo-mac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Organismo-mac.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		039C339B22C7D63700E61DA8 /* mac-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "mac-Info.plist"; path = "/Development/Github/Organismo-iOS/mac-Info.plist"; sourceTree = "<absolute>"; };
 		039DA6CA1D8EB9F800F6937A /* ORGGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGGesture.h; sourceTree = "<group>"; };
 		039DA6CB1D8EB9F800F6937A /* ORGGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGGesture.m; sourceTree = "<group>"; };
 		039DA6CE1D8EBA1300F6937A /* ORGGestureTap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGGestureTap.h; sourceTree = "<group>"; };
@@ -404,6 +404,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0300F9DB22EECAD8007DF323 /* Organismo-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				03DA66A41CBCFFE400E26CAA /* Constants */,
+				0394AA791D23F1E0002ED6F0 /* UI */,
+				03DA66A71CBD000200E26CAA /* Categories */,
+				03DA66A51CBCFFED00E26CAA /* Instrumentation */,
+				03DA66A61CBCFFF600E26CAA /* Communication */,
+				03DA66A31CBCFFD300E26CAA /* Messages */,
+				032C9FE122C8B03600B2DBEA /* Motion */,
+				03DA66A21CBCFFC600E26CAA /* Remote */,
+				039DA6C91D8EB98300F6937A /* Gestures */,
+				03DA66A11CBCFFB800E26CAA /* Supporting Files */,
+			);
+			name = "Organismo-iOS";
+			sourceTree = "<group>";
+		};
+		0300F9DC22EECB40007DF323 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0300F9DD22EECB56007DF323 /* mac-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		032C9FE122C8B03600B2DBEA /* Motion */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +436,7 @@
 				03DA66B11CBD00C300E26CAA /* ORGCoreMotion.m */,
 			);
 			name = Motion;
+			path = Organismo;
 			sourceTree = "<group>";
 		};
 		032C9FE222C8B09400B2DBEA /* Organismo-mac */ = {
@@ -422,14 +448,15 @@
 				034B1B5F22CE4F9A00CFEDD0 /* ORGNSViewHierarchy.m */,
 				034B1B6322CFA7F300CFEDD0 /* ORGUITree.h */,
 				034B1B6422CFA7F300CFEDD0 /* ORGUITree.m */,
-				034B1B6722CFA80E00CFEDD0 /* ORGUITreeNode.h */,
-				034B1B6822CFA80E00CFEDD0 /* ORGUITreeNode.m */,
+				0300F9D822EECA73007DF323 /* ORGUITreeNode.h */,
+				0300F9D722EECA73007DF323 /* ORGUITreeNode.m */,
 				0394907722D335BE0029BB9B /* ORGInspectorWindowController.h */,
 				0394907822D335BE0029BB9B /* ORGInspectorWindowController.m */,
 				0394907F22D351790029BB9B /* ORGTableCellView.h */,
 				0394908022D351790029BB9B /* ORGTableCellView.m */,
 				033DCF9C22D4D69A00295555 /* Categories */,
 				034B1B6222CE4FA000CFEDD0 /* Resources */,
+				0300F9DC22EECB40007DF323 /* Supporting Files */,
 			);
 			name = "Organismo-mac";
 			sourceTree = "<group>";
@@ -474,6 +501,7 @@
 				03DA66B51CBD00C300E26CAA /* ORGUIViewHierarchy.m */,
 			);
 			name = UI;
+			path = Organismo;
 			sourceTree = "<group>";
 		};
 		039DA6C91D8EB98300F6937A /* Gestures */ = {
@@ -489,13 +517,14 @@
 				03C2CD111E9396B200508AD9 /* ORGGestureSwipe.m */,
 			);
 			name = Gestures;
+			path = Organismo;
 			sourceTree = "<group>";
 		};
 		03DA667D1CBCEE4700E26CAA = {
 			isa = PBXGroup;
 			children = (
+				0300F9DB22EECAD8007DF323 /* Organismo-iOS */,
 				032C9FE222C8B09400B2DBEA /* Organismo-mac */,
-				03DA66891CBCEE4700E26CAA /* Organismo */,
 				03DA66951CBCEE4700E26CAA /* OrganismoTests */,
 				03DA66881CBCEE4700E26CAA /* Products */,
 				9194B1267A557759B0D56614 /* Frameworks */,
@@ -511,23 +540,6 @@
 				039C339422C7D63600E61DA8 /* Organismo-mac.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		03DA66891CBCEE4700E26CAA /* Organismo */ = {
-			isa = PBXGroup;
-			children = (
-				03DA66A41CBCFFE400E26CAA /* Constants */,
-				0394AA791D23F1E0002ED6F0 /* UI */,
-				03DA66A71CBD000200E26CAA /* Categories */,
-				03DA66A51CBCFFED00E26CAA /* Instrumentation */,
-				03DA66A61CBCFFF600E26CAA /* Communication */,
-				03DA66A31CBCFFD300E26CAA /* Messages */,
-				032C9FE122C8B03600B2DBEA /* Motion */,
-				03DA66A21CBCFFC600E26CAA /* Remote */,
-				039DA6C91D8EB98300F6937A /* Gestures */,
-				03DA66A11CBCFFB800E26CAA /* Supporting Files */,
-			);
-			path = Organismo;
 			sourceTree = "<group>";
 		};
 		03DA66951CBCEE4700E26CAA /* OrganismoTests */ = {
@@ -546,10 +558,10 @@
 				03DA673D1CBD022200E26CAA /* OrganismoPrefixHeader.pch */,
 				03DA668A1CBCEE4700E26CAA /* Organismo.h */,
 				03DA668C1CBCEE4700E26CAA /* Info.plist */,
-				039C339B22C7D63700E61DA8 /* mac-Info.plist */,
 				03DA66AE1CBD009A00E26CAA /* Web */,
 			);
 			name = "Supporting Files";
+			path = Organismo;
 			sourceTree = "<group>";
 		};
 		03DA66A21CBCFFC600E26CAA /* Remote */ = {
@@ -567,6 +579,7 @@
 				03DA67321CBD021200E26CAA /* ORGRemotePedometer.m */,
 			);
 			name = Remote;
+			path = Organismo;
 			sourceTree = "<group>";
 		};
 		03DA66A31CBCFFD300E26CAA /* Messages */ = {
@@ -580,6 +593,7 @@
 				03DA67101CBD01CB00E26CAA /* Requests */,
 			);
 			name = Messages;
+			path = Organismo;
 			sourceTree = "<group>";
 		};
 		03DA66A41CBCFFE400E26CAA /* Constants */ = {
@@ -589,6 +603,7 @@
 				03DA67011CBD018A00E26CAA /* ORGConstants.m */,
 			);
 			name = Constants;
+			path = Organismo;
 			sourceTree = "<group>";
 		};
 		03DA66A51CBCFFED00E26CAA /* Instrumentation */ = {
@@ -624,6 +639,7 @@
 				033677E01D3D3CF7009B86A4 /* UIStoryboardSegue+ORG.m */,
 			);
 			name = Instrumentation;
+			path = Organismo;
 			sourceTree = "<group>";
 		};
 		03DA66A61CBCFFF600E26CAA /* Communication */ = {
@@ -641,6 +657,7 @@
 				03DA66D51CBD011900E26CAA /* ORGOutboundMessageQueue.m */,
 			);
 			name = Communication;
+			path = Organismo;
 			sourceTree = "<group>";
 		};
 		03DA66A71CBD000200E26CAA /* Categories */ = {
@@ -692,6 +709,7 @@
 				03376E8D224BCAE300343646 /* UITableViewCell+ORG.m */,
 			);
 			name = Categories;
+			path = Organismo;
 			sourceTree = "<group>";
 		};
 		03DA67101CBD01CB00E26CAA /* Requests */ = {
@@ -763,9 +781,9 @@
 				033DCFA322D4D6EA00295555 /* NSControl+ORG.h in Headers */,
 				039C336222C7D63600E61DA8 /* NSObject+ORG.h in Headers */,
 				039C338C22C7D63600E61DA8 /* Organismo.h in Headers */,
-				034B1B6922CFA80E00CFEDD0 /* ORGUITreeNode.h in Headers */,
 				032C9FE822C8CC2600B2DBEA /* OrganismoPrefixHeader-mac.pch in Headers */,
 				033DCF9F22D4D6C800295555 /* NSWindow+ORG.h in Headers */,
+				0300F9DA22EECA73007DF323 /* ORGUITreeNode.h in Headers */,
 				0394908122D351790029BB9B /* ORGTableCellView.h in Headers */,
 				034B1B6022CE4F9A00CFEDD0 /* ORGNSViewHierarchy.h in Headers */,
 				0394907A22D335BE0029BB9B /* ORGInspectorWindowController.h in Headers */,
@@ -1103,8 +1121,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0300F9D922EECA73007DF323 /* ORGUITreeNode.m in Sources */,
 				033DCFA422D4D6EA00295555 /* NSControl+ORG.m in Sources */,
-				034B1B6A22CFA80E00CFEDD0 /* ORGUITreeNode.m in Sources */,
 				034B1B6622CFA7F300CFEDD0 /* ORGUITree.m in Sources */,
 				0394907B22D335BE0029BB9B /* ORGInspectorWindowController.m in Sources */,
 				034B1B6122CE4F9A00CFEDD0 /* ORGNSViewHierarchy.m in Sources */,
@@ -1240,7 +1258,7 @@
 					KIF/KIFFramework,
 					"XCTest-Stub/XCTest-Stub",
 				);
-				INFOPLIST_FILE = "mac-Info.plist";
+				INFOPLIST_FILE = "Organismo/Mac/mac-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)  @executable_path/../Frameworks @executable_path/Contents/Frameworks @loader_path/../Frameworks @loader_path/Frameworks @loader_path/Contents/Frameworks @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1285,7 +1303,7 @@
 					KIF/KIFFramework,
 					"XCTest-Stub/XCTest-Stub",
 				);
-				INFOPLIST_FILE = "mac-Info.plist";
+				INFOPLIST_FILE = "Organismo/Mac/mac-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited)  @executable_path/../Frameworks @executable_path/Contents/Frameworks @loader_path/../Frameworks @loader_path/Frameworks @loader_path/Contents/Frameworks @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

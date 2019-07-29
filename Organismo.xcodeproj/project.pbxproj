@@ -881,7 +881,6 @@
 				039C334022C7D63600E61DA8 /* Frameworks */,
 				039C334322C7D63600E61DA8 /* Headers */,
 				039C338D22C7D63600E61DA8 /* Resources */,
-				039C339022C7D63600E61DA8 /* Copy Product to dist folder */,
 			);
 			buildRules = (
 			);
@@ -902,7 +901,6 @@
 				03DA66841CBCEE4700E26CAA /* Headers */,
 				03DA66851CBCEE4700E26CAA /* Resources */,
 				5245D03821B1B032E2CEF46C /* [CP] Copy Pods Resources */,
-				033276E42035DD0A005A56F8 /* Copy Product to dist folder */,
 			);
 			buildRules = (
 			);
@@ -1005,34 +1003,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		033276E42035DD0A005A56F8 /* Copy Product to dist folder */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Product to dist folder";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ -d ./dist ] ; then\nrm -R ./dist/Organismo.framework\nelse\nmkdir dist\nfi\n\ncp -a $BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME ./dist\n";
-		};
-		039C339022C7D63600E61DA8 /* Copy Product to dist folder */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Product to dist folder";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if [ -d ./dist ] ; then\n    rm -R ./dist/Organismo-mac.framework\nelse\n    mkdir dist\nfi\n\ncp -a $BUILT_PRODUCTS_DIR/$FULL_PRODUCT_NAME ./dist\n";
-		};
 		482F3D785869BD7261ACCE3F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

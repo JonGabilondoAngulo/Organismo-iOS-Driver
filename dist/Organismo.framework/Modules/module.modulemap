@@ -1,6 +1,0 @@
-framework module Organismo {
-  umbrella header "Organismo.h"
-
-  export *
-  module * { export * }
-}
